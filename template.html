@@ -25,17 +25,45 @@
     <!-- Body tag which was completely absent -->
     <div class="bg-gray-50">
       <!-- Header Navigation -->
-      <header
-        class="container mx-auto py-4 px-4 flex justify-between items-center"
-      >
-        <div class="text-blue-900 font-bold">IS : Simply Dummy Text Of To</div>
-        <nav class="flex space-x-4">
-          <a href="#" class="text-blue-900">User</a>
-          <a href="#" class="text-blue-900">Lorem Us</a>
-          <a href="#" class="bg-orange-500 text-white px-4 py-1 rounded"
-            >Printing Us</a
+      <header class="container mx-auto py-4 px-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo/Title -->
+          <div class="text-blue-900 font-bold">
+            IS : Simply Dummy Text Of To
+          </div>
+
+          <!-- Mobile menu button (hamburger) - always on right side -->
+          <button id="mobile-menu-button" class="md:hidden block text-blue-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Navigation links - hidden on mobile, visible on desktop -->
+          <nav
+            id="nav-menu"
+            class="hidden md:flex md:space-x-4 absolute md:static left-0 right-0 top-16 bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none z-10 md:z-auto"
           >
-        </nav>
+            <a href="#" class="text-blue-900 block py-2 md:py-0">User</a>
+            <a href="#" class="text-blue-900 block py-2 md:py-0">Lorem Us</a>
+            <a
+              href="#"
+              class="bg-orange-500 text-white px-4 py-1 rounded text-center"
+              >Printing Us</a
+            >
+          </nav>
+        </div>
       </header>
 
       <!-- Hero Section -->
@@ -218,7 +246,7 @@
               class="flex transition-transform duration-300 ease-in-out"
             >
               <!-- Card 5 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=8"
@@ -239,7 +267,7 @@
                 </div>
               </div>
               <!-- Card 6 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=9"
@@ -260,7 +288,7 @@
                 </div>
               </div>
               <!-- Card 7 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=10"
@@ -281,7 +309,7 @@
                 </div>
               </div>
               <!-- Card 8 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=11"
@@ -302,7 +330,7 @@
                 </div>
               </div>
               <!-- Card 9 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=12"
@@ -323,7 +351,7 @@
                 </div>
               </div>
               <!-- Card 10 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=13"
@@ -344,7 +372,7 @@
                 </div>
               </div>
               <!-- Card 11 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=14"
@@ -365,7 +393,7 @@
                 </div>
               </div>
               <!-- Card 12 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2">
+              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
                 <div class="bg-white shadow-md group">
                   <img
                     src="https://picsum.photos/300/200?random=15"
@@ -508,87 +536,105 @@
       </div>
     </div>
 
-    <!-- Footer section - moved inside body tag -->
-    <div class="container mx-auto px-4 py-8">
-      <!-- Top Navigation -->
-      <nav class="flex flex-wrap justify-between items-center mb-10">
-        <!-- Left side menu -->
-        <div class="flex items-center space-x-8">
-          <div class="text-gray-800 font-medium">User</div>
-          <div class="text-gray-800 font-medium">Lorem Us</div>
-          <div class="text-gray-800 font-medium">Printing Us</div>
-        </div>
-
-        <!-- Right side contact info -->
-        <div class="flex flex-col space-y-2">
-          <div class="flex items-center">
-            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
-            <span class="text-gray-700"
-              >Lorem Ipsum Lorem,Lorem Lorem Ipsum Lorem</span
+    <!-- Footer section - Improved for mobile responsiveness -->
+    <footer class="bg-white py-8 px-4">
+      <div class="container mx-auto">
+        <!-- Top Navigation - Responsive Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <!-- Left side menu -->
+          <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6">
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >User</a
+            >
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >Lorem Us</a
+            >
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >Printing Us</a
             >
           </div>
-          <div class="flex items-center">
-            <i class="fas fa-phone text-orange-500 mr-2"></i>
-            <span class="text-gray-700">123-456-7890</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fas fa-envelope text-orange-500 mr-2"></i>
-            <span class="text-gray-700">lorem@gmail.com</span>
-          </div>
-          <div class="flex items-center">
-            <i class="far fa-clock text-orange-500 mr-2"></i>
-            <span class="text-gray-700">Monday - Friday 0AM - 00 PM</span>
+
+          <!-- Right side contact info -->
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <i
+                class="fas fa-map-marker-alt text-orange-500 mr-2 mt-1 flex-shrink-0"
+              ></i>
+              <span class="text-gray-700"
+                >Lorem Ipsum Lorem, Lorem Lorem Ipsum Lorem</span
+              >
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-phone text-orange-500 mr-2 flex-shrink-0"></i>
+              <span class="text-gray-700">123-456-7890</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-envelope text-orange-500 mr-2 flex-shrink-0"></i>
+              <span class="text-gray-700">lorem@gmail.com</span>
+            </div>
+            <div class="flex items-center">
+              <i class="far fa-clock text-orange-500 mr-2 flex-shrink-0"></i>
+              <span class="text-gray-700">Monday - Friday 0AM - 00 PM</span>
+            </div>
           </div>
         </div>
-      </nav>
 
-      <!-- Social Media Icons -->
-      <div class="flex space-x-4 mb-8">
-        <a
-          href="#"
-          class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-white"
-        >
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a
-          href="#"
-          class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="#"
-          class="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center text-white"
-        >
-          <i class="fab fa-skype"></i>
-        </a>
-        <a
-          href="#"
-          class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white"
-        >
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a
-          href="#"
-          class="w-10 h-10 rounded-full bg-green-400 flex items-center justify-center text-white"
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
+        <!-- Social Media Icons - Centered on mobile -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-white hover:bg-blue-900 transition-colors"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center text-white hover:bg-sky-600 transition-colors"
+          >
+            <i class="fab fa-skype"></i>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-green-400 flex items-center justify-center text-white hover:bg-green-500 transition-colors"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
 
-      <!-- Secondary Navigation -->
-      <div class="flex space-x-8 mb-16">
-        <div class="text-gray-800 font-medium">Remaini</div>
-        <div class="text-gray-800 font-medium">Lorem Ipsums</div>
-        <div class="text-gray-800 font-medium">Variations Of Pass</div>
-      </div>
+        <!-- Secondary Navigation - Responsive -->
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 text-center"
+        >
+          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+            >Remaini</a
+          >
+          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+            >Lorem Ipsums</a
+          >
+          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+            >Variations Of Pass</a
+          >
+        </div>
 
-      <!-- Footer Text -->
-      <div class="text-center text-gray-700 mt-8">
-        It Is A Long Established Fact That A Reader Will Be Distracted By The
-        Readable Content
+        <!-- Footer Text -->
+        <div class="text-center text-gray-700 mt-8 px-4">
+          It Is A Long Established Fact That A Reader Will Be Distracted By The
+          Readable Content
+        </div>
       </div>
-    </div>
+    </footer>
 
     <script src="carousel.js"></script>
     <script src="slider.js"></script>
