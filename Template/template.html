@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+</html>
+<html dir="ltr" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum - Dummy Text</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
     <!-- Add the google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,627 +13,779 @@
       rel="stylesheet"
     />
     <!-- Add the icon -->
-    <link rel="icon" type="image/png" href="./fav.png" />
-    <!-- usng the cdn tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../Assets/fav.png" />
+    <!-- using the cdn tailwind -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
   </head>
 
   <body>
-    <!-- Body tag which was completely absent -->
-    <div class="bg-gray-50">
-      <!-- Header Navigation -->
-      <header class="container mx-auto py-4 px-4">
-        <div class="flex justify-between items-center">
-          <!-- Logo/Title -->
-          <div class="text-blue-900 font-bold">
-            IS : Simply Dummy Text Of To
-          </div>
-
-          <!-- Mobile menu button (hamburger) - always on right side -->
-          <button id="mobile-menu-button" class="md:hidden block text-blue-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-
-          <!-- Navigation links - hidden on mobile, visible on desktop -->
-          <nav
-            id="nav-menu"
-            class="hidden md:flex md:space-x-4 absolute md:static left-0 right-0 top-16 bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none z-10 md:z-auto"
-          >
-            <a href="#" class="text-blue-900 block py-2 md:py-0">User</a>
-            <a href="#" class="text-blue-900 block py-2 md:py-0">Lorem Us</a>
-            <a
-              href="#"
-              class="bg-orange-500 text-white px-4 py-1 rounded text-center"
-              >Printing Us</a
-            >
-          </nav>
-        </div>
-      </header>
-
-      <!-- Hero Section -->
-      <section class="container mx-auto px-4 py-8 flex flex-wrap">
-        <div class="w-full md:w-1/2 pr-0 md:pr-8">
-          <h1 class="text-2xl font-bold text-blue-900 mb-2">
-            Various Versi Have Evolved It ...
-          </h1>
-          <a
-            href="#"
-            class="inline-block bg-orange-500 text-white px-4 py-1 rounded mb-4"
-            >Printing Industry</a
-          >
-          <p class="text-gray-700 mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, it is a long established fact that a reader.
-          </p>
-          <a
-            href="#"
-            class="inline-block bg-orange-500 text-white px-4 py-1 rounded"
-            >Something more</a
-          >
-        </div>
-        <div class="w-full md:w-1/2 mt-8 md:mt-0">
-          <img
-            src="https://picsum.photos/800/600?random=1"
-            alt="Hero Image"
-            class="w-full h-64 object-cover"
-          />
-        </div>
-      </section>
-
-      <!-- Dots Navigation -->
-      <div class="flex justify-center space-x-2 my-8">
-        <span class="w-2 h-2 rounded-full bg-blue-900"></span>
-        <span class="w-2 h-2 rounded-full bg-blue-900"></span>
-        <span class="w-2 h-2 rounded-full bg-blue-900"></span>
-        <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+    <main class="bg-gray-50">
+      <!-- SECTION: Header Navigation -->
+<section class="header-section">
+  <!-- Header comment: Main navigation and branding -->
+  <header class="container mx-auto py-4 px-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo/Title -->
+      <div class="text-blue-900 font-bold">
+        IS : Simply Dummy Text Of To
       </div>
 
-      <!-- Two Column Section -->
-      <section class="container mx-auto px-4 py-8">
-        <h2 class="text-xl font-bold text-blue-900 text-center mb-8">
-          Lorem Ipsum Is
-        </h2>
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full md:w-1/2 px-4 mb-8">
-            <img
-              src="https://picsum.photos/600/400?random=2"
-              alt="Tech Image"
-              class="w-full h-48 object-cover mb-4"
+      <div class="flex items-center space-x-4">
+        <!-- Language Switcher - Simple EN/AR toggle -->
+        <div class="relative">
+          <a href="template-ar.html" class="flex items-center text-blue-900 hover:text-blue-700 px-3 py-1 rounded border border-blue-200">
+            <span id="current-language">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+            <span class="ml-1">عربي</span>
+          </a>
+        </div>
+
+        <!-- Mobile menu button (hamburger) - always on right side -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden block text-blue-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
             />
-            <h3 class="text-lg font-bold text-blue-900 mb-2">
-              Lorem Ipsum Lorem Ipsum Lorem
-            </h3>
-            <p class="text-sm text-gray-700">
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation links - hidden on mobile, visible on desktop -->
+      <nav
+        id="nav-menu"
+        class="hidden md:flex md:space-x-4 absolute md:static left-0 right-0 top-16 bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none z-10 md:z-auto"
+      >
+        <a href="#" class="text-blue-900 block py-2 md:py-0">User</a>
+        <a href="#" class="text-blue-900 block py-2 md:py-0">Lorem Us</a>
+        <a
+          href="#"
+          class="bg-orange-500 text-white px-4 py-1 rounded text-center"
+          >Printing Us</a
+        >
+      </nav>
+    </div>
+  </header>
+</section>
+
+      <!-- SECTION: Hero Section -->
+      <section class="hero-section">
+        <!-- Hero comment: Main promotional content -->
+        <div class="container mx-auto px-4 py-8 flex flex-wrap">
+          <div class="w-full md:w-1/2 pr-0 md:pr-8">
+            <h1 class="text-2xl font-bold text-blue-900 mb-2">
+              Various Versi Have Evolved It ...
+            </h1>
+            <a
+              href="#"
+              class="inline-block bg-orange-500 text-white px-4 py-1 rounded mb-4"
+              >Printing Industry</a
+            >
+            <p class="text-gray-700 mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-          </div>
-          <div class="w-full md:w-1/2 px-4 mb-8">
-            <img
-              src="https://picsum.photos/600/400?random=3"
-              alt="Nature Image"
-              class="w-full h-48 object-cover mb-4"
-            />
-            <h3 class="text-lg font-bold text-blue-900 mb-2">
-              Lorem Ipsum Lorem Ipsum Lorem
-            </h3>
-            <p class="text-sm text-gray-700">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              ever since the 1500s when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not
+              only five centuries, it is a long established fact that a reader.
             </p>
             <a
               href="#"
-              class="inline-block bg-orange-500 text-white px-4 py-1 rounded mt-2"
+              class="inline-block bg-orange-500 text-white px-4 py-1 rounded"
               >Something more</a
             >
           </div>
+          <div class="w-full md:w-1/2 mt-8 md:mt-0">
+            <img
+              src="https://picsum.photos/800/600?random=1"
+              alt="Hero Image"
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
-      <!-- Card Grid Section -->
-      <section class="container mx-auto px-4 py-8">
-        <h2 class="text-xl font-bold text-blue-900 text-center mb-8">
-          Lorem Ipsum
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <!-- Card 1 -->
-          <div class="bg-white shadow-md group">
-            <img
-              src="https://picsum.photos/300/200?random=4"
-              alt="Random Image"
-              class="w-full h-40 object-cover"
-            />
-            <div
-              class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-            >
-              <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-              <p class="text-xs mb-2">
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem has been the industry's standard.
-              </p>
-              <a href="#" class="text-xs hover:underline">Read More</a>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="bg-white shadow-md group">
-            <img
-              src="https://picsum.photos/300/200?random=5"
-              alt="Random Image"
-              class="w-full h-40 object-cover"
-            />
-            <div
-              class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-            >
-              <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-              <p class="text-xs mb-2">
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem has been the industry's standard.
-              </p>
-              <a href="#" class="text-xs hover:underline">Read More</a>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="bg-white shadow-md group">
-            <img
-              src="https://picsum.photos/300/200?random=6"
-              alt="Random Image"
-              class="w-full h-40 object-cover"
-            />
-            <div
-              class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-            >
-              <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-              <p class="text-xs mb-2">
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem has been the industry's standard.
-              </p>
-              <a href="#" class="text-xs hover:underline">Read More</a>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="bg-white shadow-md group">
-            <img
-              src="https://picsum.photos/300/200?random=7"
-              alt="Random Image"
-              class="w-full h-40 object-cover"
-            />
-            <div
-              class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-            >
-              <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-              <p class="text-xs mb-2">
-                Lorem ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem has been the industry's standard.
-              </p>
-              <a href="#" class="text-xs hover:underline">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slider Section -->
-        <div class="relative mb-8">
-          <!-- Slider Container -->
-          <div class="overflow-hidden">
-            <div
-              id="slider"
-              class="flex transition-transform duration-300 ease-in-out"
-            >
-              <!-- Card 5 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=8"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 6 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=9"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 7 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=10"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 8 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=11"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum 8</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 9 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=12"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum 9</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 10 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=13"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum 10</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 11 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=14"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum 11</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 12 -->
-              <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
-                <div class="bg-white shadow-md group">
-                  <img
-                    src="https://picsum.photos/300/200?random=15"
-                    alt="Random Image"
-                    class="w-full h-40 object-cover"
-                  />
-                  <div
-                    class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
-                  >
-                    <h3 class="font-bold mb-2">Lorem Ipsum 12</h3>
-                    <p class="text-xs mb-2">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem has been the industry's
-                      standard.
-                    </p>
-                    <a href="#" class="text-xs hover:underline">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation Buttons -->
-          <button
-            id="prevButton"
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 -ml-4"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-blue-900"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-          <button
-            id="nextButton"
-            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 -mr-3"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-blue-900"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-
-          <!-- Dots Navigation -->
-          <div id="sliderDots" class="flex justify-center mt-4 space-x-2">
-            <!-- Dots will be added by JavaScript -->
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a
-            href="#"
-            class="inline-block bg-orange-500 text-white px-6 py-2 rounded"
-            >Lorem Ipsum Is</a
-          >
+      <!-- SECTION: Dots Navigation -->
+      <section class="dots-navigation">
+        <!-- Dots comment: Page indicator navigation -->
+        <div class="flex justify-center space-x-2 my-8">
+          <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+          <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+          <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+          <span class="w-2 h-2 rounded-full bg-blue-900"></span>
         </div>
       </section>
 
-      <div class="min-h-screen bg-sky-50 p-6 flex items-center justify-center">
-        <div
-          class="container mx-auto flex flex-col md:flex-row items-center gap-8"
-        >
-          <!-- Left content section -->
-          <div class="w-full md:w-1/2 space-y-6">
-            <h1
-              class="text-4xl font-bold text-blue-900 leading-tight joe-font"
-              style="font-family: 'Crimson Text', serif !important"
-            >
-              Lorem Ipsum Is Simply Of Text Of The Printing And
-            </h1>
-            <p class="text-gray-800">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500 when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also.
-            </p>
-
-            <p class="text-gray-800">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500 when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also.Lorem Ipsum is simply dummy text of
-              the printing and typesetting industry.
-            </p>
-
-            <p class="text-gray-800">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s,
-            </p>
-
-            <button
-              class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded"
-            >
-              Simpli Us
-            </button>
-          </div>
-
-          <!-- Right image and caption section -->
-          <div class="w-full md:w-1/2">
-            <div class="relative">
-              <!-- Image placeholder with border -->
-              <div class="aspect-[4/3] relative">
-                <img
-                  src="https://picsum.photos/800/600?random=16"
-                  alt="Architecture Image"
-                  class="w-full h-full object-cover"
-                />
-                <div class="absolute inset-4 border-2 border-white"></div>
-              </div>
-
-              <!-- Blue caption box -->
-              <div class="bg-blue-900 text-white p-4 text-center">
-                <h2 class="text-3xl font-medium mb-1">Lorem Ipsum</h2>
-                <p class="text-xl">Lorem Ipsum Has Been In Industry</p>
-              </div>
+      <!-- SECTION: Two Column Section -->
+      <section class="two-column-section">
+        <!-- Two Column comment: Featured content in two columns -->
+        <div class="container mx-auto px-4 py-8">
+          <h2 class="text-xl font-bold text-blue-900 text-center mb-8">
+            Lorem Ipsum Is
+          </h2>
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-8">
+              <img
+                src="https://picsum.photos/600/400?random=2"
+                alt="Tech Image"
+                class="w-full h-48 object-cover mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-lg font-bold text-blue-900 mb-2">
+                Lorem Ipsum Lorem Ipsum Lorem
+              </h3>
+              <p class="text-sm text-gray-700">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer section - Improved for mobile responsiveness -->
-    <footer class="bg-white py-8 px-4">
-      <div class="container mx-auto">
-        <!-- Top Navigation - Responsive Layout -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-          <!-- Left side menu -->
-          <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6">
-            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-              >User</a
-            >
-            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-              >Lorem Us</a
-            >
-            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-              >Printing Us</a
-            >
-          </div>
-
-          <!-- Right side contact info -->
-          <div class="space-y-3">
-            <div class="flex items-start">
-              <i
-                class="fas fa-map-marker-alt text-orange-500 mr-2 mt-1 flex-shrink-0"
-              ></i>
-              <span class="text-gray-700"
-                >Lorem Ipsum Lorem, Lorem Lorem Ipsum Lorem</span
+            <div class="w-full md:w-1/2 px-4 mb-8">
+              <img
+                src="https://picsum.photos/600/400?random=3"
+                alt="Nature Image"
+                class="w-full h-48 object-cover mb-4"
+                loading="lazy"
+              />
+              <h3 class="text-lg font-bold text-blue-900 mb-2">
+                Lorem Ipsum Lorem Ipsum Lorem
+              </h3>
+              <p class="text-sm text-gray-700">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-orange-500 text-white px-4 py-1 rounded mt-2"
+                >Something more</a
               >
             </div>
-            <div class="flex items-center">
-              <i class="fas fa-phone text-orange-500 mr-2 flex-shrink-0"></i>
-              <span class="text-gray-700">123-456-7890</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Card Grid Section -->
+      <section class="card-grid-section">
+        <!-- Card Grid comment: Display content in card format -->
+        <div class="container mx-auto px-4 py-8">
+          <h2 class="text-xl font-bold text-blue-900 text-center mb-8">
+            Lorem Ipsum
+          </h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8"
+          >
+            <!-- Card 1 -->
+            <div class="bg-white shadow-md group">
+              <img
+                src="https://picsum.photos/300/200?random=4"
+                alt="Random Image"
+                class="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+              >
+                <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                <p class="text-xs mb-2">
+                  Lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem has been the industry's standard.
+                </p>
+                <a href="#" class="text-xs hover:underline">Read More</a>
+              </div>
             </div>
-            <div class="flex items-center">
-              <i class="fas fa-envelope text-orange-500 mr-2 flex-shrink-0"></i>
-              <span class="text-gray-700">lorem@gmail.com</span>
+            <!-- Card 2 -->
+            <div class="bg-white shadow-md group">
+              <img
+                src="https://picsum.photos/300/200?random=5"
+                alt="Random Image"
+                class="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+              >
+                <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                <p class="text-xs mb-2">
+                  Lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem has been the industry's standard.
+                </p>
+                <a href="#" class="text-xs hover:underline">Read More</a>
+              </div>
             </div>
-            <div class="flex items-center">
-              <i class="far fa-clock text-orange-500 mr-2 flex-shrink-0"></i>
-              <span class="text-gray-700">Monday - Friday 0AM - 00 PM</span>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-md group">
+              <img
+                src="https://picsum.photos/300/200?random=6"
+                alt="Random Image"
+                class="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+              >
+                <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                <p class="text-xs mb-2">
+                  Lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem has been the industry's standard.
+                </p>
+                <a href="#" class="text-xs hover:underline">Read More</a>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white shadow-md group">
+              <img
+                src="https://picsum.photos/300/200?random=7"
+                alt="Random Image"
+                class="w-full h-40 object-cover"
+                loading="lazy"
+              />
+              <div
+                class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+              >
+                <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                <p class="text-xs mb-2">
+                  Lorem ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem has been the industry's standard.
+                </p>
+                <a href="#" class="text-xs hover:underline">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION: Slider Section -->
+          <div class="relative mb-8">
+            <!-- Slider comment: Interactive carousel of content -->
+            <div class="overflow-hidden">
+              <div
+                id="slider"
+                class="flex transition-transform duration-300 ease-in-out"
+              >
+                <!-- Card 5 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=8"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=9"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=10"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=11"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum 8</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=12"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum 9</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 10 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=13"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum 10</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 11 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=14"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum 11</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="w-full sm:w-1/2 md:w-1/4 flex-shrink-0 px-2 pb-4">
+                  <div class="bg-white shadow-md group">
+                    <img
+                      src="https://picsum.photos/300/200?random=15"
+                      alt="Random Image"
+                      class="w-full h-40 object-cover"
+                      loading="lazy"
+                    />
+                    <div
+                      class="p-4 text-blue-900 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300"
+                    >
+                      <h3 class="font-bold mb-2">Lorem Ipsum 12</h3>
+                      <p class="text-xs mb-2">
+                        Lorem ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem has been the industry's
+                        standard.
+                      </p>
+                      <a href="#" class="text-xs hover:underline">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button
+              id="prevButton"
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 -ml-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-blue-900"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              id="nextButton"
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 -mr-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-blue-900"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            <!-- Dots Navigation -->
+            <div id="sliderDots" class="flex justify-center mt-4 space-x-2">
+              <!-- Dots will be added by JavaScript -->
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-block bg-orange-500 text-white px-6 py-2 rounded"
+              >Lorem Ipsum Is</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Feature Showcase -->
+      <section class="feature-showcase">
+        <!-- Feature Showcase comment: Highlight key features with image -->
+        <div
+          class="min-h-screen bg-sky-50 p-6 flex items-center justify-center"
+        >
+          <div
+            class="container mx-auto flex flex-col md:flex-row items-center gap-8"
+          >
+            <!-- Left content section -->
+            <div class="w-full md:w-1/2 space-y-6">
+              <h1
+                class="text-4xl font-bold text-blue-900 leading-tight joe-font"
+                style="font-family: 'Crimson Text', serif !important"
+              >
+                Lorem Ipsum Is Simply Of Text Of The Printing And
+              </h1>
+              <p class="text-gray-800">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500 when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also.
+              </p>
+
+              <p class="text-gray-800">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500 when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also.Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry.
+              </p>
+
+              <p class="text-gray-800">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s,
+              </p>
+
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded"
+              >
+                Simpli Us
+              </button>
+            </div>
+
+            <!-- Right image and caption section -->
+            <div class="w-full md:w-1/2">
+              <div class="relative">
+                <!-- Image placeholder with border -->
+                <div class="aspect-[4/3] relative">
+                  <img
+                    src="https://picsum.photos/800/600?random=16"
+                    alt="Architecture Image"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-4 border-2 border-white"></div>
+                </div>
+
+                <!-- Blue caption box -->
+                <div class="bg-blue-900 text-white p-4 text-center">
+                  <h2 class="text-3xl font-medium mb-1">Lorem Ipsum</h2>
+                  <p class="text-xl">Lorem Ipsum Has Been In Industry</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Social Media Icons - Centered on mobile -->
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-white hover:bg-blue-900 transition-colors"
+    <!-- SECTION: Footer -->
+    <section class="footer-section">
+      <!-- Footer comment: Site information and contact details -->
+      <footer class="bg-white py-8 px-4">
+        <div class="container mx-auto">
+          <!-- Top Navigation - Responsive Layout -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <!-- Left side menu -->
+            <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6">
+              <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+                >User</a
+              >
+              <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+                >Lorem Us</a
+              >
+              <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+                >Printing Us</a
+              >
+            </div>
+
+            <!-- Right side contact info -->
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Lorem Ipsum Lorem, Lorem Lorem Ipsum Lorem</span
+                >
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-orange-500 mr-2 flex-shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  />
+                </svg>
+                <span class="text-gray-700">123-456-7890</span>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-orange-500 mr-2 flex-shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+                <span class="text-gray-700">lorem@gmail.com</span>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-orange-500 mr-2 flex-shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-700">Monday - Friday 0AM - 00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Icons - Centered on mobile -->
+          <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-white hover:bg-blue-900 transition-colors"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 320 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center text-white hover:bg-sky-600 transition-colors"
+              aria-label="Skype"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 448 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 448 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full bg-green-400 flex items-center justify-center text-white hover:bg-green-500 transition-colors"
+              aria-label="Email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                />
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Secondary Navigation - Responsive -->
+          <div
+            class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 text-center"
           >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center text-white hover:bg-sky-600 transition-colors"
-          >
-            <i class="fab fa-skype"></i>
-          </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            href="#"
-            class="w-10 h-10 rounded-full bg-green-400 flex items-center justify-center text-white hover:bg-green-500 transition-colors"
-          >
-            <i class="fas fa-envelope"></i>
-          </a>
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >Remaini</a
+            >
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >Lorem Ipsums</a
+            >
+            <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
+              >Variations Of Pass</a
+            >
+          </div>
+
+          <!-- Footer Text -->
+          <div class="text-center text-gray-700 mt-8 px-4">
+            It Is A Long Established Fact That A Reader Will Be Distracted By
+            The Readable Content
+          </div>
         </div>
+      </footer>
+    </section>
 
-        <!-- Secondary Navigation - Responsive -->
-        <div
-          class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 text-center"
-        >
-          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-            >Remaini</a
-          >
-          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-            >Lorem Ipsums</a
-          >
-          <a href="#" class="text-gray-800 font-medium hover:text-blue-900"
-            >Variations Of Pass</a
-          >
-        </div>
-
-        <!-- Footer Text -->
-        <div class="text-center text-gray-700 mt-8 px-4">
-          It Is A Long Established Fact That A Reader Will Be Distracted By The
-          Readable Content
-        </div>
-      </div>
-    </footer>
-
-    <script src="carousel.js"></script>
-    <script src="slider.js"></script>
+    <!-- Scripts with defer attribute -->
+    <script src="carousel.js" defer></script>
+    <script src="slider.js" defer></script>
   </body>
 </html>
