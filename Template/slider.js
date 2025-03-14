@@ -134,3 +134,12 @@ document.addEventListener("DOMContentLoaded", function () {
   slider.parentElement.addEventListener("focusin", stopAutoSlide);
   slider.parentElement.addEventListener("focusout", startAutoSlide);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const navMenu = document.getElementById("nav-menu");
+
+  mobileMenuButton.addEventListener("click", function () {
+    navMenu.classList.toggle("hidden");
+  });
+});
