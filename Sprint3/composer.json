@@ -1,0 +1,14 @@
+{
+    "name": "josh-techie/league-config",
+    "description": "This is a demo package basically the code is from The PHP Leaguue Config",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh-Techih",
+            "email": "youssef.abouyahia@e-polytechnique.ma"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
