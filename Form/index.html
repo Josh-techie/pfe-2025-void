@@ -3,207 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form | Validation Example</title>
+    <title>Simple Contact Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
   </head>
   <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
     <div class="w-full max-w-md">
-      <!-- Form Card -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <!-- Form Header -->
-        <div class="bg-blue-900 text-white p-6">
-          <h2 class="text-2xl font-bold">Contact Us</h2>
-          <p class="text-blue-100 mt-1">
-            Fill out the form below to get in touch with us.
-          </p>
-        </div>
-
-        <!-- Form Body -->
-        <form id="contactForm" class="p-6 space-y-6" novalidate>
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4">Contact Us</h2>
+        <form id="contactForm" class="space-y-4">
           <!-- Name Input -->
-          <div class="space-y-2">
+          <div>
             <label for="name" class="block text-sm font-medium text-gray-700"
               >Full Name <span class="text-red-500">*</span></label
             >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <i class="fas fa-user text-gray-400"></i>
-              </div>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="pl-10 w-full h-11 rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <p
-              class="error-message text-red-500 text-xs hidden"
-              id="nameError"
-            ></p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              placeholder="Ahmed Ali"
+              required
+            />
+            <p class="text-red-500 text-xs hidden" id="nameError"></p>
           </div>
 
           <!-- Email Input -->
-          <div class="space-y-2">
+          <div>
             <label for="email" class="block text-sm font-medium text-gray-700"
               >Email Address <span class="text-red-500">*</span></label
             >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <i class="fas fa-envelope text-gray-400"></i>
-              </div>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="pl-10 w-full h-11 rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="john@example.com"
-                required
-              />
-            </div>
-            <p
-              class="error-message text-red-500 text-xs hidden"
-              id="emailError"
-            ></p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              placeholder="Ahmed@example.com"
+              required
+            />
+            <p class="text-red-500 text-xs hidden" id="emailError"></p>
           </div>
 
           <!-- Phone Input -->
-          <div class="space-y-2">
+          <div>
             <label for="phone" class="block text-sm font-medium text-gray-700"
               >Phone Number <span class="text-red-500">*</span></label
             >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <i class="fas fa-phone text-gray-400"></i>
-              </div>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="pl-10 w-full h-11 rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="(212) 456-7890"
-                required
-              />
-            </div>
-            <p
-              class="error-message text-red-500 text-xs hidden"
-              id="phoneError"
-            ></p>
-          </div>
-
-          <!-- Subject Dropdown -->
-          <div class="space-y-2">
-            <label for="subject" class="block text-sm font-medium text-gray-700"
-              >Subject</label
-            >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
-              >
-                <i class="fas fa-tag text-gray-400"></i>
-              </div>
-              <select
-                id="subject"
-                name="subject"
-                class="pl-10 w-full h-11 rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 appearance-none"
-              >
-                <option value="">Please select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="support">Technical Support</option>
-                <option value="billing">Billing Question</option>
-                <option value="other">Other</option>
-              </select>
-              <div
-                class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
-              >
-                <i class="fas fa-chevron-down text-gray-400"></i>
-              </div>
-            </div>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              placeholder="(212) 456-7890"
+              required
+            />
+            <p class="text-red-500 text-xs hidden" id="phoneError"></p>
           </div>
 
           <!-- Message Textarea -->
-          <div class="space-y-2">
+          <div>
             <label for="message" class="block text-sm font-medium text-gray-700"
               >Message <span class="text-red-500">*</span></label
             >
-            <div class="relative">
-              <div class="absolute top-3 left-3 pointer-events-none">
-                <i class="fas fa-comment text-gray-400"></i>
-              </div>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                class="pl-10 pt-2 w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Your message here..."
-                required
-              ></textarea>
-            </div>
-            <p
-              class="error-message text-red-500 text-xs hidden"
-              id="messageError"
-            ></p>
-          </div>
-
-          <!-- Terms Checkbox -->
-          <div class="flex items-start">
-            <div class="flex items-center h-5">
-              <input
-                id="terms"
-                name="terms"
-                type="checkbox"
-                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div class="ml-3 text-sm">
-              <label for="terms" class="font-medium text-gray-700"
-                >I agree to the
-                <a href="#" class="text-blue-600 hover:underline"
-                  >Terms and Conditions</a
-                ></label
-              >
-              <p
-                class="error-message text-red-500 text-xs hidden"
-                id="termsError"
-              ></p>
-            </div>
-          </div>
-
-          <!-- Form Status -->
-          <div id="formStatus" class="p-4 rounded-md">
-            <!-- Will be populated by JavaScript -->
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              placeholder="Your message here..."
+              required
+            ></textarea>
+            <p class="text-red-500 text-xs hidden" id="messageError"></p>
           </div>
 
           <!-- Submit Button -->
           <div>
             <button
               type="submit"
-              class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <span>Send Message</span>
+              Send Message
             </button>
           </div>
         </form>
       </div>
-
-      <!-- Form Footer -->
-      <p class="text-center text-gray-500 text-xs mt-4">
-        &copy; 2025 Your Company Name. All rights reserved.
-      </p>
     </div>
 
+    <!-- Link to external JavaScript file -->
     <script src="form-validation.js"></script>
   </body>
 </html>
