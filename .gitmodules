@@ -1,0 +1,3 @@
+[submodule "Sprint3/Sprint3/league-config-package"]
+	path = Sprint3/Sprint3/league-config-package
+	url = https://github.com/Josh-techie/league-config-package.git

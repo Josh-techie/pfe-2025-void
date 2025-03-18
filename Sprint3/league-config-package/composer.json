@@ -1,11 +1,11 @@
 {
     "name": "josh-techie/league-config",
-    "description": "This is a demo package basically the code is from The PHP Leaguue Config",
+    "description": "This is a demo package basically the code is from the PHP League Config",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh-Techih",
+            "name": "Josh-Techie",
             "email": "youssef.abouyahia@e-polytechnique.ma"
         }
     ],
