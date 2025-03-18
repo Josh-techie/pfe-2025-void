@@ -21,5 +21,5 @@ class Controller {
 
 	function __destruct() {
 			$this->_template->render();
-	}
+	}	
 }
