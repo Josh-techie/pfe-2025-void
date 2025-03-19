@@ -3,6 +3,7 @@
 class SQLQuery {
     protected $_dbHandle;
     protected $_result;
+    protected $_table;
 
     function connect($address, $account, $pwd, $name) {
         $this->_dbHandle = new mysqli($address, $account, $pwd, $name);
