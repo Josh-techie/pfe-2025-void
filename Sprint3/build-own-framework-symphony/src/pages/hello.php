@@ -3,33 +3,20 @@ use Symfony\Component\Routing;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-$routes->add('hello', new Routing\Route('/hello/{name}', [
-    'name' => 'World',
-    '_controller' => 'render_template',
-]));
+use Symfony\Component\HttpKernel;
 
-try {
-    $request->attributes->add($matcher->match($request->getPathInfo()));
-    $response = call_user_func($request->attributes->get('_controller'), $request);
-} catch (Routing\Exception\ResourceNotFoundException $exception) {
-    $response = new Response('Not Found', 404);
-} catch (Exception $exception) {
-    $response = new Response('An error occurred', 500);
-}
+$controllerResolver = new HttpKernel\Controller\ControllerResolver();
+$argumentResolver = new HttpKernel\Controller\ArgumentResolver();
+
+$controller = $controllerResolver->getController($request);
+$arguments = $argumentResolver->getArguments($request, $controller);
+
+$response = call_user_func_array($controller, $arguments);
+
 
 // render the route of your choice
-$routes->add('hello', new Routing\Route('/hello/{name}', [
-    'name' => 'World',
-    '_controller' => function (Request $request): Response {
-        // $foo will be available in the template
-        $request->attributes->set('foo', 'bar');
-
-        $response = render_template($request);
-
-        // change some header
-        $response->headers->set('Content-Type', 'text/plain');
-
-        return $response;
-    }
+$routes->add('leap_year', new Routing\Route('/is_leap_year/{year}', [
+    'year' => null,
+    '_controller' => 'LeapYearController::index',
 ]));
 ?>
