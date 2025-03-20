@@ -1,78 +1,79 @@
 <?php
-
 class SQLQuery {
     protected $_dbHandle;
     protected $_result;
     protected $_table;
-
+    /** Connects to database **/
     function connect($address, $account, $pwd, $name) {
         $this->_dbHandle = new mysqli($address, $account, $pwd, $name);
+        // Check connection
         if ($this->_dbHandle->connect_error) {
             return 0;
         }
-        else {
-            return 1;
-        }
+        return 1;
     }
-
+    /** Disconnects from database **/
     function disconnect() {
-        if ($this->_dbHandle->close()) {
+        if ($this->_dbHandle) {
+            $this->_dbHandle->close();
             return 1;
         } else {
             return 0;
         }
     }
-
     function selectAll() {
         $query = 'SELECT * FROM `' . $this->_table . '`';
         return $this->query($query);
-    }
 
+
+    }
     function select($id) {
-        $query = 'SELECT * FROM `' . $this->_table . '` WHERE `id` = \'' . $this->_dbHandle->real_escape_string($id) . '\'';
-        return $this->query($query, 1);
+        $query = 'SELECT * FROM `' . $this->_table . '` WHERE `id` = ?';
+        return $this->query($query, 1, [$id]);
     }
-
-    function query($query, $singleResult = 0) {
-        $this->_result = $this->_dbHandle->query($query);
-
-        if ($this->_result) {
+    /** Custom SQL Query **/
+    function query($query, $singleResult = 0, $params = []) {
+        if ($stmt = $this->_dbHandle->prepare($query)) {
+            // Bind parameters if any
+            if (count($params) > 0) {
+                // Assuming the first parameter is a string for simplicity, adjust for types if needed
+                $types = str_repeat('s', count($params)); // Change to 'i' for integers, etc.
+                $stmt->bind_param($types, ...$params);
+            }
+            $stmt->execute();
+            $this->_result = $stmt->get_result();
             if (preg_match("/select/i", $query)) {
                 $result = array();
                 $table = array();
                 $field = array();
                 $tempResults = array();
                 $numOfFields = $this->_result->field_count;
-                for ($i = 0; $i < $numOfFields; ++$i) {
-                    array_push($table, $this->_result->fetch_field($i)->table);
-                    array_push($field, $this->_result->fetch_field($i)->name);
-                }
-
                 while ($row = $this->_result->fetch_assoc()) {
-                    for ($i = 0; $i < $numOfFields; ++$i) {
-                        $table[$i] = trim(ucfirst($table[$i]), "s");
-                        $tempResults[$table[$i]][$field[$i]] = $row[$field[$i]];
+                    foreach ($row as $field => $value) {
+                        $table[$field] = $field;
+                        $tempResults[$field] = $value;
                     }
                     if ($singleResult == 1) {
-                        $this->_result->free();
                         return $tempResults;
                     }
                     array_push($result, $tempResults);
                 }
-                $this->_result->free();
                 return $result;
             }
         }
+        return [];
     }
-
+    /** Get number of rows **/
     function getNumRows() {
         return $this->_result->num_rows;
     }
-
+    /** Free resources allocated by a query **/
     function freeResult() {
-        $this->_result->free();
+        if ($this->_result) {
+            $this->_result->free();
+        }
     }
-
+    /** Get error string **/
     function getError() {
         return $this->_dbHandle->error;
     }

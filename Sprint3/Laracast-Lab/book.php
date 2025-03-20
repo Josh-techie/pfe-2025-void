@@ -14,45 +14,44 @@
 
     $booksImproved = [
         ['name' => 'The fault in our stars',
-        'author' => 'Johhhn Green',
+        'author' => 'John Green',
         'bookPrice' => '150MAD'
     ],
      ['name' => 'Atomic Habits',
         'author' => 'Snziku Matimosho',
         'bookPrice' => '99MAD'
         ]
-    ]
+];
+
+    // let's create filterAuthor function
+    function filterAuthor($bookImproved, $author){
+        
+        $filteredByAuthor = [];
+        foreach ($bookImproved as $book) {
+            if ($book['author'] === $author) {
+                $filteredByAuthor[] = $book;
+            }
+        }
+
+        return $filteredByAuthor;
+
+    }
 
     ?>
 
-    <ul>
-        <!-- First way to do a foreach -->
-        <?php foreach ($books as $book){
-            echo "<li> $book </li>";
-        }
+
+
+    <h3> Filter By Author: Use functions</h3>
+    <div>
+        <!-- // here put the logic to using my function -->
+        <?php
+        $filteredBooks = filterAuthor($booksImproved, 'John Green'); // Get the filtered books
+        foreach ($filteredBooks as $book) :
         ?>
-
-        <!-- second method to do an foreach -->
-         <?php foreach($books as $book): ?>
-            <li> <?= $book; ?> </li>
+        <p>
+            <?= htmlspecialchars($book['name']) ?> by <?= htmlspecialchars($book['author']) ?> - Price: <?= htmlspecialchars($book['bookPrice']) ?>
+        </p>
         <?php endforeach; ?>
-    </ul>
-
-    <!-- associative arrays -->
-
-    <!-- access a speific inndex -->
-    <p> <?= $books[2]; ?> </p>
-
-    <h2>
-        <?php foreach ($booksImproved as $bookImproved) : ?>
-        <div>
-            <!-- looping throuugh the names of each book -->
-            <span><?= $bookImproved['name'] ?> </span>
-            <!-- looping through the price -->
-            <span> <?= $bookImproved['bookPrice']; ?> </span>
-         </div>
-        <?php endforeach; ?>
-    </h2>
-
+    </div>
 </body>
 </html>

@@ -1,1 +1,1 @@
-<a class="big" href="/application/views/items/viewall.php">Todo successfully added. Click here to go back.</a>
+<a class="big" href="/index.php?url=items/viewall">Todo successfully added. Click here to go back.</a>
