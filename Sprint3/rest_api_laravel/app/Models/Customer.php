@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Customer extends Model
 {
     use HasFactory;
+
+    protected $table = 'customer';
+
+    public $timestamps = false; // Tell Eloquent not to manage timestamps
+
+    protected $fillable = [
+        'name',
+        'email'
+    ];
+
+
 }
