@@ -1,3 +1,14 @@
+<div align="center">
+  <img width="250" alt="image" src="https://github.com/user-attachments/assets/34c9e165-2349-4914-978a-ab55f7c10917" />
+
+[![Drupal](https://img.shields.io/badge/Drupal-10+-%230678BE?logo=drupal)](https://www.drupal.org)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/your-org/appointment-booking-system/graphs/commit-activity)
+[![PHP](https://img.shields.io/badge/PHP-8.3+-%23777BB4?logo=php)](https://php.net/)
+
+</div>
+
+---
+
 ## Context:
 
 - This is a mono-repository about my internship journey at [VOID](https://void.fr/fr)
