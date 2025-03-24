@@ -7,8 +7,6 @@
 
 </div>
 
----
-
 ## Context:
 
 - This is a mono-repository about my internship journey at [VOID](https://void.fr/fr)
