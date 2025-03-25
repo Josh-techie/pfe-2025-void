@@ -19,7 +19,7 @@ A chronological order of the different sprints and what they cover in order to b
 
 - [Sprint 1](./Sprint-1/) : System Setup & Lab Configuration + Pop Quiz challenge
 - [Sprint 2](./Sprint-2/) : Creation of a responsive web page Key Skills: HTML/CSS/JS/TAILWIND
-- [Sprint 3](./Sprint3/) : Working with PHP basics to OOP, PDO, create my own framework then using frameworks such as Laravel to create my own API...
+- [Sprint 3](./Sprint3/) : Working with PHP basics to OOP, PDO, create my own framework then using frameworks such as Laravel to create my own API... + Can You See Me Challenge
 
 ---
 
