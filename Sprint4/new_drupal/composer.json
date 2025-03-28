@@ -27,6 +27,7 @@
         "drupal/google_tag": "^2.0",
         "drupal/lang_dropdown": "^2.3",
         "drupal/login_security": "^2.0",
+        "drupal/metatag": "^2.1",
         "drupal/minifyhtml": "^2.0",
         "drupal/persistent_login": "^2.2",
         "drupal/recaptcha": "^3.4",
