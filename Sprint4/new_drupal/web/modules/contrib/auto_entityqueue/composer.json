@@ -1,0 +1,11 @@
+{
+    "name": "drupal/auto_entityqueue",
+    "description": "Automatically adds entities to entityqueues.",
+    "type": "drupal-module",
+    "homepage": "https://drupal.org/project/auto_entityqueue",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/entityqueue": "^1.8"
+    }
+}

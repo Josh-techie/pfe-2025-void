@@ -1,0 +1,177 @@
+<?php
+
+/**
+ * @file
+ * Handles automatically adding entities to entityqueues.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\entityqueue\Entity\EntityQueue;
+use Drupal\entityqueue\Entity\EntitySubqueue;
+use Drupal\entityqueue\EntityQueueInterface;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Add option allowing entities to be added upon creation.
+ */
+function auto_entityqueue_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (preg_match('/^entity_queue_(add|edit)_form$/', $form_id)) {
+    // Get entity settings from the queue.
+    $entity_settings = $form_state->getFormObject()->getEntity()->getEntitySettings();
+
+    $form['entity_settings']['settings']['handler_settings']['auto_entityqueue'] = [
+      '#title' => t('Auto Entityqueue'),
+      '#type' => 'fieldset',
+    ];
+
+    // Add a checkbox setting for automatically adding entities.
+    $form['entity_settings']['settings']['handler_settings']['auto_entityqueue']['auto_add'] = [
+      '#default_value' => $entity_settings['handler_settings']['auto_entityqueue']['auto_add'] ?? FALSE,
+      '#description' => t('New entities of selected types will be automatically added to the queue.'),
+      '#title' => t('Automatically add entities to queue'),
+      '#type' => 'checkbox',
+    ];
+
+    // Add a checkbox setting for insert position.
+    $form['entity_settings']['settings']['handler_settings']['auto_entityqueue']['insert_front'] = [
+      '#default_value' => $entity_settings['handler_settings']['auto_entityqueue']['insert_front'] ?? FALSE,
+      '#description' => t('By default items are added at the back of the queue. If checked, items will be added at the front of the queue.'),
+      '#title' => t('Insert entities at front of queue'),
+      '#states' => [
+        'invisible' => [
+          ':input[name="entity_settings[handler_settings][auto_entityqueue][auto_add]"]' => ['checked' => FALSE],
+        ],
+      ],
+      '#type' => 'checkbox',
+    ];
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function auto_entityqueue_entity_insert(EntityInterface $entity) {
+  $type = $entity->getEntityTypeId();
+  $bundle = $entity->bundle();
+
+  // Get queues for this entity type and bundle combo.
+  $queues = auto_entityqueue_get_queues_by_type_and_bundle($type, $bundle);
+  if (count($queues)) {
+    // Add the entity to each queue returned.
+    foreach ($queues as $queue) {
+      auto_entityqueue_add_entity_to_queue($entity, $queue);
+    }
+  }
+}
+
+/**
+ * Add an entity to a queue.
+ *
+ * @param Drupal\Core\Entity\EntityInterface $entity
+ *   The entity to add to the queue.
+ * @param Drupal\entityqueue\EntityQueueInterface $queue
+ *   The queue to add the entity to.
+ *
+ * @throws Drupal\Core\Entity\EntityStorageException
+ */
+function auto_entityqueue_add_entity_to_queue(EntityInterface $entity, EntityQueueInterface $queue): void {
+  // Get the entity id.
+  $entity_id = $entity->id();
+
+  // Get the queue entity settings.
+  $entity_settings = $queue->getEntitySettings();
+  $queue_settings = $queue->getQueueSettings();
+
+  auto_entityqueue_check_if_handler_is_view($entity_settings);
+
+  // Check if entity is in view bundles.
+  if (isset($entity_settings['handler_settings']['target_bundles'])
+    && !in_array($entity->bundle(), $entity_settings['handler_settings']['target_bundles'])
+  ) {
+    return;
+  }
+
+  // Get the subqueues.
+  $query = \Drupal::entityQuery('entity_subqueue')->accessCheck(TRUE)->condition('queue', $queue->id());
+  $result = $query->execute();
+  $subqueues = EntitySubqueue::loadMultiple($result);
+
+  // Add entity to each subqueue.
+  foreach ($subqueues as $subqueue) {
+    $items = $subqueue->get('items')->getValue();
+
+    // Determines whether we should remove an item from the list to avoid
+    // exceeding the maximum limit on the number of items.
+    $remove_item = !empty($queue_settings['max_size']) && count($items) >= $queue_settings['max_size'];
+
+    if (isset($entity_settings['handler_settings']['auto_entityqueue']['insert_front']) && $entity_settings['handler_settings']['auto_entityqueue']['insert_front']) {
+      !$remove_item or array_pop($items);
+      array_unshift($items, ['target_id' => $entity_id]);
+    }
+    else {
+      !$remove_item or array_shift($items);
+      $items[] = ['target_id' => $entity_id];
+    }
+    $subqueue->set('items', $items);
+    $subqueue->save();
+  }
+}
+
+/**
+ * Load queues with specific type and bundle.
+ *
+ * @param string $type
+ *   The entity type.
+ * @param string $bundle
+ *   The entity bundle.
+ *
+ * @return array
+ *   Return an array of queues.
+ */
+function auto_entityqueue_get_queues_by_type_and_bundle(string $type, string $bundle): array {
+  $target_queues = [];
+
+  // Load entity queues by type.
+  $queues = EntityQueue::loadMultipleByTargetType($type);
+  foreach ($queues as $queue) {
+    $entity_settings = $queue->getEntitySettings();
+    auto_entityqueue_check_if_handler_is_view($entity_settings);
+
+    // Check bundle, if queue is enabled and if auto add is enabled.
+    // Check bundle.
+    // Check if auto add is enabled.
+    // Check if queue is enabled.
+    if (isset($entity_settings['handler_settings']['target_bundles'])
+      && in_array($bundle, $entity_settings['handler_settings']['target_bundles'])
+      && isset($entity_settings['handler_settings']['auto_entityqueue']['auto_add'])
+      && $entity_settings['handler_settings']['auto_entityqueue']['auto_add']
+      && $queue->status()
+    ) {
+      $target_queues[] = $queue;
+    }
+  }
+
+  return $target_queues;
+}
+
+/**
+ * Check if handler is views.
+ *
+ * @param array $entity_settings
+ *   The array of entity settings.
+ */
+function auto_entityqueue_check_if_handler_is_view(array &$entity_settings): void {
+  if ($entity_settings['handler'] == 'views') {
+    $view = Views::getView($entity_settings['handler_settings']['view']['view_name']);
+    if (!empty($view->getDependencies()['config'])) {
+      foreach ($view->getDependencies()['config'] as $config) {
+        if (str_starts_with($config, 'node.type')) {
+          $entity_settings['handler_settings']['target_bundles'][] = str_replace('node.type.', '', $config);
+        }
+      }
+    }
+  }
+}

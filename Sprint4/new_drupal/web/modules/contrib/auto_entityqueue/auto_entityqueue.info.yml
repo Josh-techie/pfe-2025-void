@@ -1,0 +1,12 @@
+name: Auto Entityqueue
+type: module
+description: Automatically adds entities to entityqueues.
+core_version_requirement: ^9.4 || ^10 || ^11
+package: Entityqueue
+dependencies:
+  - entityqueue:entityqueue
+
+# Information added by Drupal.org packaging script on 2024-09-03
+version: '3.0.4'
+project: 'auto_entityqueue'
+datestamp: 1725380129

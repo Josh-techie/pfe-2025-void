@@ -25,6 +25,7 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
+        'ace6d88241f812b4accb2d847454aef6' => __DIR__ . '/..' . '/halaxa/json-machine/src/functions.php',
         '23f09fe3194f8c2f70923f90d6702129' => __DIR__ . '/..' . '/illuminate/collections/functions.php',
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
         '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
@@ -38,6 +39,10 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
             'phpowermove\\docblock\\' => 21,
             'phootwork\\lang\\' => 15,
             'phootwork\\collection\\' => 21,
+        ),
+        'Z' => 
+        array (
+            'ZipStream\\' => 10,
         ),
         'T' => 
         array (
@@ -77,6 +82,7 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Solarium\\' => 9,
         ),
         'R' => 
         array (
@@ -108,6 +114,11 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
             'League\\Csv\\' => 11,
             'League\\Container\\' => 17,
             'Laravel\\Prompts\\' => 16,
+            'Laminas\\Stdlib\\' => 15,
+        ),
+        'J' => 
+        array (
+            'JsonMachine\\' => 12,
         ),
         'I' => 
         array (
@@ -176,6 +187,10 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
         'phootwork\\collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phootwork/collection',
+        ),
+        'ZipStream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
         ),
         'Twig\\' => 
         array (
@@ -309,6 +324,10 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'Solarium\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/solarium/solarium/src',
+        ),
         'Robo\\' => 
         array (
             0 => __DIR__ . '/..' . '/consolidation/robo/src',
@@ -386,6 +405,14 @@ class ComposerStaticInite4968d7ceb4379bbaed25473a0594aa5
         'Laravel\\Prompts\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
+        ),
+        'Laminas\\Stdlib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-stdlib/src',
+        ),
+        'JsonMachine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/halaxa/json-machine/src',
         ),
         'Illuminate\\Support\\' => 
         array (
