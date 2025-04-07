@@ -59,7 +59,7 @@ class ByteSizeMarkupTest extends UnitTestCase {
       ['3.77 GB', 4053371676],
       // Decimal Petabytes
       ['59.72 PB', 67234178751368124],
-      // Decimal Yottabytes 
+      // Decimal Yottabytes
       ['194.67 YB', 235346823821125814962843827],
     ];
   }
