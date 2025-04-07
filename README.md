@@ -23,7 +23,11 @@ A chronological order of the different sprints and what they cover in order to b
 - [Sprint 4](./Sprint4/) : Working with Drupal getting started to Setup your first website with Drupal, Basic Configuration, Drush, Multilingual Support, Media Management, Privacy Compliance, Login Enhancements, Developer Tools, SEO Basics, Email Setup.
 - [Sprint 5]() : Working on  Creating my first module
 
+---
 
+## Assets
+
+This folder can be found [Assets](./Assets/) where you'll find all my personnal reports created for each sprint.
 
 ---
 
