@@ -6,8 +6,6 @@ I've worked on it from March 24, 2025. Till april 4 2025 (With Eid...)
 
 ## Resources:
 
-## Resources
-
 Here's a list of resources that were helpful during this sprint:
 
 - [youtube](https://www.youtube.com/watch?v=XJatVmC5-ro&ab_channel=JohnPerry)
