@@ -1,0 +1,17 @@
+{
+    "name": "void/hello_world",
+    "description": "Simple Module to Display Hello to the person!",
+    "type": "drupal-module",
+    "autoload": {
+        "psr-4": {
+            "Void\\HelloWorld\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Josh-Techi",
+            "email": "youssef.abouyahia@e-polytechnique.ma"
+        }
+    ],
+    "require": {}
+}
