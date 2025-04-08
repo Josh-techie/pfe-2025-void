@@ -1,0 +1,18 @@
+services:
+  hello_world.controller:
+    class: Drupal\hello_world\Controller\HelloWorldController
+    arguments: ["@logger.factory"]
+    calls:
+      - method: setStringTranslation
+        arguments: ["@string_translation"]
+    public: true
+  hello_world.hello_block:
+    class: Drupal\hello_world\Plugin\Block\HelloWorldBlock
+    arguments: ["@form_builder"]
+    tags:
+      - { name: drupal.block }
+  hello_world.menu_block:
+    class: Drupal\hello_world\Plugin\Block\MenuBlock
+    arguments: ["@menu.link_tree"]
+    tags:
+      - { name: drupal.block }

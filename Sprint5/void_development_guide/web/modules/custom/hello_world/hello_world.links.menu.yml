@@ -1,0 +1,19 @@
+hello_world.menu:
+  title: "Hello World"
+  route_name: hello_world.page
+  menu_name: main
+  weight: -10 # Lower weight = higher in the menu
+
+hello_world.child_1:
+  title: "Child Menu 1"
+  route_name: hello_world.page1 # Or a different route
+  menu_name: main
+  parent: hello_world.menu # Corrected: Matches the parent's key
+  weight: 5
+
+hello_world.child_2:
+  title: "Child Menu 2"
+  route_name: hello_world.page2 # Or a different route
+  menu_name: main
+  parent: hello_world.menu # Corrected: Matches the parent's key
+  weight: 4
