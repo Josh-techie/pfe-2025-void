@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains hello_world.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function hello_world_theme($existing, $type, $theme, $path)
+{
+  return [
+    'hello_world' => [
+      'variables' => [
+        'name' => 'Bouujemaa', // Define the 'name' variable.
+      ],
+      'template' => 'hello_world', // Specify the template name (without .html.twig).
+    ],
+  ];
+}

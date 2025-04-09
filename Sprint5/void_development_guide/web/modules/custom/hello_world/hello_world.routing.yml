@@ -21,3 +21,10 @@ hello_world.child_2:
     _title: "Child Menu 2"
   requirements:
     _permission: "access content"
+hello_world.hello_page: # Unique route name (like the riad's name)
+  path: "/hello" # The URL path (the riad's address)
+  defaults:
+    _title: "Hello World" # The title of the page (the riad's welcome sign)
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::hello' # The controller that handles the request (the riad's host)
+  requirements:
+    _permission: "access content" # The permission required to access the page (the riad's security guard)

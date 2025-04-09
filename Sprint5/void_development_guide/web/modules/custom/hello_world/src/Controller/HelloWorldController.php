@@ -79,5 +79,18 @@ class HelloWorldController extends ControllerBase
     ];
   }
 
+  /**
+   * Create a new method responsible for rendering a text in twig template
+   */
+  public function hello()
+  {
+    // Prepare the variable to pass to the template.
+    $name = 'Habib'; // Imagine Habib is our honored guest.
+
+    // Render the template.
+    return [
+      '#theme' => 'hello_world', // This is the name of our theme suggestion.
+    ];
+  }
 }
 

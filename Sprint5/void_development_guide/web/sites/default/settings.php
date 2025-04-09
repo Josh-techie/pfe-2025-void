@@ -12,7 +12,7 @@
  * your modifications. Failure to remove write permissions to this file is a
  * security risk.
  *
- * In order to use the selection rules below the multisite aliasing file named
+ * In order to use the selection rule s below the multisite aliasing file named
  * sites/sites.php must be present. Its optional settings will be loaded, and
  * the aliases in the array $sites will override the default directory rules
  * below. See sites/example.sites.php for more information about aliases.
@@ -868,9 +868,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
 
 $databases['default']['default'] = [
   'database' => 'drupal_modules',
@@ -882,7 +882,7 @@ $databases['default']['default'] = [
   'driver' => 'mysql',
   'collation' => 'utf8mb4_unicode_ci',
 ];
-$databases['default']['default'] = array (
+$databases['default']['default'] = array(
   'database' => 'drupal_modules',
   'username' => 'root',
   'password' => '',
