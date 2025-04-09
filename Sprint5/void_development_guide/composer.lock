@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6a1d58c22be9aea0831a6e97e50168d",
+    "content-hash": "f0918f4b7df0c77d822e8fc804dcb3ec",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1361,6 +1361,60 @@
                 }
             ],
             "time": "2024-11-01T21:49:07+00:00"
+        },
+        {
+            "name": "drupal/alias_manager",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/alias_manager.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/alias_manager-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "6359e335bd796874f2b4b8f4e2120e110d4543ea"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1738918059",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lamp5",
+                    "homepage": "https://www.drupal.org/u/lamp5",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/3172603/committers",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Display list of aliases on every entity",
+            "homepage": "https://www.drupal.org/project/alias_manager",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/alias_manager",
+                "issues": "https://www.drupal.org/project/issues/alias_manager"
+            }
         },
         {
             "name": "drupal/coffee",

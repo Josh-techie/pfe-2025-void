@@ -1,0 +1,126 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Alias Manager module.
+ *
+ */
+
+use Drupal\Core\Entity\EntityFormInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function alias_manager_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.alias_manager':
+      $text = @file_get_contents(dirname(__FILE__) . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()
+          ->get('markdown.settings')
+          ->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function alias_manager_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $user = \Drupal::currentUser();
+
+  $entityTypes = alias_manager_get_entities_definitions();
+
+  if ($form_state->getFormObject() instanceof EntityFormInterface) {
+    $entity = $form_state->getFormObject()->getEntity();
+    if (in_array($entity->getEntityTypeId(), $entityTypes) && !$entity->isNew() && $user->hasPermission('administer alias_manager')) {
+
+      $entityPath = $entity->toUrl();
+
+      $pathAliasStorage = \Drupal::entityTypeManager()
+        ->getStorage('path_alias');
+      $aliases = $pathAliasStorage->loadByProperties(
+        ['path' => '/' . $entityPath->getInternalPath()]
+      );
+      $rows = [];
+
+      foreach ($aliases as $key => $alias) {
+        $rows[$key] = [
+          'link' => $alias->getAlias(),
+          'language' => $alias->language()->getName(),
+          'operations' => [],
+        ];
+
+        if ($user->hasPermission('create url aliases')) {
+          $rows[$key]['operations'] = [
+            'data' => [
+              '#type' => 'operations',
+              '#links' => [
+                'edit' => [
+                  'title' => t('Edit'),
+                  'url' => Url::fromUserInput('/admin/config/search/path/edit/' . $alias->id()),
+                ],
+                'delete' => [
+                  'title' => t('Delete'),
+                  'url' => Url::fromUserInput('/admin/config/search/path/delete/' . $alias->id()),
+                ],
+              ],
+            ],
+          ];
+        }
+      }
+
+      // Add the list to the vertical tabs section of the form.
+      $header = [
+        t('Alias'),
+        t('Language'),
+        t('Operations'),
+      ];
+      $form['alias_manager'] = [
+        '#type' => 'details',
+        '#title' => t('Alias manager'),
+        '#group' => 'advanced',
+        '#open' => FALSE,
+        'table' => [
+          '#type' => 'table',
+          '#header' => $header,
+          '#rows' => $rows,
+          '#empty' => t('No alias found for this entity.'),
+          '#attributes' => ['class' => ['alias-manager-table']],
+        ],
+      ];
+    }
+  }
+}
+
+/**
+ * Get all entity types with canonical link.
+ *
+ * @return array
+ *   Array of entityTypes.
+ */
+function alias_manager_get_entities_definitions() {
+  $definitions = \Drupal::entityTypeManager()->getDefinitions();
+  $entityTypes = [];
+
+  foreach ($definitions as $definition_id => $definition) {
+    if ($definition->hasLinkTemplate('canonical')) {
+      $entityTypes[] = $definition_id;
+    }
+  }
+
+  return $entityTypes;
+}

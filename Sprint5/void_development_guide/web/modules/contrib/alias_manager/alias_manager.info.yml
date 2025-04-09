@@ -1,0 +1,10 @@
+name: Alias Manager
+type: module
+description: Display list of aliases on every entity.
+package: Other
+core_version_requirement: ^10 || ^11
+
+# Information added by Drupal.org packaging script on 2025-02-07
+version: '1.0.0'
+project: 'alias_manager'
+datestamp: 1738918061

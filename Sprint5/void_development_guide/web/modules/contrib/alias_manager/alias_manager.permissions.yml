@@ -1,0 +1,4 @@
+administer alias_manager:
+  title: 'Administer alias manager'
+  description: 'Administer alias manager.'
+  restrict access: true

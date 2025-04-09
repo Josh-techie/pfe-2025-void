@@ -28,3 +28,10 @@ hello_world.hello_page: # Unique route name (like the riad's name)
     _controller: '\Drupal\hello_world\Controller\HelloWorldController::hello' # The controller that handles the request (the riad's host)
   requirements:
     _permission: "access content" # The permission required to access the page (the riad's security guard)
+hello_world.link_page:
+  path: "link"
+  defaults:
+    _title: "Link Page"
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::link'
+  requirements:
+    _permission: "access content"

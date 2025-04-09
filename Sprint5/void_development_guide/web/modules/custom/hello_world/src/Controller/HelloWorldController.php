@@ -4,6 +4,8 @@ namespace Drupal\hello_world\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Psr\Log\LoggerInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -84,13 +86,38 @@ class HelloWorldController extends ControllerBase
    */
   public function hello()
   {
-    // Prepare the variable to pass to the template.
-    $name = 'Habib'; // Imagine Habib is our honored guest.
+    // // Prepare the variable to pass to the template.
+    // $name = 'Habib';
 
-    // Render the template.
+    // $build = [
+    //   '#theme' => 'hello_world',
+    //   '#name' => $name,
+    //   '#attached' => [
+    //     'library' => [
+    //       'hello_world/tailwind', // We'll define this library in hello_world.libraries.yml
+    //     ],
+    //   ],
+    // ];
+
+    // return $build;
+  }
+
+  public function link()
+  {
+    // Generate the URL for the 'hello_world.hello_page' route
+    $url = Url::fromRoute('hello_world.link_page')->setAbsolute()->toString();
+
+    // Create a link with the URL
+    $link = Link::fromTextAndUrl('Go to Link ', Url::fromRoute('hello_world.link_page'))->toString();
+    dump($link);
+    dump($url);
+    // Pass the URL, link, and other variables to the template
     return [
-      '#theme' => 'hello_world', // This is the name of our theme suggestion.
+      '#theme' => 'hello_world',
+      '#url' => $url,
+      '#link' => $link,
     ];
   }
+
 }
 

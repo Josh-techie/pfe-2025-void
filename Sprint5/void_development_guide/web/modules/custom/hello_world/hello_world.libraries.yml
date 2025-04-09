@@ -1,0 +1,19 @@
+# hello_world/hello_world.libraries.yml
+
+tailwind:
+  version: VERSION
+  js:
+    https://unpkg.com/@tailwindcss/browser@latest/dist/tailwind.js:
+      {
+        type: external,
+        attributes:
+          {
+            integrity: "sha384-9irtnqwqAJxVJIOWHNfu5E6yURucTxknvfV7iY8xwh7UNgVeXiJh0ZedKHSWbcvw",
+            crossorigin: "anonymous",
+          },
+      }
+  hello_world/hello_world.js: {} # Path to your JavaScript file
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
