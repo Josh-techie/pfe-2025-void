@@ -87,20 +87,24 @@ class HelloWorldController extends ControllerBase
    */
   public function hello()
   {
-    // // Prepare the variable to pass to the template.
-    // $name = 'Habib';
+    // Prepare the variable to pass to the template.
+    $name = 'Habib';
+    $url = 'Not Set';
+    $link = 'Not Set';
 
-    // $build = [
-    //   '#theme' => 'hello_world',
-    //   '#name' => $name,
-    //   '#attached' => [
-    //     'library' => [
-    //       'hello_world/tailwind', // We'll define this library in hello_world.libraries.yml
-    //     ],
-    //   ],
-    // ];
+    $build = [
+      '#theme' => 'hello_world',
+      '#name' => $name,
+      '#url' => $url,
+      '#link' => $link,
+      '#attached' => [
+        'library' => [
+          'hello_world/tailwind', // We'll define this library in hello_world.libraries.yml
+        ],
+      ],
+    ];
 
-    // return $build;
+    return $build;
   }
 
   public function link()
