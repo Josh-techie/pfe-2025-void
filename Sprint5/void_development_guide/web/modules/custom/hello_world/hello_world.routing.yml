@@ -35,3 +35,10 @@ hello_world.link_page:
     _controller: 'Drupal\hello_world\Controller\HelloWorldController::link'
   requirements:
     _permission: "access content"
+hello_world.json_example:
+  path: "/hello/json"
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::json_parser'
+    _title: "JSON Example"
+  requirements:
+    _permission: "access content"

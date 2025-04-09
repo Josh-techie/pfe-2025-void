@@ -7,6 +7,7 @@ use Psr\Log\LoggerInterface;
 use Drupal\Core\Url;
 use Drupal\Core\Link;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\JsonResponse; // Import the JsonResponse class
 
 /**
  * Provides route responses for the Hello World module.
@@ -119,5 +120,27 @@ class HelloWorldController extends ControllerBase
     ];
   }
 
+  /**
+   * Returns a JSON response.
+   */
+  public function json_parser()
+  {
+    // Data to be sent as JSON.  This could come from anywhere (database, API, etc.).
+    $data = [
+      'message' => 'Hello, world!',
+      'status' => 'success',
+      'timestamp' => time(),
+    ];
+
+    // Create a new JsonResponse object, passing the data array.
+    $response = new JsonResponse($data);
+
+    // (Optional) Setting additional headers.
+    $response->headers->set('X-Custom-Header', 'My Value');
+    $response->headers->set('Cache-Control', 'no-cache, must-revalidate'); // Example: prevent caching
+
+    // Returning the response.
+    return $response;
+  }
 }
 
