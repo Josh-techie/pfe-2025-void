@@ -1,6 +1,7 @@
 <?php
 
-use Drupal\Core\Url;
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Contains hello_world.module.
@@ -23,10 +24,18 @@ function hello_world_theme($existing, $type, $theme, $path)
   ];
 }
 
-/**
- * Implements hook_preprocess_HOOK() for node templates.
- */
-/**
- * Implements hook_preprocess_HOOK() for node templates.
- */
+function hello_world_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  // Target the user login form specifically.
+  if ($form_id === 'user_login_form') {
+    // Add a simple text field.
+    $form['hello_world_extra_field'] = [
+      '#type' => 'textfield',
+      '#title' => t('Your Favorite Moroccan Dish?'), // Use t() for translation
+      '#description' => t('Just adding an extra field for practice!'),
+      '#weight' => 100, // Optional: control the field's position
+    ];
+  }
+
+}
 
