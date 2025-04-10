@@ -42,3 +42,11 @@ hello_world.json_example:
     _title: "JSON Example"
   requirements:
     _permission: "access content"
+hello_world.simple_contact_page:
+  path: "/hello-world/contact"
+  defaults:
+    # Point to the controller that will display the form
+    _controller: '\Drupal\hello_world\Controller\SimpleContactController::displayForm'
+    _title: "Simple Contact Form" # Page title
+  requirements:
+    _permission: "access content" # Allow most users to see it
