@@ -36,6 +36,72 @@ function hello_world_form_alter(&$form, FormStateInterface $form_state, $form_id
       '#weight' => 100, // Optional: control the field's position
     ];
   }
-
 }
 
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function hello_world_page_attachments_alter(array &$page)
+{
+  // Define the meta tag as a render array.
+  $viewport_meta_tag = [
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no',
+    ],
+  ];
+
+  // Add the meta tag to the 'html_head' attachments.
+  // The key 'hello_world_viewport' is just a unique identifier.
+  $page['#attached']['html_head'][] = [$viewport_meta_tag, 'hello_world_viewport'];
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function hello_world_preprocess_menu(&$variables)
+{
+  // Loop through each menu item in the 'items' array.
+  foreach ($variables['items'] as &$item) {
+    // Items usually have their attributes in $item['attributes'] or $item['link']['#options']['attributes']
+    // Let's try adding to the main item attributes first.
+    if (isset($item['attributes']) && $item['attributes'] instanceof \Drupal\Core\Template\Attribute) {
+      $item['attributes']->addClass('my-custom-class');
+    }
+    // Sometimes the attributes are on the link element within the item.
+    elseif (isset($item['link']['#options']['attributes']) && is_array($item['link']['#options']['attributes'])) {
+      // Ensure the 'class' key exists and is an array
+      if (!isset($item['link']['#options']['attributes']['class'])) {
+        $item['link']['#options']['attributes']['class'] = [];
+      }
+      // Add the class if it's not already there
+      if (!in_array('my-custom-class', $item['link']['#options']['attributes']['class'])) {
+        $item['link']['#options']['attributes']['class'][] = 'my-custom-class';
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function hello_world_preprocess_block(&$variables)
+{
+  // Check if this is the system branding block.
+  if ($variables['plugin_id'] === 'system_branding_block') {
+    // Check if the site_logo element exists in the content.
+    if (isset($variables['content']['site_logo']) && is_array($variables['content']['site_logo'])) {
+      // Change the URI of the site logo.
+      $variables['content']['site_logo']['#uri'] = 'https://static.cdnlogo.com/logos/d/88/drupal-wordmark.svg';
+
+      // Since we are providing an external URL, we might need to ensure it's treated as external.
+      // Often Drupal handles this, but you could add:
+      if (isset($variables['content']['site_logo']['#attributes'])) {
+        $variables['content']['site_logo']['#attributes']['src'] = $variables['content']['site_logo']['#uri'];
+      }
+      // If the logo is rendered via theme('image'), changing #uri is usually enough.
+    }
+  }
+}
