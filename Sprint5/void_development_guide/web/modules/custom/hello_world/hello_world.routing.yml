@@ -42,14 +42,3 @@ hello_world.json_example:
     _title: "JSON Example"
   requirements:
     _permission: "access content"
-# the route to the demo form
-hello_world.demo_form_page: # A unique machine name for this route
-  path: "/hello-world/demo-form" # The URL path users will visit
-  defaults:
-    # This points to the *Controller* method that will BUILD the form
-    _controller: '\Drupal\hello_world\Controller\DemoFormController::showDemoForm'
-    # This sets the title that appears on the page and in the browser tab
-    _title: "Demo Form Page"
-  requirements:
-    # Define who can access this page. 'access content' is common for general access.
-    _permission: "access content"
