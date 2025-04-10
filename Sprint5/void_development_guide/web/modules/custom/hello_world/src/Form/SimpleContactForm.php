@@ -5,12 +5,49 @@ namespace Drupal\hello_world\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+use Drupal\Core\Session\AccountInterface; // Needed to check user role/status
+use Symfony\Component\DependencyInjection\ContainerInterface; // Needed for service injection
+
 /**
  * Provides a simple contact form.
  */
 class SimpleContactForm extends FormBase
 {
+  /**
+   * The current user.
+   * We'll store the service object here.
+   *
+   * @var \Drupal\Core\Session\AccountInterface
+   */
+  protected $currentUser;
 
+  /**
+   * Constructs a SimpleContactForm object.
+   * We override the constructor to inject the current user service.
+   *
+   * @param \Drupal\Core\Session\AccountInterface $current_user
+   *   The current user service.
+   */
+  public function __construct(AccountInterface $current_user)
+  {
+    // Store the injected service in our property.
+    $this->currentUser = $current_user;
+  }
+
+  /**
+   * Creates an instance of the form.
+   * This is the static factory method for dependency injection.
+   *
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container)
+  {
+    // Get the 'current_user' service from the container
+    // and pass it to the constructor.
+    return new static(
+      $container->get('current_user')
+    );
+  }
   /**
    * Returns a unique string identifying the form.
    *
@@ -25,9 +62,6 @@ class SimpleContactForm extends FormBase
     // This ID should be unique across your entire Drupal site.
     return 'hello_world_simple_contact_form';
   }
-
-  // ... (Keep getFormId() method above this) ...
-
   /**
    * Builds the form structure.
    *
@@ -45,32 +79,54 @@ class SimpleContactForm extends FormBase
   public function buildForm(array $form, FormStateInterface $form_state)
   {
 
-    // --- Name Field ---
-    $form['name'] = [
-      // '#type' defines the kind of form element (text field, checkbox, etc.).
+    // --- ADD A 'details' GROUPING ELEMENT ---
+    $form['contact_details'] = [
+      '#type' => 'details', // Use 'details' for a collapsible group
+      '#title' => $this->t('Your Contact Information'), // Title for the group
+      '#open' => TRUE, // Make the group expanded by default (optional)
+      '#description' => $this->t('Please provide your details and message below.'), // Optional description
+    ];
+
+    // --- Move Name Field INSIDE the group ---
+    // Notice the change from $form['name'] to $form['contact_details']['name']
+    $form['contact_details']['name'] = [
       '#type' => 'textfield',
-      // '#title' is the human-readable label shown next to the field.
-      // We use $this->t() to make the label translatable.
       '#title' => $this->t('Your Name'),
-      // '#required' => TRUE makes the field mandatory. HTML5 validation is added,
-      // but server-side validation (in validateForm) is still crucial.
       '#required' => TRUE,
     ];
 
-    // --- Email Field ---
-    $form['email'] = [
-      // Use the 'email' type for email addresses.
+    // --- Move Email Field INSIDE the group ---
+    $form['contact_details']['email'] = [
       '#type' => 'email',
       '#title' => $this->t('Your Email'),
       '#required' => TRUE,
     ];
 
-    // --- Message Field ---
-    $form['message'] = [
-      // 'textarea' allows for multi-line text input.
+    // --- Move Message Field INSIDE the group ---
+    $form['contact_details']['message'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Message'),
       '#required' => TRUE,
+    ];
+
+    // --- ADD NEW FIELD: Internal Priority ---
+    $form['internal_priority'] = [
+      '#type' => 'select', // Let's make it a dropdown
+      '#title' => $this->t('Internal Priority'),
+      '#options' => [      // Define the dropdown options
+        'low' => $this->t('Low'),
+        'medium' => $this->t('Medium'),
+        'high' => $this->t('High'),
+      ],
+      '#default_value' => 'medium', // Default selection
+      '#description' => $this->t('Set the priority for handling this message (visible only to logged-in users).'),
+
+      // --- THE #access LOGIC ---
+      // $this->currentUser holds the user object we injected.
+      // isAnonymous() returns TRUE if the user is not logged in.
+      // We want #access to be TRUE only if the user is NOT anonymous (i.e., logged in).
+      // So we use the NOT operator (!).
+      '#access' => !$this->currentUser->isAnonymous(),
     ];
 
     // --- Submit Button ---
@@ -151,6 +207,14 @@ class SimpleContactForm extends FormBase
     $this->messenger()->addStatus(
       $this->t('Thank you @name, your message has been received!', ['@name' => $name])
     );
+
+    // --- ADD THIS LINE FOR REDIRECT ---
+    // 2. Redirect the user.
+    // '<front>' is a special route name that always points to the site's front page.
+    // Other options:
+    // - Redirect to a specific route: $form_state->setRedirect('some_module.some_route');
+    // - Redirect to a node: $form_state->setRedirect('entity.node.canonical', ['node' => 123]);
+    $form_state->setRedirect('<front>');
 
     // In a real form, you would DO something here, like:
     // - Send an email using the mail manager service.
