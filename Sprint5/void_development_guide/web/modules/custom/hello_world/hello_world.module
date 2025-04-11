@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
 
 /**
  * @file
@@ -12,12 +13,40 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function hello_world_theme($existing, $type, $theme, $path)
 {
+
+  $messenger = \Drupal::messenger();
+
+  // fetch the node titlle of id 1
+  $node = Node::load(1);
+  $node_title = $node->label();
+
+  // update the title and save it to be displayed later in our twig
+  $new_title = 'The New Udated Title';
+  $node->set('title', $new_title);
+  $save_result = $node->save();
+
+  if ($save_result) {
+    // ---- Update & Save Successful ----
+    $messenger->addStatus(t('HOOK: Successfully updated title for Node ID @nid to "@new_title" and saved.', [
+      '@nid' => $node->id(),
+      '@new_title' => $new_title,
+    ]));
+  } else {
+    // ---- Save Failed ---- (Less common if node loaded)
+    $messenger->addError(t('HOOK: Failed to save Node ID @nid after updating title.', [
+      '@nid' => $node->id(),
+    ]));
+    // Keep the default variable value.
+  }
+
+
   return [
     'hello_world' => [
       'variables' => [
         'name' => 'Bouujemaa', //
         'url' => '',
         'link' => '',
+        'loaded_node_1_title' => $node_title,
       ],
       'template' => 'hello_world', // Specify the template name (without .html.twig).
     ],
@@ -105,3 +134,14 @@ function hello_world_preprocess_block(&$variables)
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ *
+ * This function is called before the page.html.twig template is rendered.
+ * We can add or modify variables that will be available in that template.
+ *
+ * @param array $variables
+ *   An associative array containing existing template variables, passed by reference.
+ *   We will add our new variable to this array.
+ */
