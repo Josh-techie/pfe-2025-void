@@ -31,6 +31,11 @@ I've worked on this sprint basically learnt some good stuff?
 
 ---
 
+## Documentation:
+
+If you found yourself asking, but wait I need help?
+Well don't worry I got you covered, Every step, every concept wrestled with, every line of code (the ones that worked, anyway!), and every "aha!" moment from Day 1's module basics to Day 5's entity juggling act is documented in my full sprint report: [Detailed-Repport](../Assets/Youssef-ABOUYAHIA-Sprint-5.pdf)
+
 ## Author
 
 - [`@Josh-techie`](https://github.com/Josh-techie)| Software Engineer Student
