@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Template for displaying reference node info (NEW VERSION).
+ * hello-world-reference-info.html.twig
+ *
+ * Available variables:
+ * - selected_title: The title of the node selected via the form.
+ * - related_titles: An array of titles of other published nodes of the same type.
+ */
+#}
+{# Add a class or change an element to confirm this template is used #}
+<div class="reference-node-info-block">
+  {# Changed h3 to h4 for demonstration #}
+  <h4>{{ "Currently Referenced Node"|t }}</h4>
+  <p class="reference-node-info__title">{{ selected_title|placeholder("No node selected"|t) }}</p>
+
+  {% if related_titles is not empty %}
+    <h4>{{ "Other nodes of this type"|t }}</h4>
+    <ul class="reference-node-info__related-list">
+      {% for title in related_titles %}
+        <li>{{ title }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    {% if selected_title != "No node selected."|t %}
+       <p>{{ "No other published nodes of this type were found."|t }}</p>
+    {% endif %}
+  {% endif %}
+</div>

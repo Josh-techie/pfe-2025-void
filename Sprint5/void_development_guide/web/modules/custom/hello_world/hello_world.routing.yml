@@ -51,3 +51,23 @@ hello_world.simple_contact_page:
     _title: "Simple Contact Form" # Page title
   requirements:
     _permission: "access content" # Allow most users to see it
+# hello_world/hello_world.routing.yml
+
+# Route definition for accessing the Entity Reference Form page.
+hello_world.select_node_form_page:
+  # The URL path where users will access this form.
+  path: "/hello-world/select-node-for-block"
+  # Default settings for this route.
+  defaults:
+    # Use the '_form' key as a shortcut to specify the form class directly.
+    # Provide the fully qualified namespace path to your form class.
+    _form: '\Drupal\hello_world\Form\EntityRefForm'
+    # Set the title that appears on the page and in the browser tab.
+    _title: "Select Node for Block"
+  # Define the requirements to access this route.
+  requirements:
+    # Specify the permission needed. 'access content' is general,
+    # but you might want a more specific admin permission like 'administer site configuration'.
+    _permission: "access content"
+    # Example of a more restrictive permission:
+    # _permission: 'administer hello_world configuration' # (Would need defining in hello_world.permissions.yml)

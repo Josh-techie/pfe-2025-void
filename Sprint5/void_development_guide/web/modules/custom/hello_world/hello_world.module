@@ -21,7 +21,7 @@ function hello_world_theme($existing, $type, $theme, $path)
   $node_title = $node->label();
 
   // update the title and save it to be displayed later in our twig
-  $new_title = 'The New Udated Title';
+  $new_title = 'The New Updated Title';
   $node->set('title', $new_title);
   $save_result = $node->save();
 
@@ -39,7 +39,59 @@ function hello_world_theme($existing, $type, $theme, $path)
     // Keep the default variable value.
   }
 
+  // Assume $node is a valid loaded Node object from earlier code (e.g., Node::load(1))
+  // Assume $messenger is available (\Drupal::messenger())
 
+  $langcode = 'fr'; // Language code for French
+  $node_fr = null; // Initialize the variable to null (important!)
+
+  // Check if the node exists AND has the desired translation BEFORE getting it
+  if ($node instanceof \Drupal\node\NodeInterface && $node->hasTranslation($langcode)) {
+    // ---- SUCCESS: Translation Exists ----
+
+    // Now it's safe to get the actual translation object
+    $node_fr = $node->getTranslation($langcode);
+
+    // Add success message (using the retrieved translation object)
+    $messenger->addStatus(t('Successfully retrieved @langcode translation for Node @nid. Title: @title', [
+      '@langcode' => $langcode,
+      '@nid' => $node->id(), // Use the original node's ID
+      '@title' => $node_fr->label(), // Use the French node object's title
+    ]));
+
+    // $node_fr now holds the French translation object
+
+  } else {
+    // ---- FAILURE: Translation Not Found (or Node was invalid) ----
+
+    // Add a warning message. Check if $node exists before accessing its ID.
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      $messenger->addWarning(t('Node @nid exists, but a translation for language "@langcode" was not found.', [
+        '@nid' => $node->id(),
+        '@langcode' => $langcode,
+      ]));
+    } else {
+      // Handle case where the original $node object wasn't valid
+      $messenger->addError(t('Cannot check for translation because the base node is not valid.'));
+    }
+    // $node_fr remains null in this 'else' block
+  }
+
+  // Start the array of theme hook definitions.
+  $hooks = [];
+
+  // --- ADD THE NEW THEME HOOK DEFINITION ---
+  $hooks['hello_world_reference_info'] = [ // New unique theme hook name
+    'variables' => [ // Define the variables it expects
+      'selected_title' => NULL,
+      'related_titles' => [],
+    ],
+    // Drupal will automatically look for hello-world-reference-info.html.twig
+    // in the module's 'templates' directory because the key matches the pattern.
+    // You could explicitly add: 'template' => 'hello-world-reference-info',
+  ];
+  // --- END OF NEW THEME HOOK DEFINITION ---
+  // Return the complete array of theme hooks defined by this module.
   return [
     'hello_world' => [
       'variables' => [
@@ -47,6 +99,8 @@ function hello_world_theme($existing, $type, $theme, $path)
         'url' => '',
         'link' => '',
         'loaded_node_1_title' => $node_title,
+        'node_fr' => $node_fr,
+        'hooks' => $hooks,
       ],
       'template' => 'hello_world', // Specify the template name (without .html.twig).
     ],
