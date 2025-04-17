@@ -12,7 +12,12 @@ This sprint, is on fire it'll focuses on advanced Drupal development topics, bui
 
 ## Resources
 
-Coming soon!
+#### For Installation:
+
+- [Drupal Guide](http://drupal.org/docs/getting-started/installing-drupal/install-drupal-using-ddev-for-local-development)
+- [DDEV-Docs](https://ddev.readthedocs.io/en/stable/users/quickstart/#craft-cms)
+
+`Stay tuned for the rest !`
 
 ## Author
 
