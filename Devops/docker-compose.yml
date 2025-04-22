@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
@@ -29,23 +29,11 @@ services:
     networks:
       - drupal-network
 
-  drupal:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./drupal-website:/var/www/html
-    depends_on:
-      - db
-    networks:
-      - drupal-network
-
   web:
     image: nginx:latest
     ports:
       - "8080:80"
     volumes:
-      - ./drupal-website:/var/www/html
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - drupal

@@ -1,2 +1,5 @@
 db_data
 .drupal-website
+.git
+node_modules
+vendor

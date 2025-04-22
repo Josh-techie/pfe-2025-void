@@ -30,6 +30,8 @@ RUN curl -sS https://getcomposer.org/installer | \
     chmod +x /usr/local/bin/composer && \
     composer self-update --clean-backups
 
+COPY drupal-website /var/www/html
+
 WORKDIR /var/www/html
 
 # Security best practices
