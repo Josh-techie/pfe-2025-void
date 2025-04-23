@@ -1,0 +1,19 @@
+{# themes/yourtheme/templates/user--profile-full.html.twig #}
+
+<article class="user-profile-full">
+  <h2>User Profile (Full View)</h2>
+  <div class="user-content">
+    <p>This is a customized template for users in the <strong>profile.full</strong> view mode.</p>
+
+    {# You can access user variables here, such as: #}
+    {# {{ user.name }} - The user's name #}
+    {# {{ user.mail }} - The user's email address #}
+
+    <p><strong>Username:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.mail }}</p>
+
+    {# You can also render other fields or elements of the user profile here. #}
+    {# Example: Render the user's member_for field: #}
+    {# {{ content.member_for }} #}
+  </div>
+</article>
