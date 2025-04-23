@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/password_policy": "^4.0",
+        "drupal/pathauto": "^1.13",
         "drush/drush": "^13.5"
     },
     "conflict": {
