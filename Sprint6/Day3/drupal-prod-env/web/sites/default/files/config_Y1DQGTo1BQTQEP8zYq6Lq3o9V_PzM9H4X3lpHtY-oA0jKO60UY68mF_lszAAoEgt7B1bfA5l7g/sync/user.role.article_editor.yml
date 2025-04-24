@@ -1,0 +1,25 @@
+uuid: f07f0e6e-8ca5-4ef2-87fe-622271402673
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.article_taxonomy
+  module:
+    - node
+    - system
+id: article_editor
+label: 'Article Editor'
+weight: 4
+is_admin: false
+permissions:
+  - 'access content'
+  - 'create article content'
+  - 'create article_taxonomy content'
+  - 'delete any article content'
+  - 'delete any article_taxonomy content'
+  - 'delete own article content'
+  - 'delete own article_taxonomy content'
+  - 'edit own article content'
+  - 'edit own article_taxonomy content'
+  - 'view own unpublished content'

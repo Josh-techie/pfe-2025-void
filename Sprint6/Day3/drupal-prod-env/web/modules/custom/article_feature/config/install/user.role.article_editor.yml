@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.article_taxonomy
+  module:
+    - node
+    - system
+id: article_editor
+label: 'Article Editor'
+weight: 4
+is_admin: false

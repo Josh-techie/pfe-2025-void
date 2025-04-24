@@ -1,0 +1,18 @@
+name: 'Article Feature'
+description: 'This is an article feature with the taxonomy terms!'
+type: module
+core_version_requirement: '^10 || ^11'
+dependencies:
+  - 'article_feature:article_feature'
+  - 'drupal:block_content'
+  - 'drupal:comment'
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:system'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'

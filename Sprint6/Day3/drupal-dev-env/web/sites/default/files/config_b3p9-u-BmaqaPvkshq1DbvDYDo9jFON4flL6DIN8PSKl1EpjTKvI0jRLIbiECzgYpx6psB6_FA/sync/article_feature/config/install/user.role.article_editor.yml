@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: article_editor
+label: 'Article Editor'
+weight: 4
+is_admin: false

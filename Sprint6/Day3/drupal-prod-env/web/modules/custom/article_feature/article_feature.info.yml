@@ -1,0 +1,16 @@
+name: 'Article Feature'
+description: 'This is an article feature with the taxonomy terms!'
+type: module
+core_version_requirement: '^10 || ^11'
+dependencies:
+  - comment
+  - field
+  - image
+  - menu_ui
+  - node
+  - path
+  - system
+  - taxonomy
+  - text
+  - user
+  - views

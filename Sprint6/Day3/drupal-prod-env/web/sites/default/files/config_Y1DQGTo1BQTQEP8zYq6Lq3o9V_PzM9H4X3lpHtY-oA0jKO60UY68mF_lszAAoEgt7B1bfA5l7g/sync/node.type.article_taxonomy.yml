@@ -1,0 +1,18 @@
+uuid: d522e475-27e3-4624-a858-c8742bad7c02
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Article
+type: article_taxonomy
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
