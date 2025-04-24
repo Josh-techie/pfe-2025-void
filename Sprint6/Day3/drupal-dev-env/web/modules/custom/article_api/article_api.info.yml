@@ -1,0 +1,6 @@
+# modules/custom/article_api/article_api.info.yml
+name: Article API
+description: "Provides API endpoints for articles with caching examples"
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom

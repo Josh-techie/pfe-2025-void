@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * @file
+ * Contains article_api.module.
+ */
+
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_install().
+ */
+function article_api_install()
+{
+  // Specific node IDs to create.
+  $specific_ids = [10, 45, 223, 46, 47, 48, 49, 50, 51, 52];
+
+  // Article details array (you can add more details here).
+  $article_details = [
+    10 => [
+      'title' => 'First Hardcoded Article',
+      'body' => 'This is the body of the first hardcoded article with ID 10.',
+    ],
+    45 => [
+      'title' => 'Article 45',
+      'body' => 'This is the body of Article 45.',
+    ],
+    223 => [
+      'title' => 'Second Hardcoded Article',
+      'body' => 'This is the body of the second hardcoded article with ID 223.',
+    ]
+  ];
+
+  // Get the entity type manager.
+  $entity_type_manager = \Drupal::entityTypeManager();
+
+  // Get the node storage.
+  $node_storage = $entity_type_manager->getStorage('node');
+
+  // Iterate through specific IDs.
+  foreach ($specific_ids as $nid) {
+    // Check if node already exists.
+    $existing_node = $node_storage->load($nid);
+
+    if ($existing_node) {
+      \Drupal::logger('article_api')->info("Node with ID $nid already exists. Skipping.");
+      continue;
+    }
+
+    // Get article details, use default if not specified.
+    $article = $article_details[$nid] ?? [
+      'title' => "Article with ID $nid",
+      'body' => "Default body for article $nid",
+    ];
+
+    try {
+      // Create node with specific ID.
+      $node = Node::create([
+        'nid' => $nid,
+        'type' => 'article',
+        'title' => $article['title'],
+        'body' => [
+          'value' => $article['body'],
+          'format' => 'basic_html',
+        ],
+        'status' => 1,
+        'uid' => 1,
+      ]);
+
+      // Manually set the ID, bypassing the usual restrictions.
+      // This is only safe during module install, as this will break internal
+      // Drupal assumptions about auto-increment IDs.
+      $node->enforceIsNew(TRUE);
+      $node->save();
+
+      \Drupal::logger('article_api')->info("Created article with ID $nid");
+    } catch (\Exception $e) {
+      \Drupal::logger('article_api')->error("Failed to create node $nid: " . $e->getMessage());
+    }
+  }
+}
