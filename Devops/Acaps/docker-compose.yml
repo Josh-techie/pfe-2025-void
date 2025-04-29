@@ -1,0 +1,54 @@
+services:
+  web:
+    image: vactory/php-ubi9:7.4
+    container_name: web
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ../public_html/:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - drupal-network
+
+  db:
+    image: mysql/mysql-server:5.7
+    container_name: db_acaps
+    restart: always
+    networks:
+      - drupal-network
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db_acaps
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD: ${PMA_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      UPLOAD_LIMIT: 1024M
+      PHP_UPLOAD_MAX_FILESIZE: 1024M
+    networks:
+      - drupal-network
+
+volumes:
+  db-data:
+
+networks:
+  drupal-network:
+    driver: bridge
