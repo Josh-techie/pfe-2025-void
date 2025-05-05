@@ -1,0 +1,58 @@
+# Composer files
+/vendor/
+/composer.lock
+
+# Drupal files
+/web/sites/*/files/
+/web/sites/*/settings.local.php
+/web/modules/custom/
+/web/themes/custom/
+/web/profiles/custom/
+/web/update.php
+/web/core/modules/update/update.settings.yml
+/web/sites/*/sync/
+
+# Drush files
+/drush/tmp/
+/drush/cache/
+
+# Environment-specific files
+.env
+.env.local
+*.local.yml
+*.settings.php.orig
+*.settings.yml.orig
+
+# Logs and temporary files
+/web/sites/default/files/tmp/
+/tmp/
+*.log
+error.log
+
+# IDE specific files
+.idea/
+.project
+.settings
+*.iml
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Node.js and frontend tooling (if applicable)
+/node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts (if applicable)
+/build/
+/dist/
+
+# Ignore web server logs if they are in the project
+# /logs/
+
+# Ignore exported configuration if you manage it differently
+# /config/sync/
