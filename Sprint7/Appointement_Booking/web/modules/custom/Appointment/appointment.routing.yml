@@ -1,0 +1,7 @@
+appointment.book_form:
+  path: "/prendre-un-rendez-vous"
+  defaults:
+    _form: 'Drupal\appointment\Form\AppointmentMultiStepForm'
+    _title: "Prendre un rendez-vous"
+  requirements:
+    _permission: "access content"

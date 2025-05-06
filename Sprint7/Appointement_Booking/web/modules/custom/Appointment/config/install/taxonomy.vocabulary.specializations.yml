@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - appointment
+name: Specializations
+vid: specializations
+description: "Types of appointments that can be booked"
+weight: 0
