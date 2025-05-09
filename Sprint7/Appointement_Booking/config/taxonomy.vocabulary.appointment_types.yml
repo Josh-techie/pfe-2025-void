@@ -1,0 +1,9 @@
+uuid: f3a1c1b9-eb7f-4601-8a26-312986713de0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Appointment Types'
+vid: appointment_types
+description: 'Types of appointments for the booking system.'
+weight: 0
+new_revision: false
