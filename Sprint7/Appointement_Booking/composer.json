@@ -12,10 +12,22 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fullcalendar/fullcalendar",
+                "version": "3.9.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/fullcalendar/fullcalendar/archive/v3.9.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
-        "composer/installers": "^2.0",
+        "composer/installers": "^2.3",
         "drupal/better_exposed_filters": "^7.0",
         "drupal/coffee": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
@@ -25,7 +37,8 @@
         "drupal/office_hours": "^1.28",
         "drupal/symfony_mailer": "^1.5",
         "drupal/views_data_export": "^1.5",
-        "drush/drush": "^13.6"
+        "drush/drush": "^13.6",
+        "fullcalendar/fullcalendar": "3.9.0"
     },
     "conflict": {
         "drupal/drupal": "*"

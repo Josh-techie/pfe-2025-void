@@ -65,7 +65,8 @@ use Drupal\user\UserInterface;
  *   common_reference_target = TRUE
  * )
  */
-class User extends ContentEntityBase implements UserInterface {
+class User extends ContentEntityBase implements UserInterface
+{
 
   use EntityChangedTrait;
 
@@ -79,21 +80,24 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function isNew() {
+  public function isNew()
+  {
     return !empty($this->enforceIsNew) || $this->id() === NULL;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function label() {
+  public function label()
+  {
     return $this->getDisplayName();
   }
 
   /**
    * {@inheritdoc}
    */
-  public function preSave(EntityStorageInterface $storage) {
+  public function preSave(EntityStorageInterface $storage)
+  {
     parent::preSave($storage);
 
     // Make sure that the authenticated/anonymous roles are not persisted.
@@ -114,7 +118,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function postSave(EntityStorageInterface $storage, $update = TRUE) {
+  public function postSave(EntityStorageInterface $storage, $update = TRUE)
+  {
     parent::postSave($storage, $update);
 
     if ($update) {
@@ -133,8 +138,7 @@ class User extends ContentEntityBase implements UserInterface {
         if ($flood_config->get('uid_only')) {
           // Clear flood events based on the uid only if configured.
           $flood_service->clear('user.failed_login_user', $identifier);
-        }
-        elseif ($flood_service instanceof PrefixFloodInterface) {
+        } elseif ($flood_service instanceof PrefixFloodInterface) {
           $flood_service->clearByPrefix('user.failed_login_user', $identifier);
         }
 
@@ -157,7 +161,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public static function postDelete(EntityStorageInterface $storage, array $entities) {
+  public static function postDelete(EntityStorageInterface $storage, array $entities)
+  {
     parent::postDelete($storage, $entities);
 
     $uids = array_keys($entities);
@@ -167,15 +172,15 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getRoles($exclude_locked_roles = FALSE) {
+  public function getRoles($exclude_locked_roles = FALSE)
+  {
     $roles = [];
 
     // Users with an ID always have the authenticated user role.
     if (!$exclude_locked_roles) {
       if ($this->isAuthenticated()) {
         $roles[] = RoleInterface::AUTHENTICATED_ID;
-      }
-      else {
+      } else {
         $roles[] = RoleInterface::ANONYMOUS_ID;
       }
     }
@@ -192,14 +197,16 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function hasRole($rid) {
+  public function hasRole($rid)
+  {
     return in_array($rid, $this->getRoles());
   }
 
   /**
    * {@inheritdoc}
    */
-  public function addRole($rid) {
+  public function addRole($rid)
+  {
 
     if (in_array($rid, [RoleInterface::AUTHENTICATED_ID, RoleInterface::ANONYMOUS_ID])) {
       throw new \InvalidArgumentException('Anonymous or authenticated role ID must not be assigned manually.');
@@ -215,7 +222,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function removeRole($rid) {
+  public function removeRole($rid)
+  {
     $this->set('roles', array_diff($this->getRoles(TRUE), [$rid]));
 
     return $this;
@@ -224,7 +232,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function hasPermission(/* string */$permission) {
+  public function hasPermission(/* string */ $permission)
+  {
     if (!is_string($permission)) {
       @trigger_error('Calling ' . __METHOD__ . '() with a $permission parameter of type other than string is deprecated in drupal:10.3.0 and will cause an error in drupal:11.0.0. See https://www.drupal.org/node/3411485', E_USER_DEPRECATED);
       return FALSE;
@@ -235,14 +244,16 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getPassword() {
+  public function getPassword()
+  {
     return $this->get('pass')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setPassword(#[\SensitiveParameter] $password) {
+  public function setPassword(#[\SensitiveParameter] $password)
+  {
     $this->get('pass')->value = $password;
     return $this;
   }
@@ -250,14 +261,16 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getEmail() {
+  public function getEmail()
+  {
     return $this->get('mail')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setEmail($mail) {
+  public function setEmail($mail)
+  {
     $this->get('mail')->value = $mail;
     return $this;
   }
@@ -265,21 +278,24 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getCreatedTime() {
+  public function getCreatedTime()
+  {
     return $this->get('created')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getLastAccessedTime() {
+  public function getLastAccessedTime()
+  {
     return $this->get('access')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setLastAccessTime($timestamp) {
+  public function setLastAccessTime($timestamp)
+  {
     $this->get('access')->value = $timestamp;
     return $this;
   }
@@ -287,14 +303,16 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getLastLoginTime() {
+  public function getLastLoginTime()
+  {
     return $this->get('login')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setLastLoginTime($timestamp) {
+  public function setLastLoginTime($timestamp)
+  {
     $this->get('login')->value = $timestamp;
     return $this;
   }
@@ -302,21 +320,24 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function isActive() {
+  public function isActive()
+  {
     return $this->get('status')->value == 1;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function isBlocked() {
+  public function isBlocked()
+  {
     return $this->get('status')->value == 0;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function activate() {
+  public function activate()
+  {
     if ($this->isAnonymous()) {
       throw new \LogicException('The anonymous user account should remain blocked at all times.');
     }
@@ -327,7 +348,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function block() {
+  public function block()
+  {
     $this->get('status')->value = 0;
     return $this;
   }
@@ -335,20 +357,21 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getTimeZone() {
+  public function getTimeZone()
+  {
     return $this->get('timezone')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getPreferredLangcode($fallback_to_default = TRUE) {
+  public function getPreferredLangcode($fallback_to_default = TRUE)
+  {
     $language_list = $this->languageManager()->getLanguages();
     $preferred_langcode = $this->get('preferred_langcode')->value;
     if (!empty($preferred_langcode) && isset($language_list[$preferred_langcode])) {
       return $language_list[$preferred_langcode]->getId();
-    }
-    else {
+    } else {
       return $fallback_to_default ? $this->languageManager()->getDefaultLanguage()->getId() : '';
     }
   }
@@ -356,13 +379,13 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getPreferredAdminLangcode($fallback_to_default = TRUE) {
+  public function getPreferredAdminLangcode($fallback_to_default = TRUE)
+  {
     $language_list = $this->languageManager()->getLanguages();
     $preferred_langcode = $this->get('preferred_admin_langcode')->value;
     if (!empty($preferred_langcode) && isset($language_list[$preferred_langcode])) {
       return $language_list[$preferred_langcode]->getId();
-    }
-    else {
+    } else {
       return $fallback_to_default ? $this->languageManager()->getDefaultLanguage()->getId() : '';
     }
   }
@@ -370,35 +393,40 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function getInitialEmail() {
+  public function getInitialEmail()
+  {
     return $this->get('init')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function isAuthenticated() {
+  public function isAuthenticated()
+  {
     return $this->id() > 0;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function isAnonymous() {
+  public function isAnonymous()
+  {
     return $this->id() === 0 || $this->id() === '0';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getAccountName() {
+  public function getAccountName()
+  {
     return $this->get('name')->value ?: '';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getDisplayName() {
+  public function getDisplayName()
+  {
     $name = $this->getAccountName() ?: \Drupal::config('user.settings')->get('anonymous');
     \Drupal::moduleHandler()->alter('user_format_name', $name, $this);
     return $name;
@@ -407,7 +435,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function setUsername($username) {
+  public function setUsername($username)
+  {
     $this->set('name', $username);
     return $this;
   }
@@ -415,7 +444,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function setExistingPassword(#[\SensitiveParameter] $password) {
+  public function setExistingPassword(#[\SensitiveParameter] $password)
+  {
     $this->get('pass')->existing = $password;
     return $this;
   }
@@ -423,7 +453,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public function checkExistingPassword(UserInterface $account_unchanged) {
+  public function checkExistingPassword(UserInterface $account_unchanged)
+  {
     $existing = $this->get('pass')->existing;
     return $existing !== NULL && strlen($existing) > 0 &&
       \Drupal::service('password')->check(trim($existing), $account_unchanged->getPassword());
@@ -435,7 +466,8 @@ class User extends ContentEntityBase implements UserInterface {
    * @return \Drupal\user\UserInterface
    *   An anonymous user entity.
    */
-  public static function getAnonymousUser() {
+  public static function getAnonymousUser()
+  {
     if (!isset(static::$anonymousUser)) {
 
       // @todo Use the entity factory once available, see
@@ -458,7 +490,8 @@ class User extends ContentEntityBase implements UserInterface {
   /**
    * {@inheritdoc}
    */
-  public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
+  public static function baseFieldDefinitions(EntityTypeInterface $entity_type)
+  {
     /** @var \Drupal\Core\Field\BaseFieldDefinition[] $fields */
     $fields = parent::baseFieldDefinitions($entity_type);
 
@@ -576,7 +609,8 @@ class User extends ContentEntityBase implements UserInterface {
    * @return \Drupal\user\RoleStorageInterface
    *   The role storage object.
    */
-  protected function getRoleStorage() {
+  protected function getRoleStorage()
+  {
     return \Drupal::entityTypeManager()->getStorage('user_role');
   }
 
@@ -586,7 +620,8 @@ class User extends ContentEntityBase implements UserInterface {
    * @return string[]
    *   The allowed values.
    */
-  public static function getAllowedTimezones() {
+  public static function getAllowedTimezones()
+  {
     return \DateTimeZone::listIdentifiers();
   }
 
@@ -596,7 +631,8 @@ class User extends ContentEntityBase implements UserInterface {
    * @return string[]
    *   The allowed values.
    */
-  public static function getAllowedConfigurableLanguageCodes() {
+  public static function getAllowedConfigurableLanguageCodes()
+  {
     return array_keys(\Drupal::languageManager()->getLanguages(LanguageInterface::STATE_CONFIGURABLE));
   }
 

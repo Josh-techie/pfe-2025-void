@@ -1,0 +1,7 @@
+name: "offer"
+type: module
+description: "Offer module just testing stuff"
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:views
