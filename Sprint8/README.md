@@ -3,6 +3,8 @@
 Talking a litte bit about profiles and we'll be using the VOID Factory as a profil and set it up.
 `Note: This is a P0 level module so it may take some time to setup plus some errrs were intentianally introducted to this so we can build our knowldge`
 
+`Note`: You won't have access to this repo as it may have somme private info, so I kept only a pointer to it, if you can find the content of the repo without be given pemission be my guest, hack all you want and share with me your findings!
+
 ## Author
 
 - [`@Josh-techie`](https://github.com/Josh-techie)| Software Engineer Student
