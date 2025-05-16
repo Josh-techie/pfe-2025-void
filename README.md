@@ -21,7 +21,11 @@ A chronological order of the different sprints and what they cover in order to b
 - [Sprint 2](./Sprint-2/) : Creation of a responsive web page Key Skills: HTML/CSS/JS/TAILWIND
 - [Sprint 3](./Sprint3/) : Working with PHP basics to OOP, PDO, create my own framework then using frameworks such as Laravel to create my own API... + Can You See Me Challenge
 - [Sprint 4](./Sprint4/) : Working with Drupal getting started to Setup your first website with Drupal, Basic Configuration, Drush, Multilingual Support, Media Management, Privacy Compliance, Login Enhancements, Developer Tools, SEO Basics, Email Setup.
-- [Sprint 5]() : Working on  Creating my first module
+- [Sprint 5](./Sprint5/) : Working on Creating my first module (templating with twig, contollers...)
+- [Sprint 6](./Sprint6/) : Hooks, Configuration Management, Caching, Data Migration...
+- [Sprint 7](./Sprint7/) : We create a function full fledged module that does some complex stuff:Appointment Booking System, book appointement, check the availability, sending emails, confirmations...
+- [Sprint 8](./Sprint8/) : We will try to use Factory and fix the issues we might encounter installing the profil factory 9 in a monolith repo (You might not have access to all the version as this is proprietry code)
+- [Sprint 9](./Sprint9/) :
 
 ---
 
