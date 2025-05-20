@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\ckeditor5\Plugin\Validation\Constraint;
 
@@ -20,7 +20,8 @@ use Symfony\Component\Validator\Exception\UnexpectedTypeException;
  *
  * @internal
  */
-class StyleSensibleElementConstraintValidator extends ConstraintValidator implements ContainerInjectionInterface {
+class StyleSensibleElementConstraintValidator extends ConstraintValidator implements ContainerInjectionInterface
+{
 
   use PrecedingConstraintAwareValidatorTrait;
   use PluginManagerDependentValidatorTrait;
@@ -67,7 +68,8 @@ class StyleSensibleElementConstraintValidator extends ConstraintValidator implem
    * @throws \Symfony\Component\Validator\Exception\UnexpectedTypeException
    *   Thrown when the given constraint is not supported by this validator.
    */
-  public function validate($element, Constraint $constraint) {
+  public function validate($element, Constraint $constraint)
+  {
     if (!$constraint instanceof StyleSensibleElementConstraint) {
       throw new UnexpectedTypeException($constraint, StyleSensibleElementConstraint::class);
     }
@@ -141,7 +143,8 @@ class StyleSensibleElementConstraintValidator extends ConstraintValidator implem
    * @return bool
    *   Whether there is an intersection.
    */
-  private static function intersectionWithClasses(HTMLRestrictions $a, HTMLRestrictions $b): bool {
+  private static function intersectionWithClasses(HTMLRestrictions $a, HTMLRestrictions $b): bool
+  {
     // Compute the intersection, but first resolve wildcards, by merging
     // tags of the other operand. Because only tags are merged, this cannot
     // introduce a 'class' attribute intersection.
@@ -191,7 +194,8 @@ class StyleSensibleElementConstraintValidator extends ConstraintValidator implem
    * @throws \OutOfBoundsException
    *   When a $needle is provided which does not exist among the other plugins.
    */
-  private function findStyleConflictingPluginLabel(HTMLRestrictions $needle): TranslatableMarkup {
+  private function findStyleConflictingPluginLabel(HTMLRestrictions $needle): TranslatableMarkup
+  {
     foreach ($this->pluginManager->getDefinitions() as $id => $definition) {
       // We're looking to find the other plugin, not this one.
       if ($id === 'ckeditor5_style') {
