@@ -2,8 +2,8 @@
 
 This sprint is all about understanding how to use Drupal as a backend for a Next.js frontend, giving you the power to create dynamic and performant web applications. It's like learning to cook with a modern kitchen – using the best tools to create amazing dishes.
 
-In the first part of the project we created a simple Drupale 10 project.
-Then we switched to create a new Next.js & Drupal project following the [docs](https://next-drupal.org/)
+- In the first part of the project we created a simple Drupale 10 project.
+Then we added a front-end component using Next.js with our already existing project Drupal following the [docs](https://next-drupal.org/) and fixing errors on high caffeine along the way.
 
 ---
 
