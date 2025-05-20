@@ -1,6 +1,14 @@
 ## Sprint 9: Vactory - Decoupled
 
-This is the sprint 9 covering the second part of vactory: Vactory - Decoupled
+This sprint is all about understanding how to use Drupal as a backend for a Next.js frontend, giving you the power to create dynamic and performant web applications. It's like learning to cook with a modern kitchen – using the best tools to create amazing dishes.
+
+---
+
+## RESOURCES:
+
+`Coming Soon`
+
+---
 
 ## Author
 

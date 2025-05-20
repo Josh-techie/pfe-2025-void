@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for custom_field module.
+ */
+ 
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function custom_field_entity_base_field_info(EntityTypeInterface $entity_type)
+{
+  $fields = [];
+
+  if ($entity_type->id() === 'node') {
+    $fields['project_details'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Project Details'))
+      ->setDescription(t('Specify a description for this project that will be added to the Article content type.'))
+      ->setSettings([
+        'max_length' => 255,
+        'text_processing' => 0,
+      ])
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -5,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -5,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+  }
+
+  return $fields;
+}
+
+/**
+ * Install the project_details base field.
+ */
+function custom_field_update_8001()
+{
+  $entity_update_manager = \Drupal::entityDefinitionUpdateManager();
+
+  $entity_type_id = 'node';
+  $field_name = 'project_details';
+
+  $field_definition = BaseFieldDefinition::create('string')
+    ->setLabel(t('Project Details'))
+    ->setDescription(t('A description for this project.'))
+    ->setSettings([
+      'max_length' => 255,
+      'text_processing' => 0,
+      'default_value' => '',
+    ])
+    ->setDisplayOptions('view', [
+      'label' => 'above',
+      'type' => 'string',
+      'weight' => -4,
+    ])
+    ->setDisplayOptions('form', [
+      'type' => 'string_textfield',
+      'weight' => -4,
+    ])
+    ->setDisplayConfigurable('form', TRUE)
+    ->setDisplayConfigurable('view', TRUE);
+
+  $entity_update_manager->installFieldStorageDefinition(
+    $field_name,
+    $entity_type_id,
+    'node', // The module that owns the field.
+    $field_definition
+  );
+}
