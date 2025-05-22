@@ -1,0 +1,18 @@
+uuid: 2082d66a-ed94-4d45-a4b9-4cf8a1da7699
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_typologie
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: yPLuDK7MUlXotvbuu1PjiY-7ejG6B5pIm2pas33wLO4
+id: taxonomy_term.vactory_typologie
+target_entity_type_id: taxonomy_term
+target_bundle: vactory_typologie
+default_langcode: site_default
+language_alterable: false

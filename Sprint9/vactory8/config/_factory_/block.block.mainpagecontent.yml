@@ -1,0 +1,20 @@
+uuid: 01b4ba72-b466-4401-a6e3-9fa411b65d0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vactory
+id: mainpagecontent
+theme: vactory
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

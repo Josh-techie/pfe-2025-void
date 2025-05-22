@@ -1,0 +1,22 @@
+uuid: 2291254f-4767-4b5d-89ff-d7b911f79186
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: In5wKjDtnzQqNh726FQOzGk-b7d8LrDV70xmV99eIwU
+id: taxonomy_term.field_nombre_en_jours
+field_name: field_nombre_en_jours
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: e47fef84-05e6-4be0-914f-88a543f1ce5f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_header
+  theme:
+    - vactory
+id: vactoryheaderblockv6
+theme: vactory
+region: header
+weight: -6
+provider: null
+plugin: vactory_header_block6
+settings:
+  id: vactory_header_block6
+  label: 'Vactory Header Block V6'
+  label_display: '0'
+  provider: vactory_header
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /header-6

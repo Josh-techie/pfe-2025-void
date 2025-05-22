@@ -1,0 +1,22 @@
+uuid: 60e727a1-1ddd-4630-ac79-bbaa705ee684
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: m_1lfHY4v7pj6R1TVKu5t8IeVHNkjKWrlkxyrsCrJRA
+id: node.field_medium_year
+field_name: field_medium_year
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

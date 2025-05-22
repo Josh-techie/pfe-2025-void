@@ -1,0 +1,25 @@
+uuid: a2848eb3-fe93-4720-89fc-89be826ac356
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_testimonials_profils
+  module:
+    - text
+_core:
+  default_config_hash: menutRA36RLJDA4R9CZchO9SAMUSs11sL47YfZbqtwk
+id: taxonomy_term.vactory_testimonials_profils.default
+targetEntityType: taxonomy_term
+bundle: vactory_testimonials_profils
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

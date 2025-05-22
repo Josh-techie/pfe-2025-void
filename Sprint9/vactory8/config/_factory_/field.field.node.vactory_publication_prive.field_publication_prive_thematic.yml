@@ -1,0 +1,34 @@
+uuid: bc2e4854-14bf-4a94-9e8b-f987b53ef854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_prive_thematic
+    - node.type.vactory_publication_prive
+    - taxonomy.vocabulary.publication_prive_thematic
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: Unl1duGZMJTP6yo0sNoglUMPG-V65oYODVwx49uB5hM
+id: node.vactory_publication_prive.field_publication_prive_thematic
+field_name: field_publication_prive_thematic
+entity_type: node
+bundle: vactory_publication_prive
+label: Thématique
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      publication_prive_thematic: publication_prive_thematic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

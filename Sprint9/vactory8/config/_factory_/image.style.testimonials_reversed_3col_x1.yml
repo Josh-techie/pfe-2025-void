@@ -1,0 +1,19 @@
+uuid: a789cc02-0edf-45f1-80eb-536340299178
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: yArk7uCfbbBYMK7mPTijCocs42MT3vDeQ3DRUOn4HEU
+name: testimonials_reversed_3col_x1
+label: 'Testimonials Three Cols @x1 (50x50)'
+effects:
+  6766ce10-3e7f-4d6d-9c5c-526930a109fd:
+    uuid: 6766ce10-3e7f-4d6d-9c5c-526930a109fd
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      crop_type: focal_point

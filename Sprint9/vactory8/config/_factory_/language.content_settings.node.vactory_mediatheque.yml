@@ -1,0 +1,13 @@
+uuid: f928a467-7fe4-427e-805e-bff92b514d92
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.vactory_mediatheque
+_core:
+  default_config_hash: uLeJhnS3rYzgCsHbQ0AwWAQ7R8pQmBHdUMG8qgyIEow
+id: node.vactory_mediatheque
+target_entity_type_id: node
+target_bundle: vactory_mediatheque
+default_langcode: site_default
+language_alterable: false

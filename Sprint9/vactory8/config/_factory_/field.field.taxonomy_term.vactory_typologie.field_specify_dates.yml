@@ -1,0 +1,25 @@
+uuid: 4836f3ed-863d-45d2-83a7-8f2a67db8328
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_specify_dates
+    - taxonomy.vocabulary.vactory_typologie
+_core:
+  default_config_hash: eOTPm4lQkOwP0WpU2WNq41lNHLRY98YSLDMvUVQhbsk
+id: taxonomy_term.vactory_typologie.field_specify_dates
+field_name: field_specify_dates
+entity_type: taxonomy_term
+bundle: vactory_typologie
+label: 'Specify dates'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

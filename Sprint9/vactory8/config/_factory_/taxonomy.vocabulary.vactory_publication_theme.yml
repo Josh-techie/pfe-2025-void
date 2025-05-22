@@ -1,0 +1,10 @@
+uuid: 0102a8e3-86cd-4194-8bc1-c0ab83c1bb9b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U29Tch3UxjIk4pycDo8SpViM4knRayexcMQF9jrCyDs
+name: 'Publication - Theme'
+vid: vactory_publication_theme
+description: 'Publication vocabulary.'
+weight: 0

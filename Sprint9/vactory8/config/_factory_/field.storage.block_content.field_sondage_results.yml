@@ -1,0 +1,24 @@
+uuid: 2177af3c-ee49-4884-9edd-cc16e5961ebd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - vactory_sondage
+_core:
+  default_config_hash: jJ3nEZuLr8ypncesuq9nvPO0yVilJhvXPdDe1BLe2oo
+id: block_content.field_sondage_results
+field_name: field_sondage_results
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

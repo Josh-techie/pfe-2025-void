@@ -1,0 +1,35 @@
+uuid: e51fac8f-9367-4c2e-9083-e305d47e17f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.affichage_de_l_annonce.field_nombre_en_jours
+    - taxonomy.vocabulary.affichage_de_l_annonce
+  module:
+    - text
+_core:
+  default_config_hash: bmDbUdq0JxefKR_sAK0GuXhsLlMlzdzvzsWD1OqbOr8
+id: taxonomy_term.affichage_de_l_annonce.default
+targetEntityType: taxonomy_term
+bundle: affichage_de_l_annonce
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_nombre_en_jours:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

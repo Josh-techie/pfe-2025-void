@@ -1,0 +1,35 @@
+uuid: ec65d2d1-a221-4f00-ad0b-cfc2a6700600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_groups
+    - taxonomy.vocabulary.users_groups
+  module:
+    - user
+  enforced:
+    module:
+      - vactory_espace_prive
+_core:
+  default_config_hash: nyoO0I06-zu072yhP-q8GXq6Sh3fHl7m11weg8owL3o
+id: user.user.field_user_groups
+field_name: field_user_groups
+entity_type: user
+bundle: user
+label: Groupes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      users_groups: users_groups
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

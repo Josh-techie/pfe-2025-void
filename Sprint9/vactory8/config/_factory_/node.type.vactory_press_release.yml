@@ -1,0 +1,13 @@
+uuid: 13aa87c7-923f-4fdf-9f0c-3136abbb1645
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XZEjz1Or_xPRsGzb4Hbr5CxepHCqP-U05RqWjNrLXPk
+name: 'Press Release'
+type: vactory_press_release
+description: 'Manage your Press Release content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

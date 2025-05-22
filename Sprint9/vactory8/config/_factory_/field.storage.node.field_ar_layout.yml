@@ -1,0 +1,38 @@
+uuid: 92c51057-396c-491e-97ea-a0f345eb5e76
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: VTus-bKeCUmzQliklJBFHtIub1U7YuXnWhk3qG76BUE
+id: node.field_ar_layout
+field_name: field_ar_layout
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background
+      label: Background
+    -
+      value: background_with_content
+      label: 'Background with content'
+    -
+      value: key_number
+      label: 'Chiffre clè'
+    -
+      value: key_number_with_text
+      label: 'Chiffre clè with text'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

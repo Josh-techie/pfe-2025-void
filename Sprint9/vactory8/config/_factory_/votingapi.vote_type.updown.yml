@@ -1,0 +1,13 @@
+uuid: 991a2d09-918c-4a79-8a58-acf05d3d871b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - rate
+_core:
+  default_config_hash: YCafWpaSo_DLzKJECij33bX0L2VrhGBOphvWfpPc3WQ
+id: updown
+label: Up/Down
+value_type: points
+description: 'A simple up or down vote.'

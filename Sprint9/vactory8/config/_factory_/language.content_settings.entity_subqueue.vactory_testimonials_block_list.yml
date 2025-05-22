@@ -1,0 +1,13 @@
+uuid: df065fcb-9f7e-4d1f-8fce-232939bbf4e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_testimonials_block_list
+_core:
+  default_config_hash: CPNt8W3MmD-JFrj6hMXXgEosR3TKNjHMWpM8nQdDZA4
+id: entity_subqueue.vactory_testimonials_block_list
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_testimonials_block_list
+default_langcode: current_interface
+language_alterable: false

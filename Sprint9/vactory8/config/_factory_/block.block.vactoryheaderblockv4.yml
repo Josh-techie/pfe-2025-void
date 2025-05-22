@@ -1,0 +1,26 @@
+uuid: 99523b5a-7dee-406f-82b3-0d5fe8a91ab7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_header
+  theme:
+    - vactory
+id: vactoryheaderblockv4
+theme: vactory
+region: header
+weight: -8
+provider: null
+plugin: vactory_header_block4
+settings:
+  id: vactory_header_block4
+  label: 'Vactory Header Block V4'
+  label_display: '0'
+  provider: vactory_header
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /header-4

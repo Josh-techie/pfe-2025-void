@@ -1,0 +1,63 @@
+diff --git a/src/Provider/Microsoft.php b/src/Provider/Microsoft.php
+index dc7acd9..2d66d7f 100644
+--- a/src/Provider/Microsoft.php
++++ b/src/Provider/Microsoft.php
+@@ -109,4 +109,9 @@ class Microsoft extends AbstractProvider
+ 
+         return (string) Uri::withQueryValue($uri, 'access_token', (string) $token);
+     }
++
++  protected function getAuthorizationHeaders($token = null)
++  {
++    return ['Authorization' => 'Bearer ' . $token];
++  }
+ }
+diff --git a/src/Provider/MicrosoftResourceOwner.php b/src/Provider/MicrosoftResourceOwner.php
+index 5d3ee94..e932de8 100644
+--- a/src/Provider/MicrosoftResourceOwner.php
++++ b/src/Provider/MicrosoftResourceOwner.php
+@@ -28,7 +28,7 @@ class MicrosoftResourceOwner implements ResourceOwnerInterface
+      */
+     public function getId()
+     {
+-        return $this->response['id'] ?: null;
++      return $this->response['sub'] ?: null;
+     }
+ 
+     /**
+@@ -38,7 +38,7 @@ class MicrosoftResourceOwner implements ResourceOwnerInterface
+      */
+     public function getEmail()
+     {
+-        return $this->response['emails']['preferred'] ?: null;
++      return $this->response['email'] ?: null;
+     }
+ 
+     /**
+@@ -48,7 +48,7 @@ class MicrosoftResourceOwner implements ResourceOwnerInterface
+      */
+     public function getFirstname()
+     {
+-        return $this->response['first_name'] ?: null;
++      return $this->response['name'] ?: null;
+     }
+ 
+     /**
+@@ -58,7 +58,7 @@ class MicrosoftResourceOwner implements ResourceOwnerInterface
+      */
+     public function getLastname()
+     {
+-        return $this->response['last_name'] ?: null;
++      return null;
+     }
+ 
+     /**
+@@ -68,7 +68,7 @@ class MicrosoftResourceOwner implements ResourceOwnerInterface
+      */
+     public function getName()
+     {
+-        return $this->response['name'] ?: null;
++      return $this->response['given_name'] ?: null;
+     }
+ 
+     /**

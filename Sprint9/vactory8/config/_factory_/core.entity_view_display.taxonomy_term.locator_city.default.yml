@@ -1,0 +1,32 @@
+uuid: 2b7e27de-d638-4ece-89c9-725008f44bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.locator_city.field_locator_country
+    - taxonomy.vocabulary.locator_city
+  module:
+    - text
+id: taxonomy_term.locator_city.default
+targetEntityType: taxonomy_term
+bundle: locator_city
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_locator_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

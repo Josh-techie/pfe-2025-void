@@ -1,0 +1,10 @@
+uuid: a0909be9-b828-47e9-a836-594eccf1ec34
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mFoRVX9oJfx0JqHpIRud7_FC7covF901cqXOI1VEfvs
+id: vactory_block_component
+label: Template
+revision: 1
+description: 'Template block type'

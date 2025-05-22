@@ -1,0 +1,20 @@
+uuid: 822e5cd2-e32b-43c0-b0f8-f1da005c9054
+langcode: en
+status: true
+dependencies:
+  module:
+    - vactory_search_overlay
+  theme:
+    - amptheme
+id: amptheme_vactorysearchoverlayv2
+theme: amptheme
+region: header
+weight: 0
+provider: null
+plugin: vactory_search_overlay_block2
+settings:
+  id: vactory_search_overlay_block2
+  label: 'Vactory Search Overlay V2'
+  label_display: '0'
+  provider: vactory_search_overlay
+visibility: {  }

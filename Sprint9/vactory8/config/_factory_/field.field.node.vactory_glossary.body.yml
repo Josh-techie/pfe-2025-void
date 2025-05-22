@@ -1,0 +1,25 @@
+uuid: 70876c9a-b08d-4df7-a161-df8900a2f080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_glossary
+  module:
+    - text
+_core:
+  default_config_hash: rxUr49ZBvdX0ACF5woUfWhLgUqDIZo1niCJDd0bly98
+id: node.vactory_glossary.body
+field_name: body
+entity_type: node
+bundle: vactory_glossary
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

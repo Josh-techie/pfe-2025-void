@@ -1,0 +1,13 @@
+uuid: 62e6a231-57bf-44c9-b307-58a1e0c9748b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_toolbox
+_core:
+  default_config_hash: 1ax0JYdeDs92XZOscE3HhXoKd3NLmlvyZnjnuB9tb7s
+id: vactory_toolbox
+label: Toolbox
+revision: 1
+description: 'Utiliser ce type de bloc pour pour créer des toolbox.'

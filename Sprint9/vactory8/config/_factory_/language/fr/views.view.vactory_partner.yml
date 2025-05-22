@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          separator: ', '
+      empty:
+        area_text_custom:
+          content: 'Aucun résultat n''a été trouvé !'
+  partner_block_list:
+    display_options:
+      block_description: Lister
+  partner_block_slider:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          bef:
+            general:
+              secondary_label: 'Advanced options'

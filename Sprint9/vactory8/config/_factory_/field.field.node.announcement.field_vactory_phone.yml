@@ -1,0 +1,21 @@
+uuid: 0a2e410b-8745-4763-975c-2db22f137bf0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_phone
+    - node.type.announcement
+_core:
+  default_config_hash: 6tfAt2H4dnoF-3hUEI6jrW3evgcbMtj5LcDnfAJqJC0
+id: node.announcement.field_vactory_phone
+field_name: field_vactory_phone
+entity_type: node
+bundle: announcement
+label: Mobile
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: ebd6bba1-c703-4d01-b8fc-3d1c14626fb6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.announcement
+_core:
+  default_config_hash: NWgFP_Dp_AORSJnIJttDyYEqZdXXL3gF4J4d9O2FvFg
+id: node.announcement.field_country
+field_name: field_country
+entity_type: node
+bundle: announcement
+label: Pays
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

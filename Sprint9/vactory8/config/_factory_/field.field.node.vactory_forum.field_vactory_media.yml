@@ -1,0 +1,33 @@
+uuid: d98a334f-98c6-4126-969c-50a27c354d38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_media
+    - media.type.image
+    - node.type.vactory_forum
+  enforced:
+    module:
+      - vactory_forums
+_core:
+  default_config_hash: 4zJqGrAvsWRr4ZDs1fjQZXhMt43pD1Ii0YrqlQCOMUM
+id: node.vactory_forum.field_vactory_media
+field_name: field_vactory_media
+entity_type: node
+bundle: vactory_forum
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

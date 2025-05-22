@@ -1,0 +1,23 @@
+uuid: 19e7e3d8-b8eb-4525-92e3-351d9abf5fdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_vactory_document_multiple
+field_name: field_vactory_document_multiple
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

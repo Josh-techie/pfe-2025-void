@@ -1,0 +1,24 @@
+uuid: 34970466-1902-4e78-be68-907fb710ee77
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_feedback
+    - comment
+    - eu_cookie_compliance
+    - file_entity
+    - media
+    - system
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access user profiles'
+  - 'display eu cookie compliance popup'
+  - 'give feedback'
+  - 'post comments'
+  - 'view files'
+  - 'view media'

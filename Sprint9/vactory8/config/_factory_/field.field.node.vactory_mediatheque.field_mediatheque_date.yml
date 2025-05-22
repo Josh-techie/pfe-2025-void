@@ -1,0 +1,23 @@
+uuid: fdef6486-952c-4c87-8a36-66b0a8cf5e4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mediatheque_date
+    - node.type.vactory_mediatheque
+  module:
+    - datetime
+_core:
+  default_config_hash: lhljH8QlMJQ24WUd0fXJ9oi4jcEr0OATUdt7As33_ow
+id: node.vactory_mediatheque.field_mediatheque_date
+field_name: field_mediatheque_date
+entity_type: node
+bundle: vactory_mediatheque
+label: Date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

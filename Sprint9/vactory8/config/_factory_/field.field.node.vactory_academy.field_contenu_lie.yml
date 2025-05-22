@@ -1,0 +1,21 @@
+uuid: 1207d82b-bb6f-4938-a1a6-ae574d4af6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu_lie
+    - node.type.vactory_academy
+  module:
+    - vactory_cross_content
+id: node.vactory_academy.field_contenu_lie
+field_name: field_contenu_lie
+entity_type: node
+bundle: vactory_academy
+label: 'Contenu lié'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_cross_content

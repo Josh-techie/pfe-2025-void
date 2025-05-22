@@ -1,0 +1,21 @@
+uuid: 29759b55-4679-48cb-b709-6bafb37cfc1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publication_prive_thematic
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_publication_prive
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: 6x0Lir_DRzlA9rhv4HBKm3MN2oTsahF-f-S9fYV_efU
+id: taxonomy_term.publication_prive_thematic
+target_entity_type_id: taxonomy_term
+target_bundle: publication_prive_thematic
+default_langcode: site_default
+language_alterable: true

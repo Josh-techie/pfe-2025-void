@@ -1,0 +1,13 @@
+uuid: ec563916-765b-4984-9180-897ebd6fc287
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_testimonials_reversed
+_core:
+  default_config_hash: _DkevvvuUcyd-ttdQlXX80upMUayucnwyRk_yVMJnEQ
+id: entity_subqueue.vactory_testimonials_reversed
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_testimonials_reversed
+default_langcode: current_interface
+language_alterable: false

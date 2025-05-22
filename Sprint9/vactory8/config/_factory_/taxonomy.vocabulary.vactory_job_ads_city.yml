@@ -1,0 +1,10 @@
+uuid: 488d5c87-c351-410e-9baf-2c0d60387cf0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9sTc_aFP55HQ5Xo379e6vScL2rXXmm0q-3PyH7Ho6TI
+name: 'Job Ads - City'
+vid: vactory_job_ads_city
+description: 'Taxonomy for Vactory job Ads City'
+weight: 0

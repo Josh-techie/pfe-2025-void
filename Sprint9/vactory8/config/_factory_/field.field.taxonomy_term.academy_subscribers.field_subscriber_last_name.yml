@@ -1,0 +1,24 @@
+uuid: f124d414-6f64-4b60-80ef-46ef7f2b95f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_subscriber_last_name
+    - taxonomy.vocabulary.academy_subscribers
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: wsAjenjyshN_b0DFBPe0Y5jB-pFK2pvb-UgyMeuUMSE
+id: taxonomy_term.academy_subscribers.field_subscriber_last_name
+field_name: field_subscriber_last_name
+entity_type: taxonomy_term
+bundle: academy_subscribers
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

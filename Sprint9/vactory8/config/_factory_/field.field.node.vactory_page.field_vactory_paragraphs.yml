@@ -1,0 +1,49 @@
+uuid: 4b9aa8be-d41e-4cb6-b245-e6d6c9052fdf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_paragraphs
+    - node.type.vactory_page
+    - paragraphs.paragraphs_type.vactory_component
+    - paragraphs.paragraphs_type.vactory_paragraph_block
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+    - paragraphs.paragraphs_type.views_reference
+  module:
+    - entity_reference_revisions
+id: node.vactory_page.field_vactory_paragraphs
+field_name: field_vactory_paragraphs
+entity_type: node
+bundle: vactory_page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      vactory_component: vactory_component
+      vactory_paragraph_block: vactory_paragraph_block
+      vactory_paragraph_multi_template: vactory_paragraph_multi_template
+      views_reference: views_reference
+    negate: 0
+    target_bundles_drag_drop:
+      vactory_component:
+        weight: 6
+        enabled: true
+      vactory_paragraph_block:
+        weight: 8
+        enabled: true
+      vactory_paragraph_multi_template:
+        weight: 8
+        enabled: true
+      vactory_paragraph_tab:
+        weight: 9
+        enabled: false
+      views_reference:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

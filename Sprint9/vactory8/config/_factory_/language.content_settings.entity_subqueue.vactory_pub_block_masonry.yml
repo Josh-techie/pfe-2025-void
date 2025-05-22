@@ -1,0 +1,13 @@
+uuid: 9c69e3de-8253-48f0-9964-b5f803c2f85e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_pub_block_masonry
+_core:
+  default_config_hash: WPrpKyJbKVi4BFD9XdQUtDQFD9c05kYZdAXcY8JvUoM
+id: entity_subqueue.vactory_pub_block_masonry
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_pub_block_masonry
+default_langcode: site_default
+language_alterable: false

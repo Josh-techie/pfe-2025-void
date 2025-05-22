@@ -1,0 +1,53 @@
+uuid: 83c162bd-8d6d-4a05-a2cf-2767d1d63991
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.locator_category.field_locator_map_marker
+    - field.field.taxonomy_term.locator_category.field_locator_marker_height
+    - field.field.taxonomy_term.locator_category.field_locator_marker_width
+    - taxonomy.vocabulary.locator_category
+  module:
+    - text
+id: taxonomy_term.locator_category.default
+targetEntityType: taxonomy_term
+bundle: locator_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_locator_map_marker:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_locator_marker_height:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_locator_marker_width:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

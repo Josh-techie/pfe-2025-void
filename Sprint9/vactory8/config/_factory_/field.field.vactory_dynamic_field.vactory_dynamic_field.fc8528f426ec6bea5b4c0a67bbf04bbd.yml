@@ -1,0 +1,25 @@
+uuid: 619cd101-246d-48e9-ba73-02be9fcb0e2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vactory_dynamic_field.fc8528f426ec6bea5b4c0a67bbf04bbd
+    - media.type.image
+  module:
+    - vactory_dynamic_field
+id: vactory_dynamic_field.vactory_dynamic_field.fc8528f426ec6bea5b4c0a67bbf04bbd
+field_name: fc8528f426ec6bea5b4c0a67bbf04bbd
+entity_type: vactory_dynamic_field
+bundle: vactory_dynamic_field
+label: 'Mobile Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

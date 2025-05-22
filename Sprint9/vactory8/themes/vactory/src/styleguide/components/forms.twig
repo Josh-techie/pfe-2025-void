@@ -1,0 +1,130 @@
+<div class="sg-bloc">
+  <h2 class="sg-bloc__title">Contact Form</h2>
+
+  <div class="container">
+    <form class="webform-submission-form webform-details-toggle"  id="webform-submission-contact-add-form"  novalidate="novalidate">
+
+      <div class="form-item form-group form-type-select form-item-vous-etes title-before">
+
+      <label for="edit-vous-etes" class="form-required">Vous êtes<span class="form-required">*</span></label>
+
+      <select id="edit-vous-etes" name="vous_etes" class="form-select required form-control" required="required" aria-required="true">
+        <option value="" selected="selected">Sélectionner</option>
+        <option value="particuliers">Particuliers</option>
+        <option value="professionnel">Professionnel</option>
+        <option value="grande entreprise">Grande Entreprise</option>
+        <option value="Institution">institution</option>
+        <option value="PME">PME</option>
+        <option value="société de gestion">Société de gestion</option>
+      </select>
+      </div>
+
+      <div class="form-item form-group form-type-textfield form-item-name title-before">
+
+      <label for="edit-name" class="form-required">Nom<span class="form-required">*</span></label>
+
+      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="required form-type-textfield form-control" required="required">
+
+        </div>
+      <div class="js-form-type-textfield js-form-item-prenom form-item form-group form-type-textfield form-item-prenom title-before">
+
+      <label for="edit-prenom" class="js-form-required form-required">
+          Prénom<span class="form-required">*</span></label>
+
+      <input data-drupal-selector="edit-prenom" type="text" id="edit-prenom" name="prenom" value="" size="60" maxlength="255" class="required form-type-textfield form-control" required="required" aria-required="true">
+
+        </div>
+
+      <div class="form-item form-group form-type-tel form-item-telephone title-before">
+
+      <label for="edit-telephone" class="js-form-required form-required">
+          Téléphone<span class="form-required">*</span></label>
+
+      <input data-drupal-selector="edit-telephone" type="tel" id="edit-telephone" name="telephone" value="" size="30" maxlength="128" class="form-tel required form-type-tel form-control" required="required" aria-required="true">
+
+        </div>
+
+      <div class="js-form-type-email js-form-item-email form-item form-group form-type-email form-item-email title-before">
+
+      <label for="edit-email" class="js-form-required form-required">
+          E-mail<span class="form-required">*</span></label>
+
+      <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" class="form-email required form-type-email form-control" required="required" aria-required="true">
+
+        </div>
+
+      <div class="js-form-type-textfield js-form-item-subject form-item form-group form-type-textfield form-item-subject title-before">
+
+      <label for="edit-subject" class="js-form-required form-required">
+          Objet<span class="form-required">*</span></label>
+
+      <input data-drupal-selector="edit-subject" type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" class="required form-type-textfield form-control" required="required" aria-required="true">
+
+        </div>
+
+      <div class="js-form-type-textarea js-form-item-message form-item form-group form-type-textarea form-item-message title-before">
+
+      <label for="edit-message" class="js-form-required form-required">
+          Message<span class="form-required">*</span></label>
+
+      <div class="form-textarea-wrapper">
+        <textarea data-drupal-selector="edit-message" id="edit-message" name="message" rows="5" cols="60" class="form-textarea required form-control resize-vertical" required="required" aria-required="true"></textarea>
+      </div>
+
+        </div>
+
+      <div class="js-form-type-checkbox js-form-item-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota form-item form-group form-type-checkbox form-item-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota title-after checkbox form-check">
+
+      <input data-webform-required-error="Veuillez cocher la case de validation des conditions générales." data-drupal-selector="edit-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota" aria-describedby="edit-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota--description" type="checkbox" id="edit-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota" name="j_ai_lu_et_j_accepte_les_conditions_generales_d_utilisation_nota" value="1" class="form-checkbox required form-type-checkbox form-check-input" required="required" aria-required="true">
+
+      <label for="edit-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota" class="js-form-required form-required">
+          J'ai lu et j'accepte les conditions générales d'utilisation*, notamment la mention relative à la protection des données personnelles.<span class="form-required">*</span></label>
+
+            <p class="help-block">
+
+      </p><div id="edit-j-ai-lu-et-j-accepte-les-conditions-generales-d-utilisation-nota--description" class="webform-element-description">
+
+      <a href="/fr/mentions-legales" target="_blank">*Accéder aux conditions générales d'utilisation</a>
+
+      </div>
+
+
+          <p></p>
+        </div>
+
+          <div data-drupal-selector="edit-captcha" class="captcha">
+
+      <input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="62" class="form-type-hidden form-control">
+
+      <input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="p_wLJRNasbVHTY5bpnOzSKAL-ybckAktVoxz-yMB2Jg" class="form-type-hidden form-control">
+
+      <div class="js-form-type-textfield js-form-item-captcha-response form-item form-group form-type-textfield form-item-captcha-response title-before">
+
+      <label for="edit-captcha-response" class="js-form-required form-required">
+          Question mathématique<span class="form-required">*</span></label>
+
+            5 + 7 =
+
+      <input autocomplete="off" data-drupal-selector="edit-captcha-response" aria-describedby="edit-captcha-response--description" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" class="required form-type-textfield form-control" required="required" aria-required="true">
+
+            <p id="edit-captcha-response--description" class="help-block">
+            Trouvez la solution de ce problème mathématique simple et saisissez le résultat. Par exemple, pour 1 + 3, saisissez 4.
+          </p>
+        </div>
+
+      </div>
+
+      <div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions">
+
+      <input class="webform-button--submit button button--primary js-form-submit form-submit form-type-submit btn btn-primary" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Send message">
+
+
+      </div>
+
+      <input autocomplete="off" data-drupal-selector="form-5h6wbcwpegg41xbszxvfpc8b4thqa4oy1g44qeammyk" type="hidden" name="form_build_id" value="form-5H6wbcwPegg41XBSzxvFPC8b4ThQa4oY1g44qEAMmyk" class="form-type-hidden form-control">
+
+      <input data-drupal-selector="edit-webform-submission-contact-add-form" type="hidden" name="form_id" value="webform_submission_contact_add_form" class="form-type-hidden form-control">
+
+      </form>
+  </div>
+</div>

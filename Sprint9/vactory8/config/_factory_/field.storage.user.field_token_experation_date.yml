@@ -1,0 +1,20 @@
+uuid: d0d07f84-8def-4aff-8815-cbaa85813eae
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: bmNiKIsOIG1d4L5Ky24wuuQ3On1UWA1SNMyZzVRyyZk
+id: user.field_token_experation_date
+field_name: field_token_experation_date
+entity_type: user
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

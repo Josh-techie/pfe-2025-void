@@ -1,0 +1,51 @@
+# FROM composer:1.7.2 AS composer-1
+
+FROM vactory/php-fpm-nginx:8.1.16
+USER root
+
+RUN apk add openssl
+COPY --chown=nobody:nobody . /var/www/html
+RUN mkdir -p sites/default/files
+RUN mkdir -p sites/default/private
+RUN mkdir -p sites/default/files/translations
+
+RUN chown -R nobody:nobody /var/www/html
+
+RUN mkdir -p /var/www/ftp && \
+    chown -R nobody:nobody /var/www/ftp
+
+RUN mkdir -p /var/www/backup && \
+    chown -R nobody:nobody /var/www/backup
+
+RUN mkdir -p /var/www/oauth-keys && \
+    cp /var/www/html/oauth-keys/private.key /var/www/oauth-keys/private.key && \
+    cp /var/www/html/oauth-keys/public.key /var/www/oauth-keys/public.key && \
+    chown -R nobody:nobody /var/www/oauth-keys && \
+    chmod 600 /var/www/oauth-keys/private.key && \
+    chmod 600 /var/www/oauth-keys/public.key && \
+    rm -rf /var/www/html/oauth-keys
+
+# SETUP CRON FILE
+COPY ./.docker/crontab.conf /etc/crontabs/nobody
+RUN chown nobody:nobody /etc/crontabs/nobody && \
+    chmod 0644 /etc/crontabs/nobody
+
+COPY ./.docker/php/default-prod.ini /etc/php81/conf.d/custom.ini
+COPY ./.docker/nginx/default.conf /etc/nginx/nginx.conf
+COPY ./.docker/php/www.conf /etc/php81/php-fpm.d/www.conf
+COPY ./.docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Run composer install.
+RUN composer install --no-dev --no-interaction --optimize-autoloader
+
+# Apply necessary permissions after composer so it will be also applied on contrib modules files.
+RUN find "/var/www/html" -type d -exec chmod u=rx,g=rx,o=rx '{}' ';' && \
+    find "/var/www/html" -type f -exec chmod u=r,g=r,o=r '{}' ';' && \
+    find "/var/www/html/vendor/drush/drush/drush" -exec chmod u=rx,g=rx,o= '{}' ';' && \
+    find "/var/www/html/vendor/bin/drush" -exec chmod u=rx,g=rx,o= '{}' ';' && \
+    find "/var/www/html/sites/default/" -type d -exec chmod u=rwx,g=rwx,o=rx '{}' ';' && \
+    find "/var/www/html/sites/default" -exec chmod u=rwx,g=rx,o=rx '{}' ';' && \
+    find "/var/www/html/sites/default/settings.php" -exec chmod u=r,g=r,o= '{}' ';' && \
+    find "/var/www/html/sites/default/settings.docker.php" -exec chmod u=r,g=r,o= '{}' ';'
+
+USER nobody

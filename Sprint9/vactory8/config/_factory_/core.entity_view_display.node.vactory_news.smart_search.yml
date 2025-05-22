@@ -1,0 +1,82 @@
+uuid: 70dede3a-d6e5-4215-8e46-390c436d9b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.smart_search
+    - field.field.node.vactory_news.body
+    - field.field.node.vactory_news.comment
+    - field.field.node.vactory_news.field_contenu_lie
+    - field.field.node.vactory_news.field_vactory_date
+    - field.field.node.vactory_news.field_vactory_excerpt
+    - field.field.node.vactory_news.field_vactory_media
+    - field.field.node.vactory_news.field_vactory_meta_tags
+    - field.field.node.vactory_news.field_vactory_news_theme
+    - field.field.node.vactory_news.field_vactory_seo_status
+    - node.type.vactory_news
+  module:
+    - datetime
+    - user
+    - vactory_core
+    - vactory_field
+id: node.vactory_news.smart_search
+targetEntityType: node
+bundle: vactory_news
+mode: smart_search
+content:
+  field_vactory_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd | M | Y'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_excerpt:
+    type: vactory_field_excerpt_formatter
+    label: hidden
+    settings:
+      trim_length: '170'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vactory_media:
+    type: lazy_image
+    label: hidden
+    settings:
+      desktop_1x: vactory_two_cols_x1
+      desktop_2x: vactory_two_cols_x2
+      laptop_1x: vactory_two_cols_x1
+      laptop_2x: vactory_two_cols_x2
+      tablet_1x: vactory_two_cols_x1
+      tablet_2x: vactory_two_cols_x2
+      mobile_1x: vactory_two_cols_x1
+      mobile_2x: vactory_two_cols_x2
+      lqip: lqip
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  comment: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_contenu_lie: true
+  field_vactory_meta_tags: true
+  field_vactory_news_theme: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

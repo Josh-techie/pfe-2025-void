@@ -1,0 +1,14 @@
+uuid: 0066558f-50e8-4d03-805b-3d077d33ed18
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.vactory_academy_instructor
+  module:
+    - user
+id: user_add_role_action.vactory_academy_instructor
+label: 'Add the Instructor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: vactory_academy_instructor

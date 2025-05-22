@@ -1,0 +1,117 @@
+.social-media-links--platforms {
+  margin: 0;
+  .fa {
+    &:before {
+      content: $icon-picture;
+      font-family: "vactory";
+    }
+  }
+  .fa-facebook {
+    &:before {
+      content: $icon-facebook;
+    }
+  }
+  .fa-youtube {
+    &:before {
+      content: $icon-youtube;
+    }
+  }
+  .fa-linkedin {
+    &:before {
+      content: $icon-linkedin;
+    }
+  }
+  .fa-twitter {
+    &:before {
+      content: $icon-twitter;
+    }
+  }
+  .fa-instagram {
+    &:before {
+      content: $icon-instagram;
+    }
+  }
+  li span.fa {
+    font-size: 20px;
+    color: $gray-900;
+    transition: color 300ms ease-in;
+    &:hover {
+      color: $primary !important;
+    }
+
+    &.fa-youtube {
+      font-size: 15px;
+
+      &:before {
+        content: $icon-youtube;
+        font-family: 'vactory';
+      }
+    }
+
+    .vh-header-social-media & {
+      color: $white;
+      vertical-align: middle;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .social-media-links--platforms {
+    li span.fa {
+      &:hover {
+        color: $gray-900 !important;
+      }
+
+      .vh-header-social-media & {
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Sharing Block / addtoany                          */
+/* -------------------------------------------------------------------------- */
+.block-share {
+  padding: 13px 20px;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+  .addtoany_list > a {
+    font-size: 14px;
+    margin: 0 7px;
+    color: #444444;
+    text-decoration: none;
+
+    // > span {
+    //   display: none;
+    // }
+  }
+
+  &--sticky-top {
+    position: fixed;
+    top: 0;
+    border: 0;
+    padding: 10px 5px;
+
+    .addtoany_list {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 10px
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-share {
+    padding: 10px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

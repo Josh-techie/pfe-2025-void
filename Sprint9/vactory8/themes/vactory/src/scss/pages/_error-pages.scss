@@ -1,0 +1,27 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 40px 0 40px;
+  margin: auto;
+  text-align: center;
+
+  &--404 {
+    .error-page__image {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .error-page {
+    &--404 {
+      .error-page__image {
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

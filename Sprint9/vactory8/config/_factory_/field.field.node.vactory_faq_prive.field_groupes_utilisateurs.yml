@@ -1,0 +1,34 @@
+uuid: 82754595-6d2a-4e42-bbbf-269dc356741a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_groupes_utilisateurs
+    - node.type.vactory_faq_prive
+    - taxonomy.vocabulary.users_groups
+  enforced:
+    module:
+      - vactory_faq_prive
+_core:
+  default_config_hash: 7FSUrV1JFBi9ttdaZxSNx2Ix8E668NvmFsxsPVjJzdc
+id: node.vactory_faq_prive.field_groupes_utilisateurs
+field_name: field_groupes_utilisateurs
+entity_type: node
+bundle: vactory_faq_prive
+label: 'Groupes d''utilisateurs'
+description: 'Sélectionner les groupes d''utilisateurs concernés.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      users_groups: users_groups
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

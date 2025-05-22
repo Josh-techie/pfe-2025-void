@@ -1,0 +1,24 @@
+uuid: 669cca0e-d4c9-45ca-8311-ba2a005434cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: m9Ogq10gQgw0H0bEwPA0ae0bChkiVFAaqDtbc3BBm84
+id: pathauto_content_blogs_pattern
+label: 'Pathauto Content Blogs Pattern'
+type: 'canonical_entities:node'
+pattern: '/blogs/[node:title]'
+selection_criteria:
+  04fa2344-4990-4a71-9c54-2cc16523b9cd:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 04fa2344-4990-4a71-9c54-2cc16523b9cd
+    context_mapping:
+      node: node
+    bundles:
+      vactory_blog: vactory_blog
+selection_logic: and
+weight: -8
+relationships: {  }

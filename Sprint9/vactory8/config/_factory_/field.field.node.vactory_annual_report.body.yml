@@ -1,0 +1,28 @@
+uuid: aa631001-dae9-42c2-8a48-47a9770c8dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_annual_report
+  module:
+    - text
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: En7Hm_-Jhc54UGuDzWqQ3w5L3X36G_pY6Dd892JQHCM
+id: node.vactory_annual_report.body
+field_name: body
+entity_type: node
+bundle: vactory_annual_report
+label: 'Contenu Wysiwyg Bloc'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

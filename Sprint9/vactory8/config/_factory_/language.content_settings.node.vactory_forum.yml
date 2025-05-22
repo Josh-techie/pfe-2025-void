@@ -1,0 +1,21 @@
+uuid: 280196f9-b4dd-48c6-89ef-872c7d22442f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vactory_forum
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_forums
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: 2-XU3GRmrHoW2e2C-vHPTtImcKRRwTEHRTmobzpVfQs
+id: node.vactory_forum
+target_entity_type_id: node
+target_bundle: vactory_forum
+default_langcode: site_default
+language_alterable: true

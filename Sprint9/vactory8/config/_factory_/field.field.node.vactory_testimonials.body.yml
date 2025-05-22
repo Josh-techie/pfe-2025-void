@@ -1,0 +1,25 @@
+uuid: 804ffaa2-1139-4c0c-9cd7-317c107c9df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_testimonials
+  module:
+    - text
+_core:
+  default_config_hash: imqvs17TjokXMF0lgUx7NePzd7bGaCNnh7jKdi-HSEw
+id: node.vactory_testimonials.body
+field_name: body
+entity_type: node
+bundle: vactory_testimonials
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,61 @@
+uuid: 0715efb8-6fa1-4cc9-a7d4-569bee241326
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.smart_search
+    - field.field.node.vactory_job_ads.body
+    - field.field.node.vactory_job_ads.field_vactory_address
+    - field.field.node.vactory_job_ads.field_vactory_city
+    - field.field.node.vactory_job_ads.field_vactory_contract
+    - field.field.node.vactory_job_ads.field_vactory_description
+    - field.field.node.vactory_job_ads.field_vactory_email
+    - field.field.node.vactory_job_ads.field_vactory_meta_tags
+    - field.field.node.vactory_job_ads.field_vactory_profession
+    - field.field.node.vactory_job_ads.field_vactory_seo_status
+    - field.field.node.vactory_job_ads.field_vactory_telephone
+    - node.type.vactory_job_ads
+  module:
+    - user
+    - vactory_field
+_core:
+  default_config_hash: IFrWvkhQuGw5Kp2LX8rKokrfBHXBKMDLNF5AC9fnPPo
+id: node.vactory_job_ads.smart_search
+targetEntityType: node
+bundle: vactory_job_ads
+mode: smart_search
+content:
+  body:
+    type: vactory_field_excerpt_formatter
+    label: hidden
+    settings:
+      trim_length: '170'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_address: true
+  field_vactory_city: true
+  field_vactory_contract: true
+  field_vactory_description: true
+  field_vactory_email: true
+  field_vactory_meta_tags: true
+  field_vactory_profession: true
+  field_vactory_seo_status: true
+  field_vactory_telephone: true
+  langcode: true
+  links: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true

@@ -1,0 +1,28 @@
+uuid: cff58a86-5a4a-4ab6-afcd-562698574bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flash_news
+  module:
+    - text
+  enforced:
+    module:
+      - vactory_flash_news
+_core:
+  default_config_hash: vXpUluQq7-VZi6lVcQR4bVeUaak8LvN6Vl0RUWAbxA4
+id: node.flash_news.body
+field_name: body
+entity_type: node
+bundle: flash_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

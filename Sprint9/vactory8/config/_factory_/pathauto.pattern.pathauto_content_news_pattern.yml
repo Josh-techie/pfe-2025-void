@@ -1,0 +1,22 @@
+uuid: f312f679-4b42-4bc2-8567-e3bc3bc617ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_news_pattern
+label: 'Pathauto Content News Pattern'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  250445d2-822e-48d7-a69a-607c7b21ce41:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 250445d2-822e-48d7-a69a-607c7b21ce41
+    context_mapping:
+      node: node
+    bundles:
+      vactory_news: vactory_news
+selection_logic: and
+weight: -9
+relationships: {  }

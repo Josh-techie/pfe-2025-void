@@ -1,0 +1,19 @@
+uuid: e3c93c30-2b22-4b53-acf4-7c7a3685b62f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: IHH8MVYXTN4zp-YLsEL-qEVslVH5qg58U0t5Pmy0hb0
+name: vactory_testimonials_2
+label: 'Testimonials One Col @x2 (240x240)'
+effects:
+  47243341-77f3-4ac5-81b7-870d7a98c7ee:
+    uuid: 47243341-77f3-4ac5-81b7-870d7a98c7ee
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 240
+      crop_type: focal_point

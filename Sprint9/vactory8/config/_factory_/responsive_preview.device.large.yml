@@ -1,0 +1,12 @@
+uuid: de922058-b15a-4d52-97dc-b135041a1aa2
+langcode: en
+status: 0
+dependencies: {  }
+id: large
+label: 'Typical desktop'
+weight: 0
+orientation: landscape
+dimensions:
+  width: 1366
+  height: 768
+  dppx: !!float 1

@@ -1,0 +1,21 @@
+uuid: b0bf2596-ee7a-4405-bf7c-f5e3d73ccbff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.vactory_blog
+  module:
+    - vactory_google_places
+id: node.vactory_blog.field_place
+field_name: field_place
+entity_type: node
+bundle: vactory_blog
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: vactory_google_places

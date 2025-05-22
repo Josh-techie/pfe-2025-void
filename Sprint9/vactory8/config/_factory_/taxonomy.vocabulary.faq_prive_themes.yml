@@ -1,0 +1,13 @@
+uuid: 8c4293aa-20d4-4811-94d9-286b63930a44
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_faq_prive
+_core:
+  default_config_hash: TXQA1dCVFfTtkvcz9qY5FeMnE49M0migk-PM2hspw8A
+name: 'FAQ privé - Themes'
+vid: faq_prive_themes
+description: 'Utiliser ce vocabulaire pour ajouter des nouveaux thématiques de FAQ privé'
+weight: 0

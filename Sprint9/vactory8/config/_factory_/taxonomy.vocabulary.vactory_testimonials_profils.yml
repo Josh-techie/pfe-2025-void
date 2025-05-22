@@ -1,0 +1,10 @@
+uuid: 97177689-63e4-4733-b108-5dcc6e485380
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: d1SenBDRqmwGjBBLHiM9toaghEeKledYnxqcm0jkK_I
+name: 'Testimonials - Profils'
+vid: vactory_testimonials_profils
+description: 'Taxonomy for Vactory Testimonials'
+weight: 0

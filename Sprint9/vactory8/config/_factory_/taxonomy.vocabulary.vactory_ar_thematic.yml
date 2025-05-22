@@ -1,0 +1,13 @@
+uuid: 87f88d7c-d871-4aae-95fb-af81c8c97ef3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: 4jSF8HmHrJzm7dDNDakgAPoQwiDzh1Q_UeOIwPms3hI
+name: 'Annual report - Thematic'
+vid: vactory_ar_thematic
+description: 'Utiliser ce vocabulaire pour ajouter des nouveaux thématiques de rapport annuel'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: f3a843ce-d0c4-4743-a9e2-9e185788a740
+langcode: en
+status: true
+dependencies: {  }
+name: Country
+vid: locator_country
+description: 'Countries names'
+weight: 0

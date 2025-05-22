@@ -1,0 +1,24 @@
+uuid: aa1318c0-4fc4-4783-9094-112c39e85257
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.announcement
+_core:
+  default_config_hash: bVMvroLfkJzM0_5dKBkvhdUteJOiXOiiaXmAFwDWyZk
+id: node.announcement.status
+field_name: status
+entity_type: node
+bundle: announcement
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

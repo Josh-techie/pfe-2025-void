@@ -1,0 +1,7 @@
+reminder_lease_time: '300'
+reminder_time_limit: '120'
+reminder_consumers:
+  vactory_sondage_closer: '1 min'
+_core:
+  default_config_hash: pSBujAQ_5VET648haPBFIJM78jcx1j1BSoPI-96uXUs
+reminder_consumers_string: 'vactory_sondage_closer|1 min'

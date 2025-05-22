@@ -1,0 +1,48 @@
+uuid: 29fcbfdc-8d04-41bd-a5b4-4883056ff738
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_image
+    - system.menu.toolbox
+  module:
+    - content_translation
+    - image
+  enforced:
+    module:
+      - vactory_toolbox
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: menu_link_content.toolbox.field_menu_image
+field_name: field_menu_image
+entity_type: menu_link_content
+bundle: toolbox
+label: Icone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

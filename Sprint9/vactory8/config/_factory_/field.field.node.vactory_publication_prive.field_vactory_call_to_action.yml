@@ -1,0 +1,28 @@
+uuid: 01a91654-e9ad-4d1d-a388-a58d2f44934d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_call_to_action
+    - node.type.vactory_publication_prive
+  module:
+    - link
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: V7ODgsS9MG38svp3aeCDeGSE6Ak3QMgVD_HJ1tqbaBY
+id: node.vactory_publication_prive.field_vactory_call_to_action
+field_name: field_vactory_call_to_action
+entity_type: node
+bundle: vactory_publication_prive
+label: 'En savoir plus'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,27 @@
+uuid: d8cfee52-0f70-48c3-ac4a-7a3efba9b0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_no_repeated_actions
+  module:
+    - user
+  enforced:
+    module:
+      - vactory_points
+_core:
+  default_config_hash: X9wgMS3MoC8WL5muE57j0WIHFvZWc3DNlQNi4k_9_Ck
+id: user.user.field_no_repeated_actions
+field_name: field_no_repeated_actions
+entity_type: user
+bundle: user
+label: 'Points no repeated actions'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[]'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

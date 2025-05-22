@@ -1,0 +1,20 @@
+uuid: 99b64ec9-dc0e-47a9-aad4-3ace86027530
+langcode: en
+status: true
+dependencies:
+  module:
+    - vactory_search_overlay
+  theme:
+    - vactory
+id: vactorysearchoverlayv2
+theme: vactory
+region: bottom
+weight: 0
+provider: null
+plugin: vactory_search_overlay_block2
+settings:
+  id: vactory_search_overlay_block2
+  label: 'Vactory Search Overlay V2'
+  label_display: '0'
+  provider: vactory_search_overlay
+visibility: {  }

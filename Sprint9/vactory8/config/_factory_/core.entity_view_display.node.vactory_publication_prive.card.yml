@@ -1,0 +1,124 @@
+uuid: b19cff97-c0df-4f5e-8975-9ee690046601
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.vactory_publication_prive.body
+    - field.field.node.vactory_publication_prive.field_groupes_utilisateurs
+    - field.field.node.vactory_publication_prive.field_publication_prive_thematic
+    - field.field.node.vactory_publication_prive.field_publication_prive_users
+    - field.field.node.vactory_publication_prive.field_vactory_call_to_action
+    - field.field.node.vactory_publication_prive.field_vactory_date
+    - field.field.node.vactory_publication_prive.field_vactory_document
+    - field.field.node.vactory_publication_prive.field_vactory_excerpt
+    - field.field.node.vactory_publication_prive.field_vactory_media
+    - field.field.node.vactory_publication_prive.field_vactory_meta_tags
+    - field.field.node.vactory_publication_prive.field_vactory_seo_status
+    - node.type.vactory_publication_prive
+  module:
+    - datetime
+    - file
+    - link
+    - media_responsive_thumbnail
+    - text
+    - user
+    - yoast_seo
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: LkHmBw7owWK_va8ARJzwJ0plosE8DsJ0dRQL4QEcyow
+id: node.vactory_publication_prive.card
+targetEntityType: node
+bundle: vactory_publication_prive
+mode: card
+content:
+  field_publication_prive_thematic:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_publication_prive_users:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_vactory_call_to_action:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vactory_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vactory_document:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_excerpt:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_vactory_media:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_vactory_seo_status:
+    type: yoastseo_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_groupes_utilisateurs: true
+  field_vactory_meta_tags: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

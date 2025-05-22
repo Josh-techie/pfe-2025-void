@@ -1,0 +1,8 @@
+uuid: 81316d6e-deaa-4fb4-a35a-3e3604e76e49
+langcode: en
+status: true
+dependencies: {  }
+id: vactory_banner
+label: Banner
+revision: 0
+description: 'Create <i>banners</i> for your pages.'

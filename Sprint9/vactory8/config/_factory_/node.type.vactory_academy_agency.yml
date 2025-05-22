@@ -1,0 +1,26 @@
+uuid: 77ad3a7f-c1f1-4af3-9eb0-1a48fead956b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - wysiwyg_template
+  enforced:
+    module:
+      - vactory_academy_agency
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  wysiwyg_template:
+    default_template: ''
+_core:
+  default_config_hash: WXzAmGm3KD8IZa-Y_radumMSp9LqRuSd9lh5pPHCaPw
+name: 'Formation en agence'
+type: vactory_academy_agency
+description: 'Utiliser ce type de contenu pour créer des formations en présentiels.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

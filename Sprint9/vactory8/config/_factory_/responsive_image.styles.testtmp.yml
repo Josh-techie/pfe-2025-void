@@ -1,0 +1,11 @@
+uuid: eb715b9e-fd38-4413-8eb1-106910dabf7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.lqip
+id: testtmp
+label: testtmp
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: lqip

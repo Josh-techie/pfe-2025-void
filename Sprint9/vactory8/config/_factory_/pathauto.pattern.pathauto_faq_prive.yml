@@ -1,0 +1,27 @@
+uuid: 34360642-a17c-4624-b459-7302754aa7d7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - vactory_faq_prive
+_core:
+  default_config_hash: bIFfKnPK0rP5ChfngWur1X2H8BiDgbKTVBzeaUo2FgM
+id: pathauto_faq_prive
+label: 'Pathauto Content FAQ privé'
+type: 'canonical_entities:node'
+pattern: 'espace-privé/faq/[node:title]'
+selection_criteria:
+  240a8c37-65cb-4011-9425-243c216fb5c6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 240a8c37-65cb-4011-9425-243c216fb5c6
+    context_mapping:
+      node: node
+    bundles:
+      vactory_faq_prive: vactory_faq_prive
+selection_logic: and
+weight: -5
+relationships: {  }

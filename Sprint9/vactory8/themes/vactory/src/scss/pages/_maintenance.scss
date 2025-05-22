@@ -1,0 +1,25 @@
+.maintenance-page {
+  display: flex;
+  align-items: flex-end;
+  min-height: 100vh;
+
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+  background-image: url('/themes/vactory/assets/img/site-en-maintenance.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__message {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .maintenance-page {
+    background-position: center;
+  }
+}

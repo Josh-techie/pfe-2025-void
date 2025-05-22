@@ -1,0 +1,18 @@
+uuid: 154fc862-6291-4b69-8e3b-05f6b36b1746
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mediatheque_theme_albums
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: vnsUeOmW-UD26fR-37i_qReQNvrkcV0LPls1IPLgfHE
+id: taxonomy_term.mediatheque_theme_albums
+target_entity_type_id: taxonomy_term
+target_bundle: mediatheque_theme_albums
+default_langcode: site_default
+language_alterable: false

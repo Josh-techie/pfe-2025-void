@@ -1,0 +1,16 @@
+enable_email_notifications: 1
+is_authentication_required: 1
+user_can_edit_appointment: 1
+user_can_delete_appointment: 1
+dependencies:
+  enforced:
+    module:
+      - vactory_appointment
+appointment_email_from: ''
+datalayer_concerned_fields:
+  adviser: 0
+  first_name: 0
+  last_name: 0
+  phone: 0
+  email: 0
+  appointment_date: 0

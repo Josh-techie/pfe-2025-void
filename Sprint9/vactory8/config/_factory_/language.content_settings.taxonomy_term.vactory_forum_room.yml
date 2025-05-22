@@ -1,0 +1,21 @@
+uuid: c4ab9cdf-47bc-43dd-9f8b-b5c785d507f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_forum_room
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_forums
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: w7U4erkdabJUJOpCGiqbmWSWE7GfXc0LylIAcIcgDT4
+id: taxonomy_term.vactory_forum_room
+target_entity_type_id: taxonomy_term
+target_bundle: vactory_forum_room
+default_langcode: site_default
+language_alterable: true

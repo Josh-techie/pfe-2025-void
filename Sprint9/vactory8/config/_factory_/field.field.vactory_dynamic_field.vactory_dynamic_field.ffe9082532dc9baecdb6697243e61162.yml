@@ -1,0 +1,25 @@
+uuid: 12827836-defd-4655-800c-6a1153ed3df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vactory_dynamic_field.ffe9082532dc9baecdb6697243e61162
+    - media.type.image
+  module:
+    - vactory_dynamic_field
+id: vactory_dynamic_field.vactory_dynamic_field.ffe9082532dc9baecdb6697243e61162
+field_name: ffe9082532dc9baecdb6697243e61162
+entity_type: vactory_dynamic_field
+bundle: vactory_dynamic_field
+label: 'Logo Partenaire'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

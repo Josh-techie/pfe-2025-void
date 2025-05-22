@@ -1,0 +1,21 @@
+uuid: 2fc93233-00a2-4f4c-adec-46fb36a252d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_role
+    - node.type.vactory_testimonials
+_core:
+  default_config_hash: _kq9eT-zPsyjCVHkI7kiBC85Mzf9uYcSPuhgo9kh5Ws
+id: node.vactory_testimonials.field_vactory_role
+field_name: field_vactory_role
+entity_type: node
+bundle: vactory_testimonials
+label: Role
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

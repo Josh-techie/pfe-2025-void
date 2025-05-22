@@ -1,0 +1,18 @@
+uuid: cea44117-cb02-4c61-a082-90b01821a577
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.simulation_credit_profiles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: 5flaryrJ2Y083CFMPgX9OTPdCBto_pDLfSmQsQLIY1A
+id: taxonomy_term.simulation_credit_profiles
+target_entity_type_id: taxonomy_term
+target_bundle: simulation_credit_profiles
+default_langcode: site_default
+language_alterable: false

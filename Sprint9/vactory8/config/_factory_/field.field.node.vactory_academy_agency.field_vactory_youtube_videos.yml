@@ -1,0 +1,24 @@
+uuid: c725ede9-72c3-4c7e-93b5-109620ee9d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_youtube_videos
+    - node.type.vactory_academy_agency
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: 4Zdxs0RScuygCBDCQFpjwFWxvw8qIljOHuMMW5PRK4Y
+id: node.vactory_academy_agency.field_vactory_youtube_videos
+field_name: field_vactory_youtube_videos
+entity_type: node
+bundle: vactory_academy_agency
+label: 'Youtube vidéos'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

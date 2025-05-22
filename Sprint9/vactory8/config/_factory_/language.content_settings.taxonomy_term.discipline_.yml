@@ -1,0 +1,18 @@
+uuid: 0da352a0-991f-4073-8605-0f4f9570beee
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.discipline_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: DOAeisuCCRZNkIcO15SX1H4fiaXxeD4Z0aYfsb16AYs
+id: taxonomy_term.discipline_
+target_entity_type_id: taxonomy_term
+target_bundle: discipline_
+default_langcode: site_default
+language_alterable: false

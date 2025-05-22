@@ -1,0 +1,10 @@
+uuid: a5645c56-eaef-4eeb-b9cf-9916a3d5a229
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wlavBrxwzbJNCwNsgjdft4WCbJ-cqu1dCK26NU0EpMs
+name: 'Affichage de l''annonce'
+vid: affichage_de_l_annonce
+description: 'This Vocabulary is used for Announcements'
+weight: 0

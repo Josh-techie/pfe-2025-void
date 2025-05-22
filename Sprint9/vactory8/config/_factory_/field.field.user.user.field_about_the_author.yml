@@ -1,0 +1,21 @@
+uuid: 384007d5-171e-40d9-b0c1-30172510d327
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_about_the_author
+  module:
+    - text
+    - user
+id: user.user.field_about_the_author
+field_name: field_about_the_author
+entity_type: user
+bundle: user
+label: About
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

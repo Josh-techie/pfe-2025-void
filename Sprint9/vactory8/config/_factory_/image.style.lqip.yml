@@ -1,0 +1,15 @@
+uuid: 35819012-293c-4765-8d78-679559531688
+langcode: en
+status: true
+dependencies: {  }
+name: lqip
+label: LQIP
+effects:
+  vactory_lqip:
+    uuid: vactory_lqip
+    id: image_scale
+    weight: 1
+    data:
+      width: 15
+      height: null
+      upscale: false

@@ -1,0 +1,26 @@
+uuid: da445888-707b-475b-b7ec-65eeca53cfe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_date
+    - node.type.vactory_tender
+  module:
+    - datetime
+_core:
+  default_config_hash: x3YKkN7aY9iZxsPQA3cZQSrF_dy8c3nQM4Y2RGmG5NY
+id: node.vactory_tender.field_vactory_date
+field_name: field_vactory_date
+entity_type: node
+bundle: vactory_tender
+label: 'Date de publication'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

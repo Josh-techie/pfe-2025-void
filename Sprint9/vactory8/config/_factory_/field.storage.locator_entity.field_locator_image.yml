@@ -1,0 +1,20 @@
+uuid: 8f3a1f24-93fe-4598-9cf6-e5787680fd67
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - vactory_locator
+id: locator_entity.field_locator_image
+field_name: field_locator_image
+entity_type: locator_entity
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

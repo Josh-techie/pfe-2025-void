@@ -1,0 +1,20 @@
+uuid: 90f2bb07-69fc-47be-a9f1-4260fc377460
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_glossary
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: 1Hb9HJaCvW-mutjhTnvxmpbODapitM5Z4mm06A8ZVQM
+id: taxonomy_term.vactory_glossary
+target_entity_type_id: taxonomy_term
+target_bundle: vactory_glossary
+default_langcode: current_interface
+language_alterable: true

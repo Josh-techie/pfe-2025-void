@@ -1,0 +1,15 @@
+<div class="sg-bloc" id="sg-icons">
+  <h2 class="sg-bloc__title">Icons</h2>
+  <div class="container">
+    <div class="row">
+      {% for item in icons %}
+      <div class="col-4 col-md-2 mb-3">
+        <div class="sg-icons-wrapper d-flex justify-content-center align-items-center">
+          <i class="icon {{ 'icon-' ~ item.properties.name}}"></i>
+          <span>{{'icon-' ~ item.properties.name}}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

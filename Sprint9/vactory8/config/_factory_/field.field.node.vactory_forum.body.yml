@@ -1,0 +1,28 @@
+uuid: 9b79bb40-4078-4ba8-b467-b3f9584f6e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_forum
+  module:
+    - text
+  enforced:
+    module:
+      - vactory_forums
+_core:
+  default_config_hash: Skk0yA8hadY64reJZ-7Gm9ZURNHfHEDUKP3zh69R_-w
+id: node.vactory_forum.body
+field_name: body
+entity_type: node
+bundle: vactory_forum
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

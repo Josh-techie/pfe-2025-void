@@ -1,0 +1,85 @@
+uuid: cf75508f-e297-4db4-85d1-8003789e6cbd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.vactory_faq_prive.body
+    - field.field.node.vactory_faq_prive.field_faq_prive_thematique
+    - field.field.node.vactory_faq_prive.field_faq_prive_utilisateurs
+    - field.field.node.vactory_faq_prive.field_groupes_utilisateurs
+    - field.field.node.vactory_faq_prive.field_vactory_seo_status
+    - node.type.vactory_faq_prive
+  module:
+    - text
+    - user
+    - yoast_seo
+  enforced:
+    module:
+      - vactory_faq_prive
+_core:
+  default_config_hash: T6lIY-D5JXA0Ga6PcIGBqWQXV3_wBAZdokuzNlCRXMY
+id: node.vactory_faq_prive.card
+targetEntityType: node
+bundle: vactory_faq_prive
+mode: card
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_faq_prive_thematique:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_faq_prive_utilisateurs:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_groupes_utilisateurs:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_vactory_seo_status:
+    type: yoastseo_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true

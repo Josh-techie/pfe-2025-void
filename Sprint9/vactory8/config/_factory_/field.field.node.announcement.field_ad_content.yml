@@ -1,0 +1,21 @@
+uuid: 9600dcc1-685b-40d3-91cd-2c46a19e0a18
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ad_content
+    - node.type.announcement
+_core:
+  default_config_hash: kSnf6MrQCjSmesZ93Oayos7VvtsZKhxbhsjKqj_v3lE
+id: node.announcement.field_ad_content
+field_name: field_ad_content
+entity_type: node
+bundle: announcement
+label: 'Contenu de l''annonce'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

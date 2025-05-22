@@ -1,0 +1,13 @@
+uuid: 7fcae0ef-bec0-4032-aa9c-e81707e6a63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vactory_tender
+_core:
+  default_config_hash: 8ufOJ3kYuLTjryI7Co7H37si-0BZMYRCk6QiPmDI6bw
+id: node.vactory_tender
+target_entity_type_id: node
+target_bundle: vactory_tender
+default_langcode: site_default
+language_alterable: false

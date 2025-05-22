@@ -1,0 +1,14 @@
+uuid: d9e482ac-48a6-43f0-b41c-ab8bc9ce35ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.adviser
+  module:
+    - user
+id: user_add_role_action.adviser
+label: 'Add the Conseiller role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: adviser

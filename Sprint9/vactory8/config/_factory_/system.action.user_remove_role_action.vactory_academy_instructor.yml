@@ -1,0 +1,14 @@
+uuid: be65169d-69d6-48c5-8372-72da13237fef
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.vactory_academy_instructor
+  module:
+    - user
+id: user_remove_role_action.vactory_academy_instructor
+label: 'Remove the Instructor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: vactory_academy_instructor

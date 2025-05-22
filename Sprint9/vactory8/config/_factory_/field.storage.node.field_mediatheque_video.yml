@@ -1,0 +1,22 @@
+uuid: 1af4371d-dcd3-4f68-b889-21212edb7a00
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - node
+_core:
+  default_config_hash: GXWUuAI_uh3rK8bF2BDz-6At3JX_u2tpDKihuFyd_xI
+id: node.field_mediatheque_video
+field_name: field_mediatheque_video
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

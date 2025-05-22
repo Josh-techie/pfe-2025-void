@@ -1,0 +1,181 @@
+// @file
+// SASS partials import
+// -----------------------------------------------------------------------------
+@import "./abstracts/_import";
+
+
+// Bootstrap.
+// -----------------------------------------------------------------------------
+@import "./vendor/bootstrap/scss/root";
+@import "./vendor/bootstrap/scss/reboot";
+@import "./vendor/bootstrap/scss/type";
+@import "./vendor/bootstrap/scss/images";
+@import "./vendor/bootstrap/scss/code";
+@import "./vendor/bootstrap/scss/grid";
+@import "./vendor/bootstrap/scss/tables";
+@import "./vendor/bootstrap/scss/forms";
+@import "./vendor/bootstrap/scss/buttons";
+@import "./vendor/bootstrap/scss/transitions";
+@import "./vendor/bootstrap/scss/dropdown";
+@import "./vendor/bootstrap/scss/button-group";
+@import "./vendor/bootstrap/scss/input-group";
+@import "./vendor/bootstrap/scss/custom-forms";
+@import "./vendor/bootstrap/scss/nav";
+@import "./vendor/bootstrap/scss/navbar";
+@import "./vendor/bootstrap/scss/card";
+@import "./vendor/bootstrap/scss/breadcrumb";
+@import "./vendor/bootstrap/scss/pagination";
+@import "./vendor/bootstrap/scss/badge";
+@import "./vendor/bootstrap/scss/jumbotron";
+@import "./vendor/bootstrap/scss/alert";
+@import "./vendor/bootstrap/scss/progress";
+@import "./vendor/bootstrap/scss/media";
+@import "./vendor/bootstrap/scss/list-group";
+@import "./vendor/bootstrap/scss/close";
+@import "./vendor/bootstrap/scss/toasts";
+@import "./vendor/bootstrap/scss/modal";
+@import "./vendor/bootstrap/scss/tooltip";
+@import "./vendor/bootstrap/scss/popover";
+@import "./vendor/bootstrap/scss/carousel";
+@import "./vendor/bootstrap/scss/spinners";
+@import "./vendor/bootstrap/scss/utilities";
+
+
+// Animation hover buttons
+// -----------------------------------------------------------------------------
+@import "./plugin/button-hover/buttons";
+@import "./plugin/button-hover/buttons-2d";
+
+
+// Icomoon font
+// -----------------------------------------------------------------------------
+@import "../../assets/fonts/icons-font/**/style.scss";
+
+
+// Hamburgers Icoon
+// -----------------------------------------------------------------------------
+@import "plugin/hamburger/hamburgers.scss";
+
+
+// Slick Slider
+// -----------------------------------------------------------------------------
+@import "plugin/slick/slick.scss";
+@import "plugin/slick/slick-theme.scss";
+
+
+// Fancybox
+// -----------------------------------------------------------------------------
+@import "plugin/fancybox/fancybox.scss";
+
+
+// Bootstrap Select
+// -----------------------------------------------------------------------------
+@import "plugin/bootstrap-select/bootstrap-select.scss";
+
+
+// Base styles
+// -----------------------------------------------------------------------------
+@import "base/*";
+
+
+// Components.
+// -----------------------------------------------------------------------------
+@import "components/*";
+@import "components/forms/*";
+@import "components/forms/custom-element/*";
+
+
+// Custom blocks for froala
+// -----------------------------------------------------------------------------
+@import "./plugin/froala/blocks";
+
+
+// Overriding default styles
+// -----------------------------------------------------------------------------
+@import "pages/**/*";
+@import "overrides/*";
+
+
+// Custom Vactory modules styles
+// -----------------------------------------------------------------------------
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_academy/assets/scss/vactory_academy.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_academy_agency/assets/scss/vactory_academy_agency.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_anchor/assets/scss/vactory_anchor.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_announcements/assets/scss/vactory_announcements.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_annual_report/assets/scss/vactory_annual_report.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_appointment/assets/scss/vactory_appointment.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_banner/assets/scss/vactory_banner.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_espace_prive/assets/scss/vactory_espace_prive.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_event/assets/scss/vactory_event.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_faq/assets/scss/vactory_faq.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_flash_news/assets/scss/vactory_flash_news.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_forums/assets/scss/vactory_forums.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_glossary/assets/scss/vactory_glossary.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_google_map_field/assets/scss/vactory_google_map_field.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_governance/assets/scss/vactory_governance.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_loading_layer/assets/scss/vactory_loading_layer.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_locator/assets/scss/vactory_locator.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_mediatheque/assets/scss/vactory_mediatheque.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_news/assets/scss/vactory_news.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_notifications/assets/scss/vactory_notifications.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_push_notifications/assets/scss/vactory_push_notifications.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_quiz/assets/scss/vactory_quiz.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_search/modules/vactory_frequent_searches/assets/scss/vactory_frequent_searches.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_search/modules/vactory_smart_search/assets/scss/vactory_smart_search.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_search_autosuggestions/assets/scss/vactory_search_autosuggestions.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_simulation_credit/assets/scss/vactory_simulation_credit.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_social_network/assets/scss/vactory_social_network.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_sondage/assets/scss/vactory_sondage.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_splashscreen/assets/scss/vactory_splashscreen.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_toolbox/assets/scss/vactory_toolbox.scss";
+
+
+// --- Vactory Header --- //
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_helpers.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v1.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v2.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v3.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v4.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v5.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v6.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v7.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v8.scss";
+
+
+// --- Vactory Footer --- //
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v1.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v2.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v3.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v4.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v5.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v6.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v7.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v8.scss";
+
+
+// --- Vactory Search overolay --- //
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_search_overlay/assets/scss/vactory_search_overlay_v1.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_search_overlay/assets/scss/vactory_search_overlay_v2.scss";
+
+
+// --- Vactory dynamic field --- //
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_bootstrap/assets/scss/components.scss";
+// @import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_brightcove/assets/scss/components.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_juicer/assets/scss/components.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_map/assets/scss/variant1.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_wysiwyg_templates/assets/scss/components.scss";
+
+
+// --- Vactory Search overolay --- //
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v1.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v2.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v3.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v4.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v5.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v6.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v7.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v8.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v9.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v10.scss";
+@import "../../../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/assets/scss/vactory_slider_v11.scss";

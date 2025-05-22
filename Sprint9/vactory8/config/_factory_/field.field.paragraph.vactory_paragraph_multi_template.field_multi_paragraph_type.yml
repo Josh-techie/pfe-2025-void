@@ -1,0 +1,23 @@
+uuid: 65e49864-32cb-43f9-83d6-7e16bdbe7350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_multi_paragraph_type
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+  module:
+    - options
+id: paragraph.vactory_paragraph_multi_template.field_multi_paragraph_type
+field_name: field_multi_paragraph_type
+entity_type: paragraph
+bundle: vactory_paragraph_multi_template
+label: Display
+description: 'Select the wished multi paragraph display.'
+required: true
+translatable: false
+default_value:
+  -
+    value: tab
+default_value_callback: ''
+settings: {  }
+field_type: list_string

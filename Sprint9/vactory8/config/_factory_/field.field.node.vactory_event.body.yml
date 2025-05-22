@@ -1,0 +1,25 @@
+uuid: 551c16c3-40a2-41b1-b8da-3500386ecfa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_event
+  module:
+    - text
+_core:
+  default_config_hash: 0F3wwNjWe3vFJfEfQl074X4tDSDQNuDxa9HMWVc-0SQ
+id: node.vactory_event.body
+field_name: body
+entity_type: node
+bundle: vactory_event
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

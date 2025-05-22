@@ -1,0 +1,31 @@
+uuid: c268e2a5-1390-4b67-89fb-65f9f0d5cf15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_tags
+    - node.type.vactory_post
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: 1MK-4lqQvdlRd81iel-Iq4ws1Hw4kIDvAX5bkLVR59Y
+id: node.vactory_post.field_vactory_tags
+field_name: field_vactory_tags
+entity_type: node
+bundle: vactory_post
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

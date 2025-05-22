@@ -1,0 +1,23 @@
+uuid: 6a3048f7-be54-4cd4-adbc-808f7199c516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_excerpt
+    - node.type.vactory_post
+  module:
+    - text
+_core:
+  default_config_hash: itud5OP88koe4rdsHw2c__52A5oaazQiXR0J6sTNfwc
+id: node.vactory_post.field_vactory_excerpt
+field_name: field_vactory_excerpt
+entity_type: node
+bundle: vactory_post
+label: Excerpt
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

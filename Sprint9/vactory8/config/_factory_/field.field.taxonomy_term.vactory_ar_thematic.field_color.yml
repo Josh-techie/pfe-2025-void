@@ -1,0 +1,28 @@
+uuid: ddcc1555-8d31-4f56-b23b-608af6640521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color
+    - taxonomy.vocabulary.vactory_ar_thematic
+  module:
+    - colorapi
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: mWIcxnXPk3GHqD2xveccT0UQ3AeBuH4dGHTO8ihVcm4
+id: taxonomy_term.vactory_ar_thematic.field_color
+field_name: field_color
+entity_type: taxonomy_term
+bundle: vactory_ar_thematic
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#FFFFFF'
+default_value_callback: ''
+settings: {  }
+field_type: colorapi_color_field

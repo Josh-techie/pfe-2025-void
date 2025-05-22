@@ -1,0 +1,33 @@
+uuid: d9486640-0dbb-4127-bbff-f45df37406a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_instructor
+    - node.type.vactory_academy_agency
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: LdbPBX4W0i00-aAT0lxw_19SeARr4IYAa5TUZOALgYc
+id: node.vactory_academy_agency.field_vactory_instructor
+field_name: field_vactory_instructor
+entity_type: node
+bundle: vactory_academy_agency
+label: Enseignant
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

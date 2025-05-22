@@ -1,0 +1,12 @@
+uuid: 300749e6-8478-4955-8af4-1ee5f938eff6
+langcode: en
+status: 1
+dependencies: {  }
+id: ipad_air_2
+label: 'iPad Air 2'
+weight: -7
+orientation: portrait
+dimensions:
+  width: 1536
+  height: 2048
+  dppx: !!float 2

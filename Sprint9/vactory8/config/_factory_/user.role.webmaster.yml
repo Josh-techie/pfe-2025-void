@@ -1,0 +1,10 @@
+uuid: f8b18cc0-04ab-4fd9-b386-7635e6ecf59c
+langcode: en
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: 5
+is_admin: null
+permissions:
+  - 'administer users'

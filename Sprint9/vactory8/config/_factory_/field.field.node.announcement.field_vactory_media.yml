@@ -1,0 +1,30 @@
+uuid: 36b85e47-c330-4fca-9e92-1818c5706777
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_media
+    - media.type.image
+    - node.type.announcement
+_core:
+  default_config_hash: 9i-1_uNxk9N7KKiplMJxWhrXu6fJCRSip3VDSO_SNng
+id: node.announcement.field_vactory_media
+field_name: field_vactory_media
+entity_type: node
+bundle: announcement
+label: 'Image de couverture'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

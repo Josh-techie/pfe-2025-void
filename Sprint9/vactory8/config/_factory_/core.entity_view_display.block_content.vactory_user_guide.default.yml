@@ -1,0 +1,35 @@
+uuid: 0722294e-31a5-4ef4-aba1-db82e5aa1445
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.vactory_user_guide
+    - field.field.block_content.vactory_user_guide.field_user_guide_tours
+  module:
+    - vactory_dynamic_field
+  enforced:
+    module:
+      - vactory_user_guide
+id: block_content.vactory_user_guide.default
+targetEntityType: block_content
+bundle: vactory_user_guide
+mode: default
+content:
+  field_user_guide_tours:
+    type: field_wysiwyg_dynamic_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  langcode:
+    type: language
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

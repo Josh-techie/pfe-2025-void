@@ -1,0 +1,28 @@
+uuid: a5592d27-222f-4931-8f69-bf7eaf6f5d2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_seo_status
+    - node.type.vactory_partner
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: fflLgabXkGflAgIy69FescZ8GVMNJSV7MunELPD3Yxw
+id: node.vactory_partner.field_vactory_seo_status
+field_name: field_vactory_seo_status
+entity_type: node
+bundle: vactory_partner
+label: 'SEO Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: '0'
+    focus_keyword: ''
+    title: null
+    description: null
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

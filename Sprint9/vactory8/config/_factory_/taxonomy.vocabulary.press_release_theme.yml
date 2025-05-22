@@ -1,0 +1,10 @@
+uuid: 0a259b16-3507-4d37-a729-c36b1bb36392
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6KBctOmCRBqwlSPu_ntrTjqwWxToK29XjJ2rKNdZK00
+name: 'Press release - Theme'
+vid: press_release_theme
+description: 'press release vocabulary.'
+weight: 0

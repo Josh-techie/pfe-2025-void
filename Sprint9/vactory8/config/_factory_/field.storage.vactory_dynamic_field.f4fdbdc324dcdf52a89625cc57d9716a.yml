@@ -1,0 +1,20 @@
+uuid: cdfeed24-c1ec-4478-aba0-fae3b532f94e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - vactory_dynamic_field
+id: vactory_dynamic_field.f4fdbdc324dcdf52a89625cc57d9716a
+field_name: f4fdbdc324dcdf52a89625cc57d9716a
+entity_type: vactory_dynamic_field
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

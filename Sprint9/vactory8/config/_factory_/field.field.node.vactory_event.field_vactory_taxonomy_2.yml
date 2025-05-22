@@ -1,0 +1,31 @@
+uuid: 6f778c99-be85-4693-98e0-90edee67e923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_taxonomy_2
+    - node.type.vactory_event
+    - taxonomy.vocabulary.vactory_event_citys
+_core:
+  default_config_hash: 6pDOkuy5ZtyygHVRg_Xj_GxFveWN5WZCNGlh3lbSt0U
+id: node.vactory_event.field_vactory_taxonomy_2
+field_name: field_vactory_taxonomy_2
+entity_type: node
+bundle: vactory_event
+label: Ville
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vactory_event_citys: vactory_event_citys
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

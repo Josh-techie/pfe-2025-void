@@ -1,0 +1,26 @@
+uuid: 15fcb3a3-bbf7-4c4f-acad-e0b557214696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_date
+    - node.type.vactory_publication_prive
+  module:
+    - datetime
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: du3UBa5XJtX5tmT05QRP2E-visg_PJe_2Mqn1LgjQXI
+id: node.vactory_publication_prive.field_vactory_date
+field_name: field_vactory_date
+entity_type: node
+bundle: vactory_publication_prive
+label: Date
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

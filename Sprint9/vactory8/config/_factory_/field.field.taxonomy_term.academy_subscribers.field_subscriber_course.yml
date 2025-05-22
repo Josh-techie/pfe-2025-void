@@ -1,0 +1,33 @@
+uuid: f1c1c9e3-c80a-4f97-bb35-99ff311e23d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_subscriber_course
+    - node.type.vactory_academy_agency
+    - taxonomy.vocabulary.academy_subscribers
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: ysJ7_J1O9jKEqzo4-cAP1MAzi5ypcnRs73CyAvhf5yc
+id: taxonomy_term.academy_subscribers.field_subscriber_course
+field_name: field_subscriber_course
+entity_type: taxonomy_term
+bundle: academy_subscribers
+label: Formation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_academy_agency: vactory_academy_agency
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

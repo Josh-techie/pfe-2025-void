@@ -1,0 +1,10 @@
+uuid: ca1dc9de-aec6-4ff1-a410-6cdf639182c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: T0cciYAuQ6I4FeRLvcF8cKG3KU4naRI0xIYDrKOzJjY
+name: Typologie
+vid: vactory_typologie
+description: 'This Vocabulary is used for Announcements'
+weight: 0

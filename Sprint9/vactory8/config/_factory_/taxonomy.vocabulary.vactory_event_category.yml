@@ -1,0 +1,10 @@
+uuid: b56b2caf-4c17-4442-a06e-f50804a3a6b7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pYlCHx4cujsdat5jfyLSxJrbB1gV7IMKeeH6VgM8p0U
+name: 'Event - Categories'
+vid: vactory_event_category
+description: 'Utilisez les catégories pour regrouper les événements sur des sujets similaires.'
+weight: 0

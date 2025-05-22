@@ -1,0 +1,81 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set first_name = user.field_first_name.0.value %}
+{% set last_name = user.field_last_name.0.value %}
+{% set full_name = [first_name ~ ' ', last_name|capitalize]|join %}
+{% set user_date = user.createdtime | date("d/m/Y") %}
+{% set about = user.field_about_the_author.value %}
+{% include '@vactory/user/user-navigation.html.twig' with {
+'user': user,
+} %}
+
+<div class="tab-content has-border p-4">
+    <div class="row mt-4">
+        <div class="col-md-9 m-auto">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            {% if user.user_picture.target_id is not empty %}
+                                {% set image_uri = file_object(user.user_picture.target_id).uri.value %}
+                                {% set image_url = file_url(image_uri) %}
+                                <img src="{{ image_url }}"
+                                     class="rounded-circle avatar"/>
+                            {% else %}
+                                <img src="{{ base_path ~ directory }}/assets/img/user-avatar.svg"
+                                     class="rounded-circle avatar"/>
+                            {% endif %}
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="only-bottom-margin">{{ full_name }}</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="text-muted">{{ 'Email:' | t }}</span> {{ user.mail.value }}<br>
+                                    <span class="text-muted">{{ 'Username:' | t }}</span> {{ user.name.value }}<br>
+                                    <span class="text-muted">{{ 'Created:' | t }}</span> {{ user_date }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {% if about is not empty %}
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <hr>
+                                <blockquote class="blockquote mr-auto ml-auto text-center">
+                                    <p class="mb-0">{{ about|raw }}</p>
+                                    <footer class="blockquote-footer">{{ full_name }}</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

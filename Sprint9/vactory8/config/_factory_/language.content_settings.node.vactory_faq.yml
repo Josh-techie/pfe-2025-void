@@ -1,0 +1,13 @@
+uuid: 96833843-ca95-4b63-91dc-1d391275832c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vactory_faq
+_core:
+  default_config_hash: Mug87KGbdfajHztvCBvvFUlIeZTKFyfmgW-LK9eiwJ0
+id: node.vactory_faq
+target_entity_type_id: node
+target_bundle: vactory_faq
+default_langcode: current_interface
+language_alterable: true

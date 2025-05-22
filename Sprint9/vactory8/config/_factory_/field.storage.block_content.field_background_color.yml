@@ -1,0 +1,19 @@
+uuid: d5c5c144-9bde-40cd-a3ec-8eceb6796220
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - colorapi
+id: block_content.field_background_color
+field_name: field_background_color
+entity_type: block_content
+type: colorapi_color_field
+settings: {  }
+module: colorapi
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

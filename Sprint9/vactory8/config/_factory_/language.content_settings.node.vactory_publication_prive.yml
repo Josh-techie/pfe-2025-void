@@ -1,0 +1,21 @@
+uuid: 4a420638-1fd6-47b6-8b81-d1b9952aee15
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vactory_publication_prive
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_publication_prive
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: Zl6URWSns1ctqUMxWfCFBiH8O2DfBRVvkbMFe6oHmMw
+id: node.vactory_publication_prive
+target_entity_type_id: node
+target_bundle: vactory_publication_prive
+default_langcode: site_default
+language_alterable: true

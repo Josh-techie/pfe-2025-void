@@ -1,0 +1,26 @@
+uuid: bd89987e-910a-4c6e-9ee4-2fa2f76acbd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_header
+  theme:
+    - vactory_amp
+id: vactory_amp_vactoryheaderblockv1
+theme: vactory_amp
+region: header
+weight: 0
+provider: null
+plugin: vactory_header_block1
+settings:
+  id: vactory_header_block1
+  label: 'Vactory Header Block V1'
+  label_display: '0'
+  provider: vactory_header
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /header-v2

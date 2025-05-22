@@ -1,0 +1,23 @@
+uuid: a8000afb-00e6-44a7-ab88-3a0c2cc29737
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_excerpt
+    - node.type.vactory_publication
+  module:
+    - text
+_core:
+  default_config_hash: khacz2X_eG_YutjhEqLXJCVVx59X9SMqtmOt3meHnM4
+id: node.vactory_publication.field_vactory_excerpt
+field_name: field_vactory_excerpt
+entity_type: node
+bundle: vactory_publication
+label: Excerpt
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

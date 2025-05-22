@@ -1,0 +1,31 @@
+# Production environment services.
+# Copy this file content and past it into the new file shared/sites/default/services.yml on production server.
+#
+# To activate this feature, follow the instructions at the top of the
+# 'example.settings.local.php' file, which sits next to this file.
+parameters:
+  session.storage.options:
+    # Default ini options for sessions.
+    #
+    # Some distributions of Linux (most notably Debian) ship their PHP
+    # installations with garbage collection (gc) disabled. Since Drupal depends
+    # on PHP's garbage collection for clearing sessions, ensure that garbage
+    # collection occurs by using the most common settings.
+    # @default 1
+    gc_probability: 1
+    # @default 100
+    gc_divisor: 100
+    #
+    # Set session lifetime (in seconds), i.e. the time from the user's last
+    # visit to the active session may be deleted by the session garbage
+    # collector. When a session is deleted, authenticated users are logged out,
+    # and the contents of the user's $_SESSION variable is discarded.
+    # @default 200000
+    # Change it to 15 min.
+    gc_maxlifetime: 900
+    #
+    # Set session cookie lifetime (in seconds), i.e. the time from the session
+    # is created to the cookie expires, i.e. when the browser is expected to
+    # discard the cookie. The value 0 means "until the browser is closed".
+    # @default 2000000
+    cookie_lifetime: 0

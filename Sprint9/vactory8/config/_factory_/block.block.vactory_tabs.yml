@@ -1,0 +1,20 @@
+uuid: b7bc9210-47d9-4245-85c8-996561efd1d5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vactory
+id: vactory_tabs
+theme: vactory
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

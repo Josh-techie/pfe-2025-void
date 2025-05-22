@@ -1,0 +1,31 @@
+uuid: 23f6cba0-5848-4f13-8ecd-32bc25673ae7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:vactory_banner:2b89711c-17cd-4cbf-a808-3b61e76e5d13'
+  module:
+    - block_content
+    - system
+  theme:
+    - vactory_amp
+id: vactory_amp_banner_global
+theme: vactory_amp
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:2b89711c-17cd-4cbf-a808-3b61e76e5d13'
+settings:
+  id: 'block_content:2b89711c-17cd-4cbf-a808-3b61e76e5d13'
+  label: 'banner global'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/en/sliders"

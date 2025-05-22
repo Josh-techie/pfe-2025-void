@@ -1,0 +1,26 @@
+uuid: a90d4eb8-d427-41ec-87cd-37f9421f2cb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_header
+  theme:
+    - amptheme
+id: amptheme_vactoryheaderblockv2
+theme: amptheme
+region: header
+weight: 0
+provider: null
+plugin: vactory_header_block2
+settings:
+  id: vactory_header_block2
+  label: 'Vactory Header Block V2'
+  label_display: '0'
+  provider: vactory_header
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /header-v2

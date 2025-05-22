@@ -1,0 +1,24 @@
+uuid: 66dba5e6-f714-4ac5-a55e-dd85e56d6a6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: rPz5GHN_LoLvCkE-vldaWawR-UAbNb1RYalPxrGzfsE
+id: pathauto_content_job_ads_pattern
+label: 'Pathauto Content Job Ads Pattern'
+type: 'canonical_entities:node'
+pattern: '/jobs/[node:title]'
+selection_criteria:
+  3f2969b7-73f8-421c-ae12-e2dd892168e2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3f2969b7-73f8-421c-ae12-e2dd892168e2
+    context_mapping:
+      node: node
+    bundles:
+      vactory_job_ads: vactory_job_ads
+selection_logic: and
+weight: -5
+relationships: {  }

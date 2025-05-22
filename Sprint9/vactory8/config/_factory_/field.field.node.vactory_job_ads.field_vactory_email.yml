@@ -1,0 +1,21 @@
+uuid: 1de20f33-4846-492b-abf4-f7f858063eb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_email
+    - node.type.vactory_job_ads
+_core:
+  default_config_hash: JskIXknT0oZZweMo2un9GEs5IbF-C6O6X8T6lWmIMF0
+id: node.vactory_job_ads.field_vactory_email
+field_name: field_vactory_email
+entity_type: node
+bundle: vactory_job_ads
+label: 'Recruiter''s Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

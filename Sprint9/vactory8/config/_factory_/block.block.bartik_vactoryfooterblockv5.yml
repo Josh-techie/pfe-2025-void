@@ -1,0 +1,20 @@
+uuid: eeaaf4f7-c840-411f-b294-c8831dda1755
+langcode: en
+status: true
+dependencies:
+  module:
+    - vactory_footer
+  theme:
+    - bartik
+id: bartik_vactoryfooterblockv5
+theme: bartik
+region: header
+weight: -2
+provider: null
+plugin: vactory_footer_block5
+settings:
+  id: vactory_footer_block5
+  label: 'Vactory Footer Block V5'
+  label_display: '0'
+  provider: vactory_footer
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 3b730f62-7fb1-4115-ac69-455b04a8964c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_governance
+  module:
+    - text
+id: node.vactory_governance.body
+field_name: body
+entity_type: node
+bundle: vactory_governance
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

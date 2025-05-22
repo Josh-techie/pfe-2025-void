@@ -1,0 +1,11 @@
+uuid: c2b356b2-aff7-48cd-bce9-abb9e2742c22
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_news_slider_large
+id: entity_subqueue.vactory_news_slider_large
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_news_slider_large
+default_langcode: site_default
+language_alterable: false

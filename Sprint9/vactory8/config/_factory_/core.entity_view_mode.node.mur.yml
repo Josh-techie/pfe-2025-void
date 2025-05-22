@@ -1,0 +1,12 @@
+uuid: 4860f65f-d369-49c0-9072-092d6fe56d08
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 96tL3SKksmdN5YyusxH2Nsqs1wYZRDaIr0uHUlI-7QQ
+id: node.mur
+label: mur
+targetEntityType: node
+cache: true

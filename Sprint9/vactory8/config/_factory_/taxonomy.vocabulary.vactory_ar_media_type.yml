@@ -1,0 +1,13 @@
+uuid: a935f66a-56fa-4a93-af94-4b4b1a9719dc
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: 3AkVrJw8kkdSZOBQGD069_y7G_cDYRZsraTp3Y1aR84
+name: 'Annual report - Media type'
+vid: vactory_ar_media_type
+description: 'Utiliser ce vocabulaire pour ajouter des nouveaux type de document rapport annuel'
+weight: 0

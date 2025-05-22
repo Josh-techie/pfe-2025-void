@@ -1,0 +1,26 @@
+uuid: 37725fca-d15e-464e-9416-ce61dcd7486f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_meta_tags
+    - node.type.vactory_academy_agency
+  module:
+    - metatag
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: Y-l5Gp8DY7gQZoPpNotouWM9wl9u6hy3r2-pIiR8luQ
+id: node.vactory_academy_agency.field_vactory_meta_tags
+field_name: field_vactory_meta_tags
+entity_type: node
+bundle: vactory_academy_agency
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,53 @@
+uuid: ac79e458-b34a-40b2-bf20-335363a0e53e
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_tender.body
+    - field.field.node.vactory_tender.field_vactory_date
+    - field.field.node.vactory_tender.field_vactory_excerpt
+    - field.field.node.vactory_tender.field_vactory_media_document
+    - field.field.node.vactory_tender.field_vactory_media_file
+    - field.field.node.vactory_tender.field_vactory_reference
+    - node.type.vactory_tender
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 9Elcw9ZsYQrIyh9xTkMyDfxTLyRmVs6vCsJShAcwL7c
+id: node.vactory_tender.teaser
+targetEntityType: node
+bundle: vactory_tender
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_date: true
+  field_vactory_excerpt: true
+  field_vactory_media_document: true
+  field_vactory_media_file: true
+  field_vactory_reference: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

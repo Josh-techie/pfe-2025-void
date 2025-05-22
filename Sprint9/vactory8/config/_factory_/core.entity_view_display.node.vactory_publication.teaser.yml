@@ -1,0 +1,51 @@
+uuid: 5657870d-d412-4038-a5a1-0f519ab4ceaa
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_publication.body
+    - field.field.node.vactory_publication.field_vactory_call_to_action
+    - field.field.node.vactory_publication.field_vactory_date
+    - field.field.node.vactory_publication.field_vactory_document
+    - field.field.node.vactory_publication.field_vactory_excerpt
+    - field.field.node.vactory_publication.field_vactory_media
+    - field.field.node.vactory_publication.field_vactory_meta_tags
+    - field.field.node.vactory_publication.field_vactory_publication_theme
+    - field.field.node.vactory_publication.field_vactory_seo_status
+    - node.type.vactory_publication
+  module:
+    - user
+_core:
+  default_config_hash: k6F1Xw-6hASRpX3-XLObGJP5ILCY2Pq7RJSSP7HPbj0
+id: node.vactory_publication.teaser
+targetEntityType: node
+bundle: vactory_publication
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_call_to_action: true
+  field_vactory_date: true
+  field_vactory_document: true
+  field_vactory_excerpt: true
+  field_vactory_media: true
+  field_vactory_meta_tags: true
+  field_vactory_publication_theme: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

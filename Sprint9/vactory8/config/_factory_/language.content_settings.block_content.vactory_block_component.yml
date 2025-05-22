@@ -1,0 +1,18 @@
+uuid: df825a66-b1d0-429b-a320-9f304bd2d68d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.vactory_block_component
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: D2tSJXapZO1oiNuoDv2ntM86UxteExEi2mF2b_DxdF0
+id: block_content.vactory_block_component
+target_entity_type_id: block_content
+target_bundle: vactory_block_component
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,13 @@
+uuid: 7b5234f7-a4a5-4414-a553-eb1e8ce4057e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_sondage
+_core:
+  default_config_hash: DWCbLTRexxp-4oOoA9vOXN7HuFS5goKkIC9KGnQfGgo
+id: vactory_sondage
+label: Sondage
+revision: 1
+description: 'Utiliser ce type de bloc pour créer un sondage.'

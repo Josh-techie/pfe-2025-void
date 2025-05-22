@@ -1,0 +1,13 @@
+uuid: c3c27420-c28b-4d68-8c1b-616d3c4c0d1d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_publication_slider_large
+_core:
+  default_config_hash: f7aRIm4Iq_IFhOQSBWV35IA2RBFhwnoDFs8-1otkTCk
+id: entity_subqueue.vactory_publication_slider_large
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_publication_slider_large
+default_langcode: site_default
+language_alterable: false

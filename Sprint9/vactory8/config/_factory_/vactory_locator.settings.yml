@@ -1,0 +1,10 @@
+path_url: agence
+map_api_key: ''
+use_geolocation: 0
+geolocation_marker: {  }
+url_geolocation_marker: null
+map_style: ''
+enable_filter: 0
+lat: ''
+lon: ''
+zoom: nothing

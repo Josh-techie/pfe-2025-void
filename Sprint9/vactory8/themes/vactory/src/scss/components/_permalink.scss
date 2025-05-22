@@ -1,0 +1,76 @@
+
+/* -------------------------------------------------------------------------- */
+/*                            Component: Permalink                            */
+/* -------------------------------------------------------------------------- */
+
+
+$permalink-icon: $icon-arrow-right !default;
+// $permalink-icon: " → ";
+$font-size-permalink: 16px !default;
+$font-weight-permalink: 500 !default;
+$line-height-permalink: 1 !default;
+$color-permalink: $link-color !default;
+$font-size-permalink-icon: $font-size-permalink !default;
+$color-permalink-icon: $color-permalink !default;
+$permalink-icon-space: 8px !default;
+
+
+%init-permalink-icon {
+  &::before,
+  &::after {
+    font-family: $icomoon-font-family;
+    font-size: $font-size-permalink-icon;
+    line-height: $line-height-permalink;
+    color: $color-permalink-icon;
+  }
+}
+
+.permalink-icon-before,
+%permalink-icon-before {
+  @extend %init-permalink-icon;
+  &:before {
+    content: $permalink-icon;
+    margin-right: $permalink-icon-space;
+  }
+}
+
+.permalink-icon-after,
+%permalink-icon-after {
+  @extend %init-permalink-icon;
+  &:after {
+    content: $permalink-icon;
+    margin-left: $permalink-icon-space;
+  }
+}
+
+.permalink {
+  display: inline-block;
+  font-size: $font-size-permalink;
+  line-height: $line-height-permalink;
+  color: $color-permalink;
+  font-weight: $font-weight-permalink;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  &:not(.permalink-icon-after) {
+    @extend %permalink-icon-before;
+  }
+  &.permalink-icon-after {
+    @extend %permalink-icon-after;
+  }
+
+  &--download {
+    &:not(.permalink-icon-after) {
+      &::before {
+        content: $icon-download;
+      }
+    }
+    &.permalink-icon-after {
+      &::after {
+        content: $icon-download;
+      }
+    }
+  }
+}

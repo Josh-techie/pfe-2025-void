@@ -1,0 +1,27 @@
+uuid: 2a005bce-fc71-4c62-8ed9-78f226c7c476
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: zggi2l3L7lOoXPR2MNyUKWOqXsVBUkiuC7s3Gwbbt-E
+id: vactory_press_rel_block_two_cl
+label: 'press release Block Two Columns'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_press_release: vactory_press_release
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,51 @@
+uuid: 60c743cc-06b6-42c5-b101-1f85ea5825f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ads
+    - field.field.block_content.ads.field_dynamic_block_components
+  module:
+    - vactory_dynamic_field
+_core:
+  default_config_hash: G7HCZLq04reJai70o3EqbgctH2oWC_T3XURPlUa6mpk
+id: block_content.ads.default
+targetEntityType: block_content
+bundle: ads
+mode: default
+content:
+  block_machine_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_dynamic_block_components:
+    type: field_wysiwyg_dynamic_widget
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,165 @@
+{
+  "name": "vactory 8",
+  "description": "Responsive base theme for Drupal.",
+  "proxy": "http://vactory.lndo.site:8080",
+  "css": {
+    "file": "src/scss/*.scss",
+    "src": ["src/scss/**/*.scss"],
+    "dest": "assets/css",
+    "includePaths": ["./node_modules/"]
+  },
+  "essentiel_files": {
+    "import": "src/scss/abstracts",
+    "ltr_font": "src/scss/abstracts/fonts-variables/_fonts-ltr.scss",
+    "rtl_font": "src/scss/abstracts/fonts-variables/_fonts-rtl.scss",
+    "variables": [
+      "src/scss/abstracts/fonts-variables/_fonts-ltr-variables.scss",
+      "src/scss/abstracts/fonts-variables/_fonts-rtl-variables.scss",
+      "src/scss/abstracts/variables/_bootstrap-variables.scss",
+      "src/scss/abstracts/variables/_vactory-variables.scss"
+    ]
+  },
+  "css_components": {
+    "file": "src/scss/components/standalone_components/*.scss",
+    "watch": [
+      "src/scss/components/standalone_components/*.scss",
+      "src/scss/components/standalone_components/**/*.scss",
+      "src/scss/components/standalone_components/**/**/*.scss"
+    ],
+    "dest": "assets/css/components"
+  },
+  "css_fonts": {
+    "file": "src/scss/fonts/*.scss",
+    "dest": "assets/css/fonts"
+  },
+  "css_vactory_module": {
+    "file": [
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_academy/assets/scss/vactory_academy.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_academy_agency/assets/scss/vactory_academy_agency.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_anchor/assets/scss/vactory_anchor.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_announcements/assets/scss/vactory_announcements.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_annual_report/assets/scss/vactory_annual_report.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_appointment/assets/scss/vactory_appointment.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_banner/assets/scss/vactory_banner.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_espace_prive/assets/scss/vactory_espace_prive.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_event/assets/scss/vactory_event.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_faq/assets/scss/vactory_faq.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_flash_news/assets/scss/vactory_flash_news.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v1.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v2.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v3.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v4.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v5.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v6.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v7.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_footer/assets/scss/vactory_footer_v8.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_forums/assets/scss/vactory_forums.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_glossary/assets/scss/vactory_glossary.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_google_map_field/assets/scss/vactory_google_map_field.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_governance/assets/scss/vactory_governance.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_helpers.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v1.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v2.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v3.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v4.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v5.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v6.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v7.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v8.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/vactory_header_v9.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_header/assets/scss/full-mega-menu.css.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_loading_layer/assets/scss/vactory_loading_layer.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_locator/assets/scss/vactory_locator.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_mediatheque/assets/scss/vactory_mediatheque.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_news/assets/scss/vactory_news.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_notifications/assets/scss/vactory_notifications.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_push_notifications/assets/scss/vactory_push_notifications.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_quiz/assets/scss/vactory_quiz.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_search/modules/vactory_frequent_searches/assets/scss/vactory_frequent_searches.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_search/modules/vactory_smart_search/assets/scss/vactory_smart_search.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_search_autosuggestions/assets/scss/vactory_search_autosuggestions.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_search_overlay/assets/scss/vactory_search_overlay_v1.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_search_overlay/assets/scss/vactory_search_overlay_v2.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_simulation_credit/assets/scss/vactory_simulation_credit.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_social_network/assets/scss/vactory_social_network.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_sondage/assets/scss/vactory_sondage.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_splashscreen/assets/scss/vactory_splashscreen.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_toolbox/assets/scss/vactory_toolbox.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/1/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/2/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/3/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/4/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/5/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/6/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/7/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/8/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/9/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/10/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/11/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_sliders/widgets/12/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_wysiwyg_templates/assets/scss/components.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_wysiwyg_templates/widgets/52/assets/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_wysiwyg_templates/widgets/53/assets/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_juicer/assets/scss/components.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_brightcove/assets/scss/components.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_bootstrap/assets/scss/components.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_map/assets/scss/variant1.scss"
+    ],
+    "dest": "assets/css/vactory_module"
+  },
+  "css_custom_module": {
+    "file": ["../../modules/custom/vactory_newsroom/assets/scss/card.scss"],
+    "dest": "assets/css/custom_module"
+  },
+  "css_dynamic_field": {
+    "file": [
+      "../../modules/custom/vactory_dynamic_field/widgets/1/assets/style.scss",
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_wysiwyg_templates/widgets/29/assets/style.scss"
+    ]
+  },
+  "css_dynamic_field_default": {
+    "file": [
+      "../../profiles/contrib/vactory_starter_kit/modules/vactory_dynamic_field/modules/vactory_dynamic_field_default/widgets/**/assets/*.scss"
+    ]
+  },
+  "ckeditor": {
+    "file": "src/scss/ckeditor.style.scss",
+    "src": ["src/scss/**/*.scss"],
+    "dest": "assets/css",
+    "includePaths": ["./node_modules/"]
+  },
+  "csscomb": {
+    "src": ["assets/css/*.css"],
+    "dest": "assets/css"
+  },
+  "js": {
+    "file": "vactory.script.js",
+    "src": [
+      "src/js/_variables.js",
+      "src/js/utilities/*.js",
+      "src/js/behaviors/*.js",
+      "src/js/theme/*.js",
+      "src/js/_init.js"
+    ],
+    "dest": "assets/js"
+  },
+  "jsplugins": {
+    "src": "src/js/plugins/*.js",
+    "dest": "assets/js/plugins"
+  },
+  "images": {
+    "src": ["src/img/*.+(png|jpg|gif|svg)"],
+    "dest": "assets/img"
+  },
+  "styleguide": {
+    "src": "src/styleguide/index.twig",
+    "dest": "assets/styleguide",
+    "srcWatch": ["src/styleguide/**/*.twig", "src/styleguide/*.twig"]
+  },
+  "markdown": {
+    "config": "src/markdown/config.md",
+    "files": "src/markdown/patterns/*.md",
+    "dest": "assets/markdown"
+  }
+}

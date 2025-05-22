@@ -1,0 +1,118 @@
+uuid: 854d733e-3279-4b06-8135-ac5df9d26796
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.smart_search
+    - field.field.node.vactory_forum.body
+    - field.field.node.vactory_forum.comment
+    - field.field.node.vactory_forum.field_vactory_date
+    - field.field.node.vactory_forum.field_vactory_excerpt
+    - field.field.node.vactory_forum.field_vactory_forum_room
+    - field.field.node.vactory_forum.field_vactory_forum_status
+    - field.field.node.vactory_forum.field_vactory_forums_thematic
+    - field.field.node.vactory_forum.field_vactory_media
+    - field.field.node.vactory_forum.field_vactory_meta_tags
+    - node.type.vactory_forum
+    - responsive_image.styles.vactory_three_cols
+  module:
+    - datetime
+    - media_responsive_thumbnail
+    - options
+    - user
+    - vactory_field
+  enforced:
+    module:
+      - vactory_forums
+_core:
+  default_config_hash: UehpUWRWOaI2c5bxNUXcg9BFlZEE-cKw27AXQgnyyGs
+id: node.vactory_forum.smart_search
+targetEntityType: node
+bundle: vactory_forum
+mode: smart_search
+content:
+  field_vactory_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd | M | Y'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_excerpt:
+    type: vactory_field_excerpt_formatter
+    label: hidden
+    settings:
+      trim_length: '170'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vactory_forum_room:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_vactory_forum_status:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_vactory_forums_thematic:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_vactory_media:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: vactory_three_cols
+      image_link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  langcode:
+    type: language
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  taxonomy_forums:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  comment: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_meta_tags: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

@@ -1,0 +1,24 @@
+uuid: 152c0dca-ac81-4f8c-a304-d292f63d09e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq
+    - node.type.vactory_faq
+  module:
+    - faqfield
+_core:
+  default_config_hash: Y_CDTWr59pNQf_Hd0lSRgqCfjceQVuysTJzHxeuZ51g
+id: node.vactory_faq.field_faq
+field_name: field_faq
+entity_type: node
+bundle: vactory_faq
+label: 'Frequently Asked Questions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: full_html
+field_type: faqfield

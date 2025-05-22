@@ -1,0 +1,10 @@
+uuid: 5794076e-9da3-42c5-b19f-f67c129a470e
+langcode: en
+status: true
+dependencies: {  }
+id: vactory_paragraph_block
+label: Block
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

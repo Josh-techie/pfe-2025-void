@@ -1,0 +1,23 @@
+uuid: f82f7d2d-1b92-40bc-9bd8-364747d0f359
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: _wd2pIjeMdMYwZ2_VluPYTGdau0Mj5-AB634elkgaKs
+id: node.field_has_corner
+field_name: field_has_corner
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

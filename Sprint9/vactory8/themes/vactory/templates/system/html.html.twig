@@ -1,0 +1,93 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+set body_classes = [
+logged_in ? 'page--logged-in',
+not root_path ? 'page--front' : 'path--' ~ root_path|clean_class,
+node_type ? 'page--' ~ node_type|clean_class,
+db_offline ? 'db-offline',
+node_body_class ? node_body_class,
+]
+%}
+
+{% if html_attributes['dir'] == 'ltr' %}
+  {{ attach_library('vactory/style_ltr') }}
+{% elseif html_attributes['dir'] == 'rtl' %}
+  {{ attach_library('vactory/style_rtl') }}
+{% endif %}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    {% if (attached_css_files) is defined %}
+      {% for element in attached_css_files  %}
+        <link rel="stylesheet" href="{{ element['url'] }}">
+      {% endfor %}
+    {% endif %}
+    <js-placeholder token="{{ placeholder_token|raw }}">
+    <style>body{visibility: hidden}</style>
+  </head>
+  <body {{ attributes.addClass(body_classes) }} {% if node_bg_image is defined %} style="background-image: url('{{ node_bg_image ? node_bg_image }}')" {% endif %} >
+    {% if is_decoupled is defined and iframe_url is not empty %}
+      {{ page_top }}
+      <div class="p-2 border border-primary text-center">
+        <a href="{{ iframe_url }}" target="_blank" class="btn btn-success mr-2">{{ 'View in live mode' }}</a>
+        {% if not logged_in %}
+          <a href="{{ path('vactory_espace_prive.login') }}" class="btn btn-primary">{{ 'Login now' }}</a>
+        {% endif %}
+        <p class="p-3 text-muted">{{ "Le cadre ci-dessous n'est qu'un aperçu de la page en cours, pour une meilleure expérience vous pouvez visiter la page en Live Mode en cliquant sur le bouton 'View in live mode' ci-dessus"|t }}</p>
+      </div>
+      <iframe id="live-site-iframe"
+              title="Frontend site"
+              src="{{ iframe_url }}"
+              class="w-100"
+              onload="this.width=screen.width;this.height=screen.height;">
+      </iframe>
+      <div class="d-none">
+        {{ page }}
+        {{ page_bottom }}
+      </div>
+    {% else %}
+      <a href="#main-content" class="visually-hidden focusable">
+        {{ 'Skip to main content'|t }}
+      </a>
+      {% if is_loading_layer_enabled %}
+        {{ attach_library('vactory_loading_layer/loading_layer_libs') }}
+        <div id="load-layer" class="load-layer">
+          <img class="load-layer__logo img-fluid" src="{{ base_path ~ directory }}/logo.png">
+        </div>
+      {% endif %}
+      {{ page_top }}
+      {{ page }}
+      {{ page_bottom }}
+    {% endif %}
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+  </body>
+</html>

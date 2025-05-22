@@ -1,0 +1,162 @@
+uuid: 687f7e3c-6d22-4065-b9bb-194efca58334
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.locator_entity.vactory_locator.field_agency_path
+    - field.field.locator_entity.vactory_locator.field_locator_additional_adress
+    - field.field.locator_entity.vactory_locator.field_locator_adress
+    - field.field.locator_entity.vactory_locator.field_locator_autre
+    - field.field.locator_entity.vactory_locator.field_locator_autre_2
+    - field.field.locator_entity.vactory_locator.field_locator_autre_3
+    - field.field.locator_entity.vactory_locator.field_locator_category
+    - field.field.locator_entity.vactory_locator.field_locator_city
+    - field.field.locator_entity.vactory_locator.field_locator_country
+    - field.field.locator_entity.vactory_locator.field_locator_description
+    - field.field.locator_entity.vactory_locator.field_locator_email
+    - field.field.locator_entity.vactory_locator.field_locator_fax
+    - field.field.locator_entity.vactory_locator.field_locator_image
+    - field.field.locator_entity.vactory_locator.field_locator_info
+    - field.field.locator_entity.vactory_locator.field_locator_phone
+    - field.field.locator_entity.vactory_locator.field_locator_zipcode
+    - field.field.locator_entity.vactory_locator.field_locator_zoom
+    - vactory_locator.locator_entity_type.vactory_locator
+  module:
+    - media_responsive_thumbnail
+    - telephone
+    - text
+    - vactory_google_map_field
+id: locator_entity.vactory_locator.default
+targetEntityType: locator_entity
+bundle: vactory_locator
+mode: default
+content:
+  field_locator_additional_adress:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_locator_autre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_locator_autre_2:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_locator_autre_3:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_locator_city:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_locator_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_locator_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_locator_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_locator_fax:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_locator_image:
+    type: media_responsive_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      responsive_image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_locator_info:
+    type: vactory_google_map_field_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_locator_phone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_locator_zipcode:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_locator_zoom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_agency_path: true
+  field_is_appointment_enabled: true
+  field_locator_adress: true
+  field_locator_autre_4: true
+  field_locator_autre_5: true
+  field_locator_category: true
+  field_locator_path_alias: true
+  langcode: true
+  search_api_excerpt: true
+  user_id: true

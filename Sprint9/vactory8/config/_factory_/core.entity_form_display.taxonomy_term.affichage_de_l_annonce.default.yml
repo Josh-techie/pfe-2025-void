@@ -1,0 +1,66 @@
+uuid: 21deab11-0447-4b99-808d-8d16b79a03aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.affichage_de_l_annonce.field_nombre_en_jours
+    - taxonomy.vocabulary.affichage_de_l_annonce
+  module:
+    - path
+    - text
+_core:
+  default_config_hash: By4h1aNv4TydcqbpujAkxvAbmsBHzTtug2nTAjTQqqQ
+id: taxonomy_term.affichage_de_l_annonce.default
+targetEntityType: taxonomy_term
+bundle: affichage_de_l_annonce
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_nombre_en_jours:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

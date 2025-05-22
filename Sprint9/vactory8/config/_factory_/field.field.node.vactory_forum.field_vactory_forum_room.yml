@@ -1,0 +1,34 @@
+uuid: bf216fb6-f322-4082-9abb-8d94c22b8f75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_forum_room
+    - node.type.vactory_forum
+    - taxonomy.vocabulary.vactory_forum_room
+  enforced:
+    module:
+      - vactory_forums
+_core:
+  default_config_hash: FHpTUfsUz5tE1hz789IkC4TBcOoyicmZAhYh5fsj3PU
+id: node.vactory_forum.field_vactory_forum_room
+field_name: field_vactory_forum_room
+entity_type: node
+bundle: vactory_forum
+label: 'Forum Room'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vactory_forum_room: vactory_forum_room
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

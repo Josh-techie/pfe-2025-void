@@ -1,0 +1,52 @@
+uuid: 042b5b14-733c-4549-a97c-6081e375c054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_paragraphs
+    - node.type.vactory_academy_agency
+    - paragraphs.paragraphs_type.vactory_component
+    - paragraphs.paragraphs_type.vactory_paragraph_block
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: RaSqmAMa4CyMuM9Yccto7em7DkZhYp4oAKUmFBz6i5E
+id: node.vactory_academy_agency.field_vactory_paragraphs
+field_name: field_vactory_paragraphs
+entity_type: node
+bundle: vactory_academy_agency
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      vactory_component: vactory_component
+      vactory_paragraph_block: vactory_paragraph_block
+      vactory_paragraph_multi_template: vactory_paragraph_multi_template
+    negate: 0
+    target_bundles_drag_drop:
+      vactory_component:
+        weight: 6
+        enabled: true
+      vactory_paragraph_block:
+        weight: 7
+        enabled: true
+      vactory_paragraph_multi_template:
+        weight: 8
+        enabled: true
+      vactory_paragraph_tab:
+        weight: 9
+        enabled: false
+      views_reference:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

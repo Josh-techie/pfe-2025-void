@@ -1,0 +1,33 @@
+uuid: 6d4c9ba4-8620-471d-989b-691828b9bd92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_media
+    - media.type.image
+    - node.type.vactory_publication_prive
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: 5LUR0HP6BVjWNHVlU2Ppgv5ifdV2_Uoa2pp3kDl0uyE
+id: node.vactory_publication_prive.field_vactory_media
+field_name: field_vactory_media
+entity_type: node
+bundle: vactory_publication_prive
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

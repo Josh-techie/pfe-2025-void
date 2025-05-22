@@ -1,0 +1,69 @@
+uuid: ff7942e1-817b-45d7-bd32-f3d3c589fe50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_partner.body
+    - field.field.node.vactory_partner.field_vactory_call_to_action
+    - field.field.node.vactory_partner.field_vactory_media
+    - field.field.node.vactory_partner.field_vactory_seo_status
+    - node.type.vactory_partner
+    - responsive_image.styles.partner_responsive_image_style
+  module:
+    - link
+    - media_responsive_thumbnail
+    - text
+    - user
+_core:
+  default_config_hash: h3JZbM2GZiRnPqsBYApuxNlz1S0CoEffmR7ki4t1Gkc
+id: node.vactory_partner.default
+targetEntityType: node
+bundle: vactory_partner
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_vactory_call_to_action:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_vactory_media:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: partner_responsive_image_style
+      image_link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

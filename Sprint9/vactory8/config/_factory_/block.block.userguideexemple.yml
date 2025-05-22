@@ -1,0 +1,31 @@
+uuid: fc264bc6-a25a-4810-b970-f443bfa3b9a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:vactory_user_guide:fc19759a-0038-4e67-b073-809a6ac742ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - vactory
+id: userguideexemple
+theme: vactory
+region: bottom
+weight: 0
+provider: null
+plugin: 'block_content:fc19759a-0038-4e67-b073-809a6ac742ff'
+settings:
+  id: 'block_content:fc19759a-0038-4e67-b073-809a6ac742ff'
+  label: 'User Guide Exemple'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

@@ -1,0 +1,26 @@
+uuid: f8351282-ad07-4f0d-b263-e90b779a4c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_date
+    - node.type.vactory_testimonials
+  module:
+    - datetime
+_core:
+  default_config_hash: 099o437DCw_YVHCCaNSHmKg4UCxP44vRba5kv6TP3Tk
+id: node.vactory_testimonials.field_vactory_date
+field_name: field_vactory_date
+entity_type: node
+bundle: vactory_testimonials
+label: Date
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

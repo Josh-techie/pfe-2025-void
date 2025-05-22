@@ -1,0 +1,13 @@
+uuid: 9c833fc8-8089-4c9c-af3d-9922eaf52d80
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yU-ABfmNkq_jrgwts9kNAX19EGuYz2RoOpOXwiF_GwQ
+name: Publication
+type: vactory_publication
+description: 'Manage your publications content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

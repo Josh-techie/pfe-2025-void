@@ -1,0 +1,16 @@
+uuid: f9f1bebf-0e1a-4270-9bd6-7e177352fd14
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: JvCkOiU5gZYIB0E32O4R2j6YjkQKrfhkujPGY-tCuY8
+name: 'Annual report'
+type: vactory_annual_report
+description: 'Manage your Annual Reports content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

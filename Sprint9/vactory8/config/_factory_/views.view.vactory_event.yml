@@ -1,0 +1,1914 @@
+uuid: 95dcf4c5-6eed-4561-889b-1883517a4cb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.card_inline
+    - core.entity_view_mode.node.masonry
+    - entityqueue.entity_queue.vactory_block_three_columns
+    - entityqueue.entity_queue.vactory_block_two_columns
+    - entityqueue.entity_queue.vactory_event_block_masonry
+    - entityqueue.entity_queue.vactory_event_slider_large
+    - entityqueue.entity_queue.vactory_event_slider_small
+    - taxonomy.vocabulary.vactory_event_category
+    - taxonomy.vocabulary.vactory_event_citys
+  module:
+    - better_exposed_filters
+    - datetime
+    - entityqueue
+    - node
+    - taxonomy
+    - user
+    - vactory_views
+_core:
+  default_config_hash: K6WQBmWV5ZhsPUalmvKiAaooC4Ep4SqzAGbvGHtloDA
+id: vactory_event
+label: 'Vactory Event'
+module: views
+description: 'Find and manage events.'
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Master
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Listing One Column'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: '&nbsp;'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              text_input_required: 'Select any filter and click on Apply to see results'
+              text_input_required_format: basic_html
+            sort:
+              plugin_id: default
+              advanced:
+                combine: true
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              field_vactory_taxonomy_1_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vactory_taxonomy_2_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vactory_date_interval_value:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'Aucun résultat n''a été trouvé !'
+          tokenize: false
+      sorts: {  }
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+      style:
+        type: default
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_masonry:
+    id: block_masonry
+    display_title: 'Block Masonry'
+    display_plugin: block
+    position: 8
+    display_options:
+      enabled: true
+      title: 'Block Masonry'
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_masonry
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          transitionDuration: 0.4s
+          stagger: '30'
+          resize: 1
+          horizontalOrder: 1
+          originTop: 1
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: masonry
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: vactory_event_block_masonry
+      css_class: block-masonry-vactory-event
+      use_more: false
+      use_more_always: true
+      use_more_text: 'See more'
+      link_display: listing_masonry
+      link_url: vactory/events/listing-masonry
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: Masonry
+      block_category: Events
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.vactory_event_block_masonry'
+        - entity_field_info
+        - views_data
+  block_slider_large:
+    id: block_slider_large
+    display_title: 'Block Slider Large'
+    display_plugin: block
+    position: 2
+    display_options:
+      enabled: true
+      title: 'Block slider large'
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_slider
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          slidesToShow: '1'
+          slidesToScroll: '1'
+          speed: '800'
+          infinite: 1
+          dots: 1
+          cssEase: 'cubic-bezier(0.585, -0.005, 0.635, 0.920)'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card_inline
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: vactory_event_slider_large
+      css_class: block-slider-large-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: true
+      use_more_text: 'See more'
+      link_display: listing_one_column
+      link_url: vactory/events/listing-one-column
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Slider Large'
+      block_category: Events
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.vactory_event_slider_large'
+        - entity_field_info
+        - views_data
+  block_slider_small:
+    id: block_slider_small
+    display_title: 'Block Slider Small'
+    display_plugin: block
+    position: 2
+    display_options:
+      enabled: true
+      title: 'Block slider small'
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_slider
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          slidesToShow: '3'
+          slidesToScroll: '1'
+          speed: '800'
+          infinite: 1
+          dots: 1
+          cssEase: 'cubic-bezier(0.585, -0.005, 0.635, 0.920)'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: vactory_event_slider_small
+      css_class: block-slider-small-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: true
+      use_more_text: 'See more'
+      link_display: listing_one_column
+      link_url: vactory/events/listing-one-column
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Slider Small'
+      block_category: Events
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.vactory_event_slider_small'
+        - entity_field_info
+        - views_data
+  block_three_columns:
+    id: block_three_columns
+    display_title: 'Block Three Columns'
+    display_plugin: block
+    position: 2
+    display_options:
+      enabled: true
+      title: 'Block three columns'
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_grid
+        options:
+          uses_fields: false
+          xs: col-xs-12
+          sm: col-sm-6
+          md: col-md-4
+          lg: col-lg-4
+          wrapper_class_custom: eq-height
+          row_class_default: 1
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: vactory_block_three_columns
+      css_class: block-three-columns-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: true
+      use_more_text: 'See more'
+      link_display: listing_three_columns
+      link_url: vactory/events/listing-one-column
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Three Columns'
+      block_category: Events
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.vactory_block_three_columns'
+        - entity_field_info
+        - views_data
+  block_two_columns:
+    id: block_two_columns
+    display_title: 'Block Two Columns'
+    display_plugin: block
+    position: 2
+    display_options:
+      enabled: true
+      title: 'Block two columns'
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: entityqueue_relationship
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_grid
+        options:
+          uses_fields: false
+          xs: col-xs-12
+          sm: col-sm-6
+          md: col-md-6
+          lg: col-lg-6
+          wrapper_class_custom: eq-height
+          row_class_default: 1
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: false
+          limit_queue: vactory_block_two_columns
+      css_class: block-two-columns-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: true
+      use_more_text: 'See more'
+      link_display: listing_two_columns
+      link_url: vactory/events/listing-two-columns
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: 'Two Columns'
+      block_category: Events
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.vactory_block_two_columns'
+        - entity_field_info
+        - views_data
+  listing_masonry:
+    id: listing_masonry
+    display_title: 'Listing Masonry'
+    display_plugin: page
+    position: 9
+    display_options:
+      enabled: true
+      title: 'Events - Masonry'
+      pager:
+        type: full
+        options:
+          items_per_page: 9
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vactory_taxonomy_1_target_id:
+          id: field_vactory_taxonomy_1_target_id
+          table: node__field_vactory_taxonomy_1
+          field: field_vactory_taxonomy_1_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by category'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+          vid: vactory_event_category
+          type: select
+        field_vactory_taxonomy_2_target_id:
+          id: field_vactory_taxonomy_2_target_id
+          table: node__field_vactory_taxonomy_2
+          field: field_vactory_taxonomy_2_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by city'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: city
+            required: false
+          vid: vactory_event_citys
+          type: select
+        field_vactory_date_interval_value:
+          id: field_vactory_date_interval_value
+          table: node__field_vactory_date_interval
+          field: field_vactory_date_interval_value
+          entity_type: node
+          plugin_id: datetime
+          operator: regular_expression
+          value:
+            min: ''
+            max: ''
+            value: '.*'
+            type: date
+          exposed: true
+          expose:
+            label: 'Filter by date'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: date
+            required: false
+            placeholder: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_masonry
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          transitionDuration: 0.4s
+          stagger: '30'
+          resize: 1
+          horizontalOrder: 1
+          originTop: 1
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: masonry
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships: {  }
+      css_class: listing-masonry-vactory-event
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: vactory/events/listing-masonry
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  listing_one_column:
+    id: listing_one_column
+    display_title: 'Listing One Column'
+    display_plugin: page
+    position: 1
+    display_options:
+      enabled: true
+      title: 'Events - Listing One Column'
+      pager:
+        type: full
+        options:
+          items_per_page: 9
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: '&nbsp;'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Sélectionnez n''importe quel filtre et cliquez sur Appliquer pour voir les résultats'
+          text_input_required_format: restricted_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Options avancées'
+              text_input_required: 'Sélectionnez n''importe quel filtre et cliquez sur Appliquer pour voir les résultats'
+              text_input_required_format: basic_html
+            sort:
+              plugin_id: default
+              advanced:
+                combine: true
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              field_vactory_taxonomy_1_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vactory_taxonomy_2_target_id:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              field_vactory_date_interval_value:
+                plugin_id: default
+                advanced:
+                  sort_options: false
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vactory_taxonomy_1_target_id:
+          id: field_vactory_taxonomy_1_target_id
+          table: node__field_vactory_taxonomy_1
+          field: field_vactory_taxonomy_1_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by category'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+          vid: vactory_event_category
+          type: select
+        field_vactory_taxonomy_2_target_id:
+          id: field_vactory_taxonomy_2_target_id
+          table: node__field_vactory_taxonomy_2
+          field: field_vactory_taxonomy_2_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by city'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: city
+            required: false
+          vid: vactory_event_citys
+          type: select
+        field_vactory_date_interval_value:
+          id: field_vactory_date_interval_value
+          table: node__field_vactory_date_interval
+          field: field_vactory_date_interval_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: datetime
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Filter by date'
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: date
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              super_administrator: '0'
+              master: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_grid
+        options:
+          uses_fields: false
+          xs: col-xs-12
+          sm: col-sm-12
+          md: col-md-12
+          lg: col-lg-12
+          wrapper_class_custom: eq-height
+          row_class_default: 1
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card_inline
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        exposed_form: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
+      relationships: {  }
+      css_class: listing-one-column-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: vactory/events/listing-one-column
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  listing_three_columns:
+    id: listing_three_columns
+    display_title: 'Listing Three Columns'
+    display_plugin: page
+    position: 1
+    display_options:
+      enabled: true
+      title: 'Events - Listing Three Columns'
+      pager:
+        type: full
+        options:
+          items_per_page: 9
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vactory_taxonomy_1_target_id:
+          id: field_vactory_taxonomy_1_target_id
+          table: node__field_vactory_taxonomy_1
+          field: field_vactory_taxonomy_1_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by category'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+          vid: vactory_event_category
+          type: select
+        field_vactory_taxonomy_2_target_id:
+          id: field_vactory_taxonomy_2_target_id
+          table: node__field_vactory_taxonomy_2
+          field: field_vactory_taxonomy_2_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by city'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: city
+            required: false
+          vid: vactory_event_citys
+          type: select
+        field_vactory_date_interval_value:
+          id: field_vactory_date_interval_value
+          table: node__field_vactory_date_interval
+          field: field_vactory_date_interval_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: datetime
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Filter by date'
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: date
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              super_administrator: '0'
+              master: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_grid
+        options:
+          uses_fields: false
+          xs: col-xs-12
+          sm: col-sm-6
+          md: col-md-4
+          lg: col-lg-4
+          wrapper_class_custom: eq-height
+          row_class_default: 1
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships: {  }
+      css_class: listing-three-columns-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: vactory/events/listing-three-columns
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  listing_two_columns:
+    id: listing_two_columns
+    display_title: 'Listing Two Columns'
+    display_plugin: page
+    position: 1
+    display_options:
+      enabled: true
+      title: 'Events - Listing Two Columns'
+      pager:
+        type: full
+        options:
+          items_per_page: 8
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_vactory_taxonomy_1_target_id:
+          id: field_vactory_taxonomy_1_target_id
+          table: node__field_vactory_taxonomy_1
+          field: field_vactory_taxonomy_1_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by category'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: category
+            required: false
+          vid: vactory_event_category
+          type: select
+        field_vactory_taxonomy_2_target_id:
+          id: field_vactory_taxonomy_2_target_id
+          table: node__field_vactory_taxonomy_2
+          field: field_vactory_taxonomy_2_target_id
+          plugin_id: taxonomy_index_tid
+          exposed: true
+          expose:
+            label: 'Filter by city'
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: city
+            required: false
+          vid: vactory_event_citys
+          type: select
+        field_vactory_date_interval_value:
+          id: field_vactory_date_interval_value
+          table: node__field_vactory_date_interval
+          field: field_vactory_date_interval_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: datetime
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Filter by date'
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: date
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              super_administrator: '0'
+              master: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            - vactory_event
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          exposed: false
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: vactory_views_grid
+        options:
+          uses_fields: false
+          xs: col-xs-12
+          sm: col-sm-6
+          md: col-md-6
+          lg: col-lg-6
+          wrapper_class_custom: eq-height
+          row_class_default: 1
+          row_class_custom: ''
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
+      defaults:
+        title: false
+        css_class: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
+        relationships: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      relationships: {  }
+      css_class: listing-two-columns-vactory-event
+      display_description: ''
+      use_more: false
+      use_more_always: false
+      use_more_text: more
+      rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      path: vactory/events/listing-two-columns
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

@@ -1,0 +1,27 @@
+uuid: 61797263-cc0b-49a5-97d6-d02032f48728
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 9NoNub-WcW6DwU9D4jXbrjtAE3LLk1glDMNUh_D50Og
+id: vactory_block_three_columns
+label: 'Event Block Three Columns'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_event: vactory_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

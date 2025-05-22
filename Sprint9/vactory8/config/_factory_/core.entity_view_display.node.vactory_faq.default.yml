@@ -1,0 +1,45 @@
+uuid: fc56f8a5-8f83-4ff1-b908-bfa81a319cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_faq.body
+    - field.field.node.vactory_faq.field_faq
+    - field.field.node.vactory_faq.field_vactory_seo_status
+    - node.type.vactory_faq
+  module:
+    - user
+    - yoast_seo
+_core:
+  default_config_hash: Sow_MV3sZAXalPy-Q_7OQAGOdZzREiZT_6kARpQ0tKs
+id: node.vactory_faq.default
+targetEntityType: node
+bundle: vactory_faq
+mode: default
+content:
+  field_vactory_seo_status:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_faq: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

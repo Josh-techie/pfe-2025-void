@@ -1,0 +1,25 @@
+uuid: 36c3ccde-ec81-4d77-a992-8d17c082579b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_tender
+  module:
+    - text
+_core:
+  default_config_hash: R0fcl626ACwEHPIgBvP-8VPRtOHmTndjjFpM4hDG7VI
+id: node.vactory_tender.body
+field_name: body
+entity_type: node
+bundle: vactory_tender
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

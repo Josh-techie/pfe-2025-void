@@ -1,0 +1,22 @@
+uuid: db7c4215-2880-4f5b-bba3-3e45b762ef74
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: AkSdEUtY7jYsjOIbwNK_xursp2wR1lYoJbljAf_63Vg
+id: node.field_vactory_city
+field_name: field_vactory_city
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

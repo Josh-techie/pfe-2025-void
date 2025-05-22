@@ -1,0 +1,25 @@
+uuid: 6a157072-6326-434b-84a3-3529cd8a5269
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: EGXJIQRaNrPQvW62_egIKuMwBAmIQJL0GSXs6NyLvpg
+id: node.field_ar_thematic
+field_name: field_ar_thematic
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: f3b50e75-c9f2-49c4-9d22-a7e393e084b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.medium_year
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: FkBSWaaEkBdF9O_GCTbSwDczkz-AX5uN9EMzFv2Y1lE
+id: taxonomy_term.medium_year
+target_entity_type_id: taxonomy_term
+target_bundle: medium_year
+default_langcode: site_default
+language_alterable: false

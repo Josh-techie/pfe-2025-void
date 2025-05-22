@@ -1,0 +1,20 @@
+uuid: b0da5d4a-af9b-43c5-a34f-8ec845520b62
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - vactory_dynamic_field
+id: vactory_dynamic_field.f37aab8767d22114fa7db31997b3333d
+field_name: f37aab8767d22114fa7db31997b3333d
+entity_type: vactory_dynamic_field
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

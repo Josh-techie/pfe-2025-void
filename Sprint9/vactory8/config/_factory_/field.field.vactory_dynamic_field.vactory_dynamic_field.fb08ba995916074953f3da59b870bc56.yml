@@ -1,0 +1,25 @@
+uuid: 3bf0f56e-e60b-40b3-9ea6-53487286f325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vactory_dynamic_field.fb08ba995916074953f3da59b870bc56
+    - media.type.image
+  module:
+    - vactory_dynamic_field
+id: vactory_dynamic_field.vactory_dynamic_field.fb08ba995916074953f3da59b870bc56
+field_name: fb08ba995916074953f3da59b870bc56
+entity_type: vactory_dynamic_field
+bundle: vactory_dynamic_field
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

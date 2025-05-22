@@ -1,0 +1,25 @@
+uuid: 25a5b93d-2567-4c13-b0d5-59d1e1de0d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vactory_dynamic_field.f78be32fbfab1bcdcfbdbcc1f026edfd
+    - media.type.image
+  module:
+    - vactory_dynamic_field
+id: vactory_dynamic_field.vactory_dynamic_field.f78be32fbfab1bcdcfbdbcc1f026edfd
+field_name: f78be32fbfab1bcdcfbdbcc1f026edfd
+entity_type: vactory_dynamic_field
+bundle: vactory_dynamic_field
+label: 'Logo company'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

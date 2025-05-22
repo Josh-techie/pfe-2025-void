@@ -1,0 +1,28 @@
+uuid: 843927f5-b9fa-47cb-804b-0e06411879e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_seo_status
+    - node.type.vactory_glossary
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: Rfqc-oLoGR7jFN_EbNWDKThk7O1K5RZp7b9oqFxD02M
+id: node.vactory_glossary.field_vactory_seo_status
+field_name: field_vactory_seo_status
+entity_type: node
+bundle: vactory_glossary
+label: 'SEO Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: ''
+    focus_keyword: ''
+    title: null
+    description: null
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

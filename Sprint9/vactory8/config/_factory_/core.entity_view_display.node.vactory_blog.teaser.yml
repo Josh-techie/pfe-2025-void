@@ -1,0 +1,60 @@
+uuid: 43257814-bd23-491c-a237-9fdbe61b0f12
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_blog.body
+    - field.field.node.vactory_blog.field_blog_category
+    - field.field.node.vactory_blog.field_blog_tags
+    - field.field.node.vactory_blog.field_contenu_lie
+    - field.field.node.vactory_blog.field_places
+    - field.field.node.vactory_blog.field_vactory_excerpt
+    - field.field.node.vactory_blog.field_vactory_media
+    - field.field.node.vactory_blog.field_vactory_meta_tags
+    - field.field.node.vactory_blog.field_vactory_seo_status
+    - node.type.vactory_blog
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: Vn7pQt4tBGyHCNhkUP2Kd5iUCj0ny3pP5IZ3GLu5uiM
+id: node.vactory_blog.teaser
+targetEntityType: node
+bundle: vactory_blog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_blog_category: true
+  field_blog_tags: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_contenu_lie: true
+  field_place: true
+  field_places: true
+  field_vactory_excerpt: true
+  field_vactory_media: true
+  field_vactory_meta_tags: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

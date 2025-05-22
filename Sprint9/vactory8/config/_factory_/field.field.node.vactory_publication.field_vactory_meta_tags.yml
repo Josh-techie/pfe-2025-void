@@ -1,0 +1,23 @@
+uuid: 99c1b9b0-2332-4c6f-babf-e46eb0d1d94c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_meta_tags
+    - node.type.vactory_publication
+  module:
+    - metatag
+_core:
+  default_config_hash: fpettVAFweZqIAbw0aOn9yUIsLtQmMpEJgb2ZxNzUnY
+id: node.vactory_publication.field_vactory_meta_tags
+field_name: field_vactory_meta_tags
+entity_type: node
+bundle: vactory_publication
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

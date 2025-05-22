@@ -1,0 +1,73 @@
+uuid: 22ba8539-0d42-4528-af37-dba65e5f1555
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_quiz.body
+    - field.field.node.vactory_quiz.field_certificat_require
+    - field.field.node.vactory_quiz.field_enable_certificat
+    - field.field.node.vactory_quiz.field_quiz_questions
+    - node.type.vactory_quiz
+  module:
+    - options
+    - text
+    - user
+    - vactory_quiz
+  enforced:
+    module:
+      - vactory_quiz
+_core:
+  default_config_hash: bpI5WJDIl1c2WavzkUsISbcM00D16mHpxg-4Gn_NGYE
+id: node.vactory_quiz.default
+targetEntityType: node
+bundle: vactory_quiz
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_certificat_require:
+    type: list_key
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_enable_certificat:
+    type: boolean
+    label: visually_hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_quiz_questions:
+    type: vactory_quiz_question_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

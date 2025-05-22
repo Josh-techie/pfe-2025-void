@@ -1,0 +1,8 @@
+uuid: dd6387a8-bd46-4b0d-ba9a-4c3d700718ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Locator - City'
+vid: locator_city
+description: 'City for locator items'
+weight: 0

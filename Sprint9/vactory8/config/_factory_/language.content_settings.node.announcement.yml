@@ -1,0 +1,18 @@
+uuid: 00478b1d-ac32-484d-bbea-528a78067807
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.announcement
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: 2T3hUcb7Gs7ussh9vrh1WppMtCLqQIpL1RYKeU6xnoY
+id: node.announcement
+target_entity_type_id: node
+target_bundle: announcement
+default_langcode: fr
+language_alterable: true

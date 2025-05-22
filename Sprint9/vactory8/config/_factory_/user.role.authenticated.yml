@@ -1,0 +1,18 @@
+uuid: 8d0467cb-6082-4f55-8878-f9b87573ba9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.mailchimp_campaign
+  module:
+    - admin_feedback
+    - comment
+    - filter
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'give feedback'
+  - 'post comments'
+  - 'use text format mailchimp_campaign'

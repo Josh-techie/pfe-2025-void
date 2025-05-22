@@ -1,0 +1,25 @@
+uuid: 14f6cb16-2e1d-4ca6-9944-e89844ccb2e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_partner
+  module:
+    - text
+_core:
+  default_config_hash: lfeiu6_ovCCOCZtNMhxGsSUtPBgtrfON-8ZOYPE3jwQ
+id: node.vactory_partner.body
+field_name: body
+entity_type: node
+bundle: vactory_partner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

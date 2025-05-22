@@ -1,0 +1,31 @@
+uuid: b4168120-a31f-4a18-9c0e-49469e3996d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_publication_theme
+    - node.type.vactory_publication
+    - taxonomy.vocabulary.vactory_publication_theme
+_core:
+  default_config_hash: Ctmk8DS9cCsj789Oq2ILRe9sPNOStl_C5ADrQGtHDrE
+id: node.vactory_publication.field_vactory_publication_theme
+field_name: field_vactory_publication_theme
+entity_type: node
+bundle: vactory_publication
+label: Theme
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vactory_publication_theme: vactory_publication_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

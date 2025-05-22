@@ -1,0 +1,94 @@
+uuid: e0f06501-cb79-4aff-b025-1b81b20ac6b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_press_kit.field_press_kit_theme
+    - field.field.node.vactory_press_kit.field_vactory_date
+    - field.field.node.vactory_press_kit.field_vactory_document
+    - field.field.node.vactory_press_kit.field_vactory_excerpt
+    - field.field.node.vactory_press_kit.field_vactory_media
+    - field.field.node.vactory_press_kit.field_vactory_meta_tags
+    - field.field.node.vactory_press_kit.field_vactory_seo_status
+    - node.type.vactory_press_kit
+    - responsive_image.styles.vactory_three_cols
+  module:
+    - datetime
+    - file
+    - media_responsive_thumbnail
+    - metatag
+    - text
+    - user
+_core:
+  default_config_hash: ycjDnV4rd1sjI8wn_ZiwpFtgSbK8VMWfD6Qa_IWg2Ro
+id: node.vactory_press_kit.default
+targetEntityType: node
+bundle: vactory_press_kit
+mode: default
+content:
+  field_press_kit_theme:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vactory_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_document:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_vactory_excerpt:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vactory_media:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: vactory_three_cols
+      image_link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_vactory_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

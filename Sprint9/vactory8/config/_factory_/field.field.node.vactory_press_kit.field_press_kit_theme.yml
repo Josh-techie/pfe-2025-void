@@ -1,0 +1,31 @@
+uuid: d890a2cb-6aeb-4212-84d4-5bae8cc9e796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_kit_theme
+    - node.type.vactory_press_kit
+    - taxonomy.vocabulary.press_kit_theme
+_core:
+  default_config_hash: 37Lvg0oZX7c67hps1GpvxC42MYHuoL2gsIGBFkC9v5Q
+id: node.vactory_press_kit.field_press_kit_theme
+field_name: field_press_kit_theme
+entity_type: node
+bundle: vactory_press_kit
+label: Theme
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      press_kit_theme: press_kit_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

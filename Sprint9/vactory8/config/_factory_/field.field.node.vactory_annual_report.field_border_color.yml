@@ -1,0 +1,28 @@
+uuid: a625846a-83a3-4c9e-bbc9-7446ff62b2e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_border_color
+    - node.type.vactory_annual_report
+  module:
+    - colorapi
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: WCGuiyHrkKmIb9dJEobnxOoB8cFgX2ZCGsfx8vfNz7w
+id: node.vactory_annual_report.field_border_color
+field_name: field_border_color
+entity_type: node
+bundle: vactory_annual_report
+label: 'Border Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#FFFFFF'
+default_value_callback: ''
+settings: {  }
+field_type: colorapi_color_field

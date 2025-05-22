@@ -1,0 +1,24 @@
+uuid: a07a4f5b-d309-44a8-b03c-456ded4255c4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: juYAqPfw4NwTyDlf-ZJGEZ2ErmgWDDETh3gT96f2FAw
+id: announcement_pattern
+label: 'Announcement Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  0053d302-61be-4c69-950a-bbd8c99cf787:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0053d302-61be-4c69-950a-bbd8c99cf787
+    context_mapping:
+      node: node
+    bundles:
+      announcement: announcement
+selection_logic: and
+weight: -5
+relationships: {  }

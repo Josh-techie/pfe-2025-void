@@ -1,0 +1,52 @@
+uuid: 09fae127-0332-452e-b035-bb8817230c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.toolbox.field_menu_image
+    - image.style.thumbnail
+    - system.menu.toolbox
+  module:
+    - image
+    - link
+    - menu_item_extras
+  enforced:
+    module:
+      - vactory_toolbox
+_core:
+  default_config_hash: dVnfEsLUnreKeEIpBBuE5_ArIo-w48uTkwmCXXeTvws
+id: menu_link_content.toolbox.default
+targetEntityType: menu_link_content
+bundle: toolbox
+mode: default
+content:
+  field_menu_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: 0b943315-afd9-48bb-aa34-beab9effda07
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: q0XfwUaCd_N1CCfFRwkOcXq86PclpsKKOGUR8FxLq4Q
+id: taxonomy_term.field_media_type_css_class
+field_name: field_media_type_css_class
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+uuid: 25b8f7f0-4e7c-49d7-9d47-6f8e1b63f5fa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.vactory_press_kit_slider_lar
+_core:
+  default_config_hash: Y0kGhv81A2Onrv15g4sKYIOm94NmizzykrAq1GXDAPw
+id: entity_subqueue.vactory_press_kit_slider_lar
+target_entity_type_id: entity_subqueue
+target_bundle: vactory_press_kit_slider_lar
+default_langcode: current_interface
+language_alterable: false

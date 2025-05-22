@@ -1,0 +1,21 @@
+uuid: 8ba6024d-9f98-49f6-b048-9696f6753ba2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - vactory_locator
+id: locator_entity.field_locator_autre_5
+field_name: field_locator_autre_5
+entity_type: locator_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

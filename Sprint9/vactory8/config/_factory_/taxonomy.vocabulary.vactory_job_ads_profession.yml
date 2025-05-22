@@ -1,0 +1,10 @@
+uuid: a4a32c6a-f0e6-4152-8bde-46aa1766cd37
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cuurpXI0I7h0tzDk4Nz8wXSFbeVpDYFWZ0Xz3Kjlf2U
+name: 'Job Ads - Profession'
+vid: vactory_job_ads_profession
+description: 'Taxonomy for Vactory job Ads Profession'
+weight: 0

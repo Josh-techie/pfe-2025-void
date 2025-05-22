@@ -1,0 +1,26 @@
+uuid: 0dce3ce0-5c75-4031-aafb-5a28375dc80f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.vactory_block_component
+    - field.storage.block_content.field_dynamic_block_components
+  module:
+    - vactory_dynamic_field
+_core:
+  default_config_hash: mkzDwtTOkfXruvopWcEmeBbVJejZuIPVp0mUQ9PWxFU
+id: block_content.vactory_block_component.field_dynamic_block_components
+field_name: field_dynamic_block_components
+entity_type: block_content
+bundle: vactory_block_component
+label: Templates
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value:
+      template: -1
+default_value_callback: ''
+settings: {  }
+field_type: field_wysiwyg_dynamic

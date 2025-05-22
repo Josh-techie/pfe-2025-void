@@ -1,0 +1,27 @@
+uuid: 0204d1e0-0719-4f9d-801e-f2901e137d72
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: S-5MWp08lkYADOAmCZbf5uL8OmD93UH_LgjbZ5YBOcA
+id: vactory_blog_slider_small
+label: 'Blog Slider Small'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_blog: vactory_blog
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

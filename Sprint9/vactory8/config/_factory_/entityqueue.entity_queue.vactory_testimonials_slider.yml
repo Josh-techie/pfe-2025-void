@@ -1,0 +1,27 @@
+uuid: f359e062-cb34-400d-9ed5-1140faddef77
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: u2VCaUshOhSDq5dJA7eMPTjdejq9CV6jNh0oWjm1Hx8
+id: vactory_testimonials_slider
+label: 'Testimonials Block Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_testimonials: vactory_testimonials
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

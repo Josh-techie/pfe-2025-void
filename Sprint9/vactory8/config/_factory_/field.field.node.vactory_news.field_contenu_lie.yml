@@ -1,0 +1,21 @@
+uuid: 687707b6-14ec-4faa-b575-a24aeb65d221
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu_lie
+    - node.type.vactory_news
+  module:
+    - vactory_cross_content
+id: node.vactory_news.field_contenu_lie
+field_name: field_contenu_lie
+entity_type: node
+bundle: vactory_news
+label: 'Contenu lié'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_cross_content

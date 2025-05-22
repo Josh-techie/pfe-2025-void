@@ -1,0 +1,38 @@
+uuid: a29f062d-3ed1-44c4-a509-4a58b53c1a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.vactory_toolbox
+    - field.field.block_content.vactory_toolbox.field_dynamic_block_components
+    - field.field.block_content.vactory_toolbox.field_links_source
+  module:
+    - options
+    - vactory_dynamic_field
+  enforced:
+    module:
+      - vactory_toolbox
+_core:
+  default_config_hash: NITq5uoT5z-_OuaOVcJwjYZvVU6aTPBg9PGbnEaYsao
+id: block_content.vactory_toolbox.default
+targetEntityType: block_content
+bundle: vactory_toolbox
+mode: default
+content:
+  field_dynamic_block_components:
+    type: field_wysiwyg_dynamic_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_links_source:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

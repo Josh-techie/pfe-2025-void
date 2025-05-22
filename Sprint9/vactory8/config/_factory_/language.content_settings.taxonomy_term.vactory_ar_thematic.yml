@@ -1,0 +1,16 @@
+uuid: 5c8de51b-1d18-4fae-89f4-0105c1d7bae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_ar_thematic
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: dPr9ZGk6-A8BNci_P-LBrr8yLUBAAh6EJn65O3EeXo8
+id: taxonomy_term.vactory_ar_thematic
+target_entity_type_id: taxonomy_term
+target_bundle: vactory_ar_thematic
+default_langcode: site_default
+language_alterable: false

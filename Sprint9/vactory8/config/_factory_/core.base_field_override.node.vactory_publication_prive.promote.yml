@@ -1,0 +1,27 @@
+uuid: 39212aeb-cf1b-4d85-b7a4-9c865c533135
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vactory_publication_prive
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: 73NppK5oO1lS-ktT7UkbXXNJMwh8d6Y7Rv5Uksrw3bk
+id: node.vactory_publication_prive.promote
+field_name: promote
+entity_type: node
+bundle: vactory_publication_prive
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

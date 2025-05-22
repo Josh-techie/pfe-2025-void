@@ -1,0 +1,19 @@
+uuid: 916a6b72-4323-4fb4-9fe8-de1aae888ea3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - vactory_cross_content
+id: node.field_contenu_lie
+field_name: field_contenu_lie
+entity_type: node
+type: field_cross_content
+settings: {  }
+module: vactory_cross_content
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

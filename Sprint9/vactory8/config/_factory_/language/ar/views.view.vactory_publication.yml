@@ -1,0 +1,55 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+  listing_masonry:
+    display_options:
+      use_more_text: المزيد
+      filters:
+        field_vactory_publication_theme_target_id:
+          expose:
+            label: حلة
+        field_vactory_date_value:
+          expose:
+            label: 'أُنشِئ يوم'
+  listing_one_column:
+    display_options:
+      filters:
+        field_vactory_publication_theme_target_id:
+          expose:
+            label: حلة
+        field_vactory_date_value:
+          expose:
+            label: 'أُنشِئ يوم'
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      use_more_text: المزيد
+  listing_three_columns:
+    display_options:
+      use_more_text: المزيد
+  listing_two_columns:
+    display_options:
+      use_more_text: المزيد
+      filters:
+        field_vactory_publication_theme_target_id:
+          expose:
+            label: حلة
+        field_vactory_date_value:
+          expose:
+            label: 'أُنشِئ يوم'

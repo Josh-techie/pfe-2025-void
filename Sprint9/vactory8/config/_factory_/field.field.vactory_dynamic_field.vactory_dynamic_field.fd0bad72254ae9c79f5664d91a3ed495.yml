@@ -1,0 +1,25 @@
+uuid: 7878894d-e3ca-41e5-a80c-a48c70168e69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vactory_dynamic_field.fd0bad72254ae9c79f5664d91a3ed495
+    - media.type.image
+  module:
+    - vactory_dynamic_field
+id: vactory_dynamic_field.vactory_dynamic_field.fd0bad72254ae9c79f5664d91a3ed495
+field_name: fd0bad72254ae9c79f5664d91a3ed495
+entity_type: vactory_dynamic_field
+bundle: vactory_dynamic_field
+label: 'Image Profile'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

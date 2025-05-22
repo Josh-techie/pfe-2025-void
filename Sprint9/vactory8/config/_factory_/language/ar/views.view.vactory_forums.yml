@@ -1,0 +1,36 @@
+label: المنتديات
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+          bef:
+            general:
+              secondary_label: 'الخيارات المتقدمة'
+      fields:
+        comment_count:
+          label: المحتوى
+        last_comment_name:
+          label: 'آخر موضوع'
+      filters:
+        field_vactory_date_value:
+          expose:
+            label: التاريخ
+      title: المنتديات
+  page_forum_table:
+    display_options:
+      fields:
+        title:
+          label: العنوان
+        field_vactory_forum_status:
+          label: الحالة
+        comment_count:
+          label: الردود
+        last_comment_name:
+          label: 'آخر رد'

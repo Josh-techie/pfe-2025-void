@@ -1,0 +1,23 @@
+uuid: ac66b5cd-aa35-4853-8c1a-9fbd9ab462dc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.vactory_faq_prive
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_faq_prive
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: mCsVdwlM1ydgFMTUcomuUhO3GjAzjfaNgfb2pcEEZoo
+id: node.vactory_faq_prive
+target_entity_type_id: node
+target_bundle: vactory_faq_prive
+default_langcode: site_default
+language_alterable: true

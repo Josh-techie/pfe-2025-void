@@ -1,0 +1,22 @@
+uuid: 4cac0b15-d371-43db-ae50-ecf856496d2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: HZOjBKTVv6e4vQLvBlHmEnu_iaIRM4djamnsrqZ4xgk
+id: node.field_press_release_theme
+field_name: field_press_release_theme
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

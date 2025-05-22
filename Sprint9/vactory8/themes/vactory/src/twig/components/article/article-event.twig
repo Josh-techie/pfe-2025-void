@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Article Component.
+ * themes/interface/src/scss/stylesheets/components/article/_article.scss
+ * modules/custom/vactory_event/scss/_event.scss
+ */
+#}
+
+{% extends "@twigComponents/article/article.twig" %}
+
+{% block image_after %}
+
+    {% if date_end|default %}
+      <a href="{{ url }}" class="card__event__overlay">
+        <div class="card__event__date">
+          {% if date_start|default %}
+            <div class="card__event__date__start">
+              <span class="card__date__start--day">{{ date_start.day_short }}</span>
+              <span class="card__date__start--month">{{ date_start.month_short }}</span>
+            </div>
+          {% endif %}
+          {% if date_end|default %}
+            <div class="card__event__date__separator">-</div>
+            <div class="card__event__date__end">
+              <span class="card__date__end--day">{{ date_end.day_short }}</span>
+              <span class="card__date__end--day">{{ date_end.month_short }}</span>
+            </div>
+          {% endif %}
+        </div>
+      </a>
+    {% endif %}
+
+{% endblock %}
+
+{% block subtitle %}
+    <span class="badge badge-primary">{{ subtitle.category }}</span>
+    <span class="badge badge-danger">{{ subtitle.city }}</span>
+{% endblock %}

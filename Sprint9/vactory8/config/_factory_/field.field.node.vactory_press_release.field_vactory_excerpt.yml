@@ -1,0 +1,23 @@
+uuid: dd86eb4e-0b73-4cf9-95f9-3bc78bf674c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_excerpt
+    - node.type.vactory_press_release
+  module:
+    - text
+_core:
+  default_config_hash: L9Z0HJtUgQTVrvNKybgAJlFHhZgDUEChIvgTWh6-bvQ
+id: node.vactory_press_release.field_vactory_excerpt
+field_name: field_vactory_excerpt
+entity_type: node
+bundle: vactory_press_release
+label: Excerpt
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

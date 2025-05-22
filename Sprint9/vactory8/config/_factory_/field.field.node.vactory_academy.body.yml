@@ -1,0 +1,26 @@
+uuid: 624e2258-5441-4d55-9ad2-a05ef984bc19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vactory_academy
+  module:
+    - text
+  enforced:
+    module:
+      - vactory_academy
+id: node.vactory_academy.body
+field_name: body
+entity_type: node
+bundle: vactory_academy
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

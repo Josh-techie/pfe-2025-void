@@ -1,0 +1,1 @@
+FROM vactory/php-ubi9:8.3.14

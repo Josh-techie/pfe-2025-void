@@ -1,0 +1,106 @@
+uuid: f88b9797-6067-4a26-b8e6-0c9ec9c84147
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.vactory_news.body
+    - field.field.node.vactory_news.comment
+    - field.field.node.vactory_news.field_contenu_lie
+    - field.field.node.vactory_news.field_vactory_date
+    - field.field.node.vactory_news.field_vactory_excerpt
+    - field.field.node.vactory_news.field_vactory_media
+    - field.field.node.vactory_news.field_vactory_meta_tags
+    - field.field.node.vactory_news.field_vactory_news_theme
+    - field.field.node.vactory_news.field_vactory_seo_status
+    - node.type.vactory_news
+    - responsive_image.styles.vactory_three_cols
+  module:
+    - comment
+    - datetime
+    - media_responsive_thumbnail
+    - metatag
+    - text
+    - user
+    - yoast_seo
+id: node.vactory_news.full
+targetEntityType: node
+bundle: vactory_news
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_vactory_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vactory_media:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: vactory_three_cols
+      image_link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_vactory_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vactory_news_theme:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_seo_status:
+    type: yoastseo_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_contenu_lie: true
+  field_vactory_excerpt: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

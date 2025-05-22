@@ -1,0 +1,31 @@
+// btn permalink
+$permalink-icon: $icon-arrow-right;
+$font-size-permalink: 16px;
+$line-height-permalink: 16px;
+$color-permalink: $primary;
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a.link {
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+}
+
+a.white-link {
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $dark;
+  }
+}
+
+a[href^="tel:"] {
+  /*rtl:ignore*/
+  direction: ltr;
+}

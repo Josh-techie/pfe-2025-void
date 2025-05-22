@@ -1,0 +1,26 @@
+uuid: 74199b2d-4a52-4576-abe4-7b145106c390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_excerpt
+    - node.type.vactory_publication_prive
+  module:
+    - text
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: FOh53BJ6srJitWS827ObwXSQ5vymVCSmSQaJao_gftA
+id: node.vactory_publication_prive.field_vactory_excerpt
+field_name: field_vactory_excerpt
+entity_type: node
+bundle: vactory_publication_prive
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

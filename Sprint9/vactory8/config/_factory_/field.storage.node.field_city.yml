@@ -1,0 +1,23 @@
+uuid: c52bd13c-da5e-4548-8806-3360c4400c9e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: '-FflHfabgpBktM5lJCDsDyctbvESQ1txb2JPCRwFRk4'
+id: node.field_city
+field_name: field_city
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

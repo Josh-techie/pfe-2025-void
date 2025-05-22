@@ -1,0 +1,23 @@
+uuid: de472dfb-c6c9-42d8-9bcb-f302e94ce87d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_image_x
+    - paragraphs.paragraphs_type.views_reference
+  module:
+    - options
+id: paragraph.views_reference.field_position_image_x
+field_name: field_position_image_x
+entity_type: paragraph
+bundle: views_reference
+label: 'Positionner l''image - Horizontalement '
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: centrer
+default_value_callback: ''
+settings: {  }
+field_type: list_string

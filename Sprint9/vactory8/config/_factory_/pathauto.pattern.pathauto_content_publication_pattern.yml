@@ -1,0 +1,24 @@
+uuid: c6b1ac81-25b1-41ad-af16-f533572210f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ISKvW7k6MAjdGtHb5NziVEsS5rCtjMKxUGMOeB1qzq0
+id: pathauto_content_publication_pattern
+label: 'Pathauto Content publication Pattern'
+type: 'canonical_entities:node'
+pattern: '/publications/[node:title]'
+selection_criteria:
+  834bf669-dfaf-44ae-bd0c-5154d6ab65f1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 834bf669-dfaf-44ae-bd0c-5154d6ab65f1
+    context_mapping:
+      node: node
+    bundles:
+      vactory_publication: vactory_publication
+selection_logic: and
+weight: -9
+relationships: {  }

@@ -1,0 +1,11 @@
+uuid: 4ac43d5c-0eee-4fc0-9719-cc637d09eaca
+langcode: en
+status: true
+dependencies: {  }
+id: master
+label: Master
+weight: 4
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'change own username'

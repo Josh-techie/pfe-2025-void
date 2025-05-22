@@ -1,0 +1,13 @@
+uuid: 86596783-5f2b-43ec-b860-bd982d45cad7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: x1FQ1-54SMDUxgfFcATlquI4vLsjJcPPOJf9xnFjr5M
+name: 'Appel d''offre'
+type: vactory_tender
+description: 'Manage your call for tenders content.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

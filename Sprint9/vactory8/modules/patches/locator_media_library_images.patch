@@ -1,0 +1,126 @@
+diff --git a/modules/contrib/media_library_form_element/assets/js/modal_form.js b/modules/contrib/media_library_form_element/assets/js/modal_form.js
+index e69de29bb..37b203c71 100644
+--- a/modules/contrib/media_library_form_element/assets/js/modal_form.js
++++ b/modules/contrib/media_library_form_element/assets/js/modal_form.js
+@@ -0,0 +1,95 @@
++/**
++ * @file
++ * Extends methods from core/misc/dialog/dialog.ajax.js.
++ */
++(function ($, window, Drupal, drupalSettings) {
++
++  'use strict';
++
++  drupalSettings.dialogStack = [];
++
++  Drupal.behaviors.stackedDialog = {
++    attach: function attach(context, settings) {
++      // Remove the core drupal modal.
++      if ($('#drupal-modal').length) {
++        $('#drupal-modal').remove();
++      }
++
++      let originalClose = settings.dialog.close;
++      settings.dialog.close = function (event) {
++        originalClose.apply(settings.dialog, arguments);
++        $(event.target).remove();
++
++        let lastSelector = drupalSettings.dialogStack[drupalSettings.dialogStack.length - 1] || false;
++
++        if (lastSelector && $(event.target).attr('id') === lastSelector.replace(/^#/, '')) {
++          settings.dialogStack.pop();
++        }
++      };
++    }
++  };
++
++  Drupal.AjaxCommands.prototype.openDialog = function (ajax, response, status) {
++    if (!response.selector) {
++      return false;
++    }
++    let $dialog = $(response.selector);
++
++    if (!$dialog.length) {
++      if (response.selector === '#drupal-modal') {
++        response.selector = '#drupal-modal-' + Math.random().toString(36).substr(2, 16);
++      }
++      $dialog = $('<div id="' + response.selector.replace(/^#/, '') + '" class="ui-front"/>').appendTo('body');
++
++      drupalSettings.dialogStack.push(response.selector);
++    }
++
++    if (!ajax.wrapper) {
++      ajax.wrapper = $dialog.attr('id');
++    }
++
++    response.command = 'insert';
++    response.method = 'html';
++    ajax.commands.insert(ajax, response, status);
++
++    if (!response.dialogOptions.buttons) {
++      response.dialogOptions.drupalAutoButtons = true;
++      response.dialogOptions.buttons = Drupal.behaviors.dialog.prepareDialogButtons($dialog);
++    }
++
++    $dialog.on('dialogButtonsChange', function () {
++      let buttons = Drupal.behaviors.dialog.prepareDialogButtons($dialog);
++      $dialog.dialog('option', 'buttons', buttons);
++    });
++
++    response.dialogOptions = response.dialogOptions || {};
++    let dialog = Drupal.dialog($dialog.get(0), response.dialogOptions);
++    if (response.dialogOptions.modal) {
++      dialog.showModal();
++    }
++    else {
++      dialog.show();
++    }
++
++    $dialog.parent().find('.ui-dialog-buttonset').addClass('form-actions');
++  };
++
++  Drupal.AjaxCommands.prototype.closeDialog = function (ajax, response, status) {
++    if (response.selector === '#drupal-modal') {
++      response.selector = drupalSettings.dialogStack[drupalSettings.dialogStack.length - 1] || '#drupal-modal';
++    }
++
++    let $dialog = $(response.selector);
++    if ($dialog.length) {
++      drupalSettings.dialogStack.pop();
++
++      Drupal.dialog($dialog.get(0)).close();
++      if (!response.persist) {
++        $dialog.remove();
++      }
++    }
++
++    $dialog.off('dialogButtonsChange');
++
++  };
++})(jQuery, this, Drupal, drupalSettings);
+diff --git a/modules/contrib/media_library_form_element/media_library_form_element.libraries.yml b/modules/contrib/media_library_form_element/media_library_form_element.libraries.yml
+index 5f4453891..fa5663af2 100644
+--- a/modules/contrib/media_library_form_element/media_library_form_element.libraries.yml
++++ b/modules/contrib/media_library_form_element/media_library_form_element.libraries.yml
+@@ -7,3 +7,9 @@ media_library_form_element:
+     - core/sortable
+     - core/jquery.once
+     - media_library/style
++media_library_modal_form:
++  js:
++    assets/js/modal_form.js: {}
++  dependencies:
++    - core/jquery
++    - core/drupalSettings
+diff --git a/modules/contrib/media_library_form_element/src/Element/MediaLibrary.php b/modules/contrib/media_library_form_element/src/Element/MediaLibrary.php
+index 3855b3f9a..22d400e69 100644
+--- a/modules/contrib/media_library_form_element/src/Element/MediaLibrary.php
++++ b/modules/contrib/media_library_form_element/src/Element/MediaLibrary.php
+@@ -95,6 +95,7 @@ public static function processMediaLibrary(array &$element, FormStateInterface $
+         '#attached' => [
+           'library' => [
+             'media_library_form_element/media_library_form_element',
++            'media_library_form_element/media_library_modal_form',
+             'media_library/view',
+           ],
+         ],

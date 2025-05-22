@@ -1,0 +1,29 @@
+uuid: 28e39cf7-c147-474c-8d07-5c7559b0198a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:vactory_banner:4ce41782-82fd-4b58-a341-0d61ec405103'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - vactory
+third_party_settings:
+  block_class:
+    classes: eteet
+id: bannerespacetestt
+theme: vactory
+region: bridge
+weight: -9
+provider: null
+plugin: 'block_content:4ce41782-82fd-4b58-a341-0d61ec405103'
+settings:
+  id: 'block_content:4ce41782-82fd-4b58-a341-0d61ec405103'
+  label: banner-espace-testt
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

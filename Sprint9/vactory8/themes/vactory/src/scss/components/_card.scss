@@ -1,0 +1,248 @@
+//card
+.card {
+  $self: &;
+
+  height: 100%; // fix for ie
+  flex-grow: 1;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 8px 10px 0 rgba(48, 49, 51, 0.1);
+  overflow: hidden;
+
+  &__image,
+  &__image__wrapper,
+  &__image--inline {
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: transform .4s;
+      backface-visibility: hidden;
+    }
+  }
+
+  &__event {
+    &__overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $white;
+      text-align: center;
+      &:hover {
+        color: $white;
+      }
+    }
+    &__date {
+      background-color: $primary;
+      &__separator {
+        line-height: 0;
+      }
+      &__start,
+      &__end {
+        padding: 3px;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    word-break: break-word;
+    width: 100%; // Fix IE Bug
+    padding: 18px 20px 28px;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  &__tag {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background-color: $yellow;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #0D0D0D;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $gray-500;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1.25px #{"/*!rtl:0px*/"};
+    font-weight: $font-weight-bold;
+    margin-bottom: 8px;
+    &,
+    a {
+      color: $black;
+    }
+    a:hover {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: .3px #{"/*!rtl:0px*/"};
+    margin-bottom: auto;
+    // width: 100%; // Fix IE Bug
+  }
+
+  &__read-more,
+  &__permalink {
+    margin-top: 20px;
+  }
+
+  &__attached-assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  &:hover {
+    img:not(.no-effect) {
+      transform: scale(1.14);
+    }
+  }
+
+  &--inline {
+    flex-direction: row;
+    &--reversed {
+      flex-direction: row-reverse;
+    }
+
+    #{$self} {
+      &__image {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+      &__body {
+        padding: 35px 40px;
+      }
+
+      &__title {
+        margin-bottom: 24px;
+      }
+
+      &__description {
+        font-size: 18px;
+        line-height: 1.7;
+        letter-spacing: .08px #{"/*!rtl:0px*/"};
+
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &--search {
+    box-shadow: none;
+    border: 1px solid $border-color;
+    #{$self} {
+      &__title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+}
+
+// fix bugs of cards inside a slick slider
+.slick-slider {
+  .card {
+    width: 100%;
+    height: auto;
+    @include if-ie() {
+      height: 100%; // fix for ie
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  .card {
+    $self: &;
+
+    &__body {
+      padding: 20px 18px 24px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    // ----------------------------------- //
+    &--inline {
+      #{$self} {
+        &__image {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
+
+        &__body {
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .card {
+    $self: &;
+
+    &__body {
+      padding: 20px 18px 24px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 1.3;
+      margin-bottom: 30px;
+    }
+
+    // ----------------------------------- //
+    &--inline {
+      flex-direction: column;
+      #{$self} {
+        &__image {
+          flex-basis: auto;
+          max-width: 100%;
+        }
+        &__body {
+          padding: 30px 16px;
+        }
+        &__description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

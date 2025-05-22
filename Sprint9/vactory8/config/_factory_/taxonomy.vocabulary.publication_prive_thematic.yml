@@ -1,0 +1,13 @@
+uuid: 471b3b37-13a7-4969-8905-20776aca98c4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: 4tvvmKDVFllDC2X8uQSQxyiZgTt9PbTjzPJo9yQwwWA
+name: 'Publications privées - Thématiques'
+vid: publication_prive_thematic
+description: 'Utiliser ce vocabulaire pour ajouter de nouvelles thématiques des publications privées'
+weight: 0

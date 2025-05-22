@@ -1,0 +1,33 @@
+uuid: f870c629-7de6-49ef-be23-8d71b2c972dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_agence_formation
+    - taxonomy.vocabulary.academy_subscribers
+    - vactory_locator.locator_entity_type.vactory_locator
+  enforced:
+    module:
+      - vactory_academy_agency
+_core:
+  default_config_hash: aKJlalyLocFp63usElFZ0GG42aU1D-VlEVPCidRAr1A
+id: taxonomy_term.academy_subscribers.field_agence_formation
+field_name: field_agence_formation
+entity_type: taxonomy_term
+bundle: academy_subscribers
+label: Agence
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:locator_entity'
+  handler_settings:
+    target_bundles:
+      vactory_locator: vactory_locator
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: 846b9290-330e-4122-9d23-8b590ce43179
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - vactory_publication_prive
+_core:
+  default_config_hash: ywZYulgomzhy_SQBoVO9d9_orv0H-ctLjS3TOHu8vSQ
+id: pathauto_publication_prive
+label: 'Pathauto Content Publication privé'
+type: 'canonical_entities:node'
+pattern: '/espace-privé/publications/[node:title]'
+selection_criteria:
+  e7031c5e-33f0-4630-a3c6-2370b8877429:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e7031c5e-33f0-4630-a3c6-2370b8877429
+    context_mapping:
+      node: node
+    bundles:
+      vactory_publication_prive: vactory_publication_prive
+selection_logic: and
+weight: -5
+relationships: {  }

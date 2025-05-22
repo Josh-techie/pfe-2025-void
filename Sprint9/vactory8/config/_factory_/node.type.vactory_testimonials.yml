@@ -1,0 +1,13 @@
+uuid: bb0d5452-3e5b-48f6-b7b7-a20cc4f72dfd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FFSXnnV0oSEUjOMgg5STV4-acpzXLGcoa327q6AwQ3A
+name: Testimonials
+type: vactory_testimonials
+description: 'Manage your testimonials content.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,179 @@
+uuid: d6367bbb-1008-455c-9ec5-370778c159d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.announcement.field_ad_content
+    - field.field.node.announcement.field_ad_display
+    - field.field.node.announcement.field_already_approved
+    - field.field.node.announcement.field_city
+    - field.field.node.announcement.field_country
+    - field.field.node.announcement.field_discipline
+    - field.field.node.announcement.field_event_date_end
+    - field.field.node.announcement.field_event_date_start
+    - field.field.node.announcement.field_facebook_account
+    - field.field.node.announcement.field_site
+    - field.field.node.announcement.field_twitter_account
+    - field.field.node.announcement.field_typology
+    - field.field.node.announcement.field_vactory_email
+    - field.field.node.announcement.field_vactory_media
+    - field.field.node.announcement.field_vactory_name
+    - field.field.node.announcement.field_vactory_phone
+    - node.type.announcement
+  module:
+    - datetime
+    - user
+_core:
+  default_config_hash: 6s-sap7TRRNAapb5H2cvRFjUdAE-fOXE3rHEktD10fc
+id: node.announcement.default
+targetEntityType: node
+bundle: announcement
+mode: default
+content:
+  field_ad_content:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_ad_display:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_already_approved:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_country:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_discipline:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_event_date_end:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_event_date_start:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_facebook_account:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_site:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_twitter_account:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_typology:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_vactory_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_vactory_media:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_vactory_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_vactory_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

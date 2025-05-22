@@ -1,0 +1,27 @@
+uuid: f3f673f0-c8f1-40f8-963d-26d4b66faaf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: a7mq7085fnaaJAn6zKM8stX9DdXqDLNzfpcP31huyWk
+id: vactory_partner_slider_block
+label: 'Partner Slider Block'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_partner: vactory_partner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

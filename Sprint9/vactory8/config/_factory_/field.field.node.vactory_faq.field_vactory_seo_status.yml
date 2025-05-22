@@ -1,0 +1,28 @@
+uuid: 81649037-346e-47cc-9662-4025c5d91031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_seo_status
+    - node.type.vactory_faq
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: 4JTV8v53W2v7DxL9oWcz0Use7pL9QQOLKmMv8I60xOc
+id: node.vactory_faq.field_vactory_seo_status
+field_name: field_vactory_seo_status
+entity_type: node
+bundle: vactory_faq
+label: 'SEO Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: '0'
+    focus_keyword: ''
+    title: null
+    description: null
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

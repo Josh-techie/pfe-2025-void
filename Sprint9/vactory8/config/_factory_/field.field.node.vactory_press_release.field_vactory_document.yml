@@ -1,0 +1,29 @@
+uuid: bae7314d-fa75-4e9c-a791-84d80f32dc68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_document
+    - node.type.vactory_press_release
+  module:
+    - file
+_core:
+  default_config_hash: VLZhLICQ32Wh6D6r-_-DdxAtEAugNVtR8HuDuV0mM8c
+id: node.vactory_press_release.field_vactory_document
+field_name: field_vactory_document
+entity_type: node
+bundle: vactory_press_release
+label: Document
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'press_release/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

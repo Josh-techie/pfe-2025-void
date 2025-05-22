@@ -1,0 +1,47 @@
+uuid: ae12c7ef-46b5-42d0-96d0-5e72c9b488a6
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_press_kit.field_press_kit_theme
+    - field.field.node.vactory_press_kit.field_vactory_date
+    - field.field.node.vactory_press_kit.field_vactory_document
+    - field.field.node.vactory_press_kit.field_vactory_excerpt
+    - field.field.node.vactory_press_kit.field_vactory_media
+    - field.field.node.vactory_press_kit.field_vactory_meta_tags
+    - field.field.node.vactory_press_kit.field_vactory_seo_status
+    - node.type.vactory_press_kit
+  module:
+    - user
+_core:
+  default_config_hash: SM7SoIjrKXBRmhIttzoOOVj7nWtyNLYykv2mUywJNGI
+id: node.vactory_press_kit.teaser
+targetEntityType: node
+bundle: vactory_press_kit
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_press_kit_theme: true
+  field_vactory_date: true
+  field_vactory_document: true
+  field_vactory_excerpt: true
+  field_vactory_media: true
+  field_vactory_meta_tags: true
+  field_vactory_seo_status: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

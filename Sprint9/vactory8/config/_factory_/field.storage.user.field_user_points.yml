@@ -1,0 +1,25 @@
+uuid: 37635049-5746-4573-9e34-6ab257aba73c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  enforced:
+    module:
+      - vactory_points
+_core:
+  default_config_hash: 8hGDX8NQCkLu3jbQRzjJo387cAKIE-Dy2CWPRU7w9Vw
+id: user.field_user_points
+field_name: field_user_points
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 7ba4810b-705d-4d24-a873-9a27b8eee3f5
+langcode: en
+status: false
+dependencies:
+  module:
+    - vactory_mediatheque
+  theme:
+    - vactory
+_core:
+  default_config_hash: h6wMWVl4Cq5CaPE0ShmD7_S_s1pZ9NWzx9OLMgViij0
+id: mediathequeyearblock
+theme: vactory
+region: content
+weight: -2
+provider: null
+plugin: year_block_filter
+settings:
+  id: year_block_filter
+  label: 'Médiathèque Year Block'
+  label_display: '0'
+  provider: vactory_mediatheque
+visibility: {  }

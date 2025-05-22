@@ -1,0 +1,21 @@
+uuid: c643339d-1a79-45e5-8e51-021184ac31d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu_lie
+    - node.type.vactory_page
+  module:
+    - vactory_cross_content
+id: node.vactory_page.field_contenu_lie
+field_name: field_contenu_lie
+entity_type: node
+bundle: vactory_page
+label: 'Contenu lié'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_cross_content

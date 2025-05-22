@@ -1,0 +1,24 @@
+uuid: bcd4c588-7077-4da8-adac-75ce6dff5e06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_token_experation_date
+  module:
+    - user
+_core:
+  default_config_hash: EqSkKvXdziUhvnKLTth2JkN8mA8JIqstoqgCPkrta1A
+id: user.user.field_token_experation_date
+field_name: field_token_experation_date
+entity_type: user
+bundle: user
+label: 'Token Experation Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1586508085
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

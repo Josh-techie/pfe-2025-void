@@ -1,0 +1,27 @@
+uuid: 30f33ad0-f46a-4d3a-bd98-4e2450dce7eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: RX9-0E06TIZgI6LmZMnmRn-D9Axn71kSETokutsM7EI
+id: vactory_press_kit_slider_sm
+label: 'press kit Slider Small'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_press_kit: vactory_press_kit
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

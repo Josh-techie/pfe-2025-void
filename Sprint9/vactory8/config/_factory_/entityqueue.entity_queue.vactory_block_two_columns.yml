@@ -1,0 +1,27 @@
+uuid: 403fa96a-3059-43c9-a6b0-68ea4ec6f679
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: SiFfozVD0bp2w3srCDO9GHu6mXBaQHCIyN1YgCGx4So
+id: vactory_block_two_columns
+label: 'Event Block Two Columns'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_event: vactory_event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

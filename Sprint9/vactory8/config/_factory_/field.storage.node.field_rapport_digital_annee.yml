@@ -1,0 +1,25 @@
+uuid: 4ed34b97-6958-48a2-a4a5-51aa3984faf6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: HCo0N3Y9uzuRwpnqCcvqx4gwX4-_sHoPN2eMe-db-Nw
+id: node.field_rapport_digital_annee
+field_name: field_rapport_digital_annee
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

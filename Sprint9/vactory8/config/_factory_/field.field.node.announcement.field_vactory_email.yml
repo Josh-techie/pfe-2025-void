@@ -1,0 +1,21 @@
+uuid: 19344b13-2184-44e8-bba6-274bc7794f17
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_email
+    - node.type.announcement
+_core:
+  default_config_hash: g-8q5dnVoYj79qnF-MHzjKH0Nllx1l9x1l6lBOq_Qf4
+id: node.announcement.field_vactory_email
+field_name: field_vactory_email
+entity_type: node
+bundle: announcement
+label: Email
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

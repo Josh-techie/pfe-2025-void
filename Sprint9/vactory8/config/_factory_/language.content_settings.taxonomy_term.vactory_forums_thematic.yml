@@ -1,0 +1,23 @@
+uuid: 4e485a21-9fc2-46df-beb6-1e46384386cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.vactory_forums_thematic
+  module:
+    - content_translation
+  enforced:
+    module:
+      - vactory_forums
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: zoGhjkfdwSGbqhI04Ujk_3vlOCgXJVJpkX-3Y1eGUl0
+id: taxonomy_term.vactory_forums_thematic
+target_entity_type_id: taxonomy_term
+target_bundle: vactory_forums_thematic
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,12 @@
+uuid: 0e738964-4b39-4c96-b3aa-b55e5ec78750
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YA2sJCiRZbNO7VXteG0I9H6b4kEc83E73VRekdm0CAo
+id: paragraph_background_wrapper
+label: Background
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

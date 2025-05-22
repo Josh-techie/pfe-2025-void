@@ -1,0 +1,147 @@
+uuid: b48844e1-960d-4165-a820-af63d1f3f118
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.vactory_annual_report.body
+    - field.field.node.vactory_annual_report.field_ar_background_color
+    - field.field.node.vactory_annual_report.field_ar_content_body
+    - field.field.node.vactory_annual_report.field_ar_element_width
+    - field.field.node.vactory_annual_report.field_ar_layout
+    - field.field.node.vactory_annual_report.field_ar_media_type
+    - field.field.node.vactory_annual_report.field_ar_thematic
+    - field.field.node.vactory_annual_report.field_border_color
+    - field.field.node.vactory_annual_report.field_has_corner
+    - field.field.node.vactory_annual_report.field_rapport_digital_annee
+    - field.field.node.vactory_annual_report.field_vactory_excerpt
+    - field.field.node.vactory_annual_report.field_vactory_media
+    - field.field.node.vactory_annual_report.field_vactory_paragraphs
+    - node.type.vactory_annual_report
+  module:
+    - colorapi
+    - options
+    - text
+    - user
+    - vactory_dynamic_field
+  enforced:
+    module:
+      - vactory_annual_report
+_core:
+  default_config_hash: 0rX8vnpEDPtf7HM34FUusZSP4U65aqysymX8KRJfPyk
+id: node.vactory_annual_report.card
+targetEntityType: node
+bundle: vactory_annual_report
+mode: card
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_ar_background_color:
+    type: colorapi_color_display
+    label: hidden
+    settings:
+      display_name: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_ar_content_body:
+    type: field_wysiwyg_dynamic_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_ar_element_width:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_ar_layout:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_ar_media_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_ar_thematic:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_border_color:
+    type: colorapi_color_display
+    label: hidden
+    settings:
+      display_name: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_has_corner:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_rapport_digital_annee:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_vactory_excerpt:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_vactory_media:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_content_access_custom: true
+  field_content_access_groups: true
+  field_content_access_roles: true
+  field_content_access_users: true
+  field_vactory_paragraphs: true
+  langcode: true
+  mail_message: true
+  mail_subject: true
+  notification_message: true
+  notification_title: true
+  search_api_excerpt: true

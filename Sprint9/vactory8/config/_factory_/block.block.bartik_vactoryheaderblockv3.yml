@@ -1,0 +1,27 @@
+uuid: 672e4e62-d85c-4059-8814-2ff4e1c8e0d0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_header
+  theme:
+    - bartik
+id: bartik_vactoryheaderblockv3
+theme: bartik
+region: header
+weight: -9
+provider: null
+plugin: vactory_header_block3
+settings:
+  id: vactory_header_block3
+  label: 'Vactory Header Block V3'
+  label_display: '0'
+  provider: vactory_header
+  use_lang_code: 1
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /header-3

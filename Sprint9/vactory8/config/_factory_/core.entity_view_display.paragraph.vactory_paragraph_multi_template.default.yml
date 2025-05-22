@@ -1,0 +1,106 @@
+uuid: b7524eae-d297-411b-9f76-68668b8887c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vactory_paragraph_multi_template.field_multi_paragraph_type
+    - field.field.paragraph.vactory_paragraph_multi_template.field_paragraph_hide_lg
+    - field.field.paragraph.vactory_paragraph_multi_template.field_paragraph_hide_sm
+    - field.field.paragraph.vactory_paragraph_multi_template.field_paragraph_introduction
+    - field.field.paragraph.vactory_paragraph_multi_template.field_position_image_x
+    - field.field.paragraph.vactory_paragraph_multi_template.field_position_image_y
+    - field.field.paragraph.vactory_paragraph_multi_template.field_size_image
+    - field.field.paragraph.vactory_paragraph_multi_template.field_titre_ancre
+    - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_flag
+    - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_flag_2
+    - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_paragraph_tab
+    - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_title
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.vactory_paragraph_multi_template.default
+targetEntityType: paragraph
+bundle: vactory_paragraph_multi_template
+mode: default
+content:
+  field_multi_paragraph_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_paragraph_hide_lg:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_paragraph_hide_sm:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_paragraph_introduction:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_position_image_x:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_position_image_y:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_size_image:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_vactory_paragraph_tab:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vactory_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_background_color: true
+  field_titre_ancre: true
+  field_vactory_flag: true
+  field_vactory_flag_2: true
+  paragraph_background_image: true
+  paragraph_container: true
+  search_api_excerpt: true

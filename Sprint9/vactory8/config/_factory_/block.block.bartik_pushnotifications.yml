@@ -1,0 +1,31 @@
+uuid: 414fb891-fb98-4d19-ac86-1b2ef2cd3e71
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_push_notifications
+  theme:
+    - bartik
+id: bartik_pushnotifications
+theme: bartik
+region: header
+weight: -12
+provider: null
+plugin: vactory_push_notifications_block
+settings:
+  id: vactory_push_notifications_block
+  label: 'Push Notifications'
+  label_display: '0'
+  provider: vactory_push_notifications
+  block_template: '9'
+  delays: 60
+  how_many: 0
+  begin_date: '2021-09-07'
+  end_date: '2023-01-13'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /smart-search

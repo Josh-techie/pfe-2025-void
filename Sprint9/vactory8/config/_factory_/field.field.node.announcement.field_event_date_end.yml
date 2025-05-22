@@ -1,0 +1,23 @@
+uuid: a7fc70db-4079-4b84-8f6f-27ceb5b50333
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date_end
+    - node.type.announcement
+  module:
+    - datetime
+_core:
+  default_config_hash: ZQ5ZfUkVYnYRJffTDWgI-PJu8n1MYmV57mZGgz8gd3A
+id: node.announcement.field_event_date_end
+field_name: field_event_date_end
+entity_type: node
+bundle: announcement
+label: 'Date Fin d''événement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

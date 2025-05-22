@@ -1,0 +1,15 @@
+uuid: 9d560e77-c7fb-44d6-a061-51ed6bfdcf19
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.favorite_academy
+  module:
+    - flag
+id: flag_action.favorite_academy_flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:favorite_academy_flag'
+configuration:
+  flag_id: favorite_academy
+  flag_action: flag

@@ -1,0 +1,31 @@
+uuid: b0f634bd-c19b-4f95-8c65-9831cdb8c6c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discipline
+    - node.type.announcement
+    - taxonomy.vocabulary.discipline_
+_core:
+  default_config_hash: nuUWLfY5R5ni9ZMsxNpkb64LvjwrmPISCaPIOcFXgz8
+id: node.announcement.field_discipline
+field_name: field_discipline
+entity_type: node
+bundle: announcement
+label: Discipline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      discipline_: discipline_
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

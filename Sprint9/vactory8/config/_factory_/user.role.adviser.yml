@@ -1,0 +1,17 @@
+uuid: 0788481c-8fe0-4d12-bc29-dc8c4800160f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vactory_notifications
+  enforced:
+    module:
+      - vactory_appointment
+id: adviser
+label: Conseiller
+weight: 7
+is_admin: null
+permissions:
+  - 'access content'
+  - 'view notifications'

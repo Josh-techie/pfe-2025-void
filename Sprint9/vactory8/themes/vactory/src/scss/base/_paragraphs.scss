@@ -1,0 +1,30 @@
+
+[class*="has-background--"] {
+  & + .paragraph {
+    padding-top: $paragraph-sm;
+  }
+}
+
+.paragraph:not(.paragraph--type--vactory-paragraph-tab,.vp_anchor) {
+  padding-bottom: $paragraph-sm;
+}
+
+[class*="has-background--"] .paragraph:not(.paragraph--type--vactory-paragraph-tab) {
+  padding-top: $paragraph-sm;
+}
+
+
+@include media-breakpoint-up(lg) {
+  [class*="has-background--"] {
+    & + .paragraph {
+      padding-top: $paragraph-lg;
+    }
+  }
+
+  .paragraph:not(.paragraph--type--vactory-paragraph-tab,.vp_anchor) {
+    padding-bottom: $paragraph-lg;
+  }
+  [class*="has-background--"] .paragraph:not(.paragraph--type--vactory-paragraph-tab) {
+    padding-top: $paragraph-lg;
+  }
+}
