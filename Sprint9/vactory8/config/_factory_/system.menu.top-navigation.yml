@@ -1,8 +1,0 @@
-uuid: 65e4e8bf-1056-4b78-9c7e-363b90a47257
-langcode: en
-status: true
-dependencies: {  }
-id: top-navigation
-label: 'Top Navigation'
-description: 'Top Navigation'
-locked: false

@@ -1,8 +1,0 @@
-uuid: e7bc3bb9-6e51-4e10-bb2f-da58f20615fd
-langcode: en
-status: true
-dependencies: {  }
-name: 'News - Theme'
-vid: vactory_news_theme
-description: 'News vocabulary.'
-weight: 0

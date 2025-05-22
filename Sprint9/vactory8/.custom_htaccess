@@ -1,7 +1,0 @@
-# Change parameters of restricted area here.
-<If "%{HTTP_HOST} == 'vactory.lapreprod.com'">
-  AuthType Basic
-  AuthName "restricted area"
-  AuthUserFile /home/vactorypreprod/public_html/.custom_htpasswd
-  require valid-user
-</If>

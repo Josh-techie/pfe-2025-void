@@ -1,8 +1,0 @@
-uuid: 573cda63-fe18-413e-986c-1f6b5f1a9802
-langcode: en
-status: true
-dependencies: {  }
-name: 'Locator - Category'
-vid: locator_category
-description: 'Category for locator items'
-weight: 0

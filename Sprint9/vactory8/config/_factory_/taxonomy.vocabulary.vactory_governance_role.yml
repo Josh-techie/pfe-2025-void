@@ -1,8 +1,0 @@
-uuid: 40a56ff8-fbe8-4677-9916-0453cf729050
-langcode: en
-status: true
-dependencies: {  }
-name: 'Governance - Roles'
-vid: vactory_governance_role
-description: 'Roles of the government member.'
-weight: 0

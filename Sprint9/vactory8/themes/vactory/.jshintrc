@@ -1,9 +1,0 @@
-{
-  "globals": {
-    "$": false,
-    "jQuery": false,
-    "Drupal": false,
-    "ResponsiveBootstrapToolkit": false
-  },
-  "browser" : true
-}

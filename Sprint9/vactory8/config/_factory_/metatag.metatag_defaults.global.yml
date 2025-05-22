@@ -1,9 +1,0 @@
-uuid: 5b97d5ec-a471-436a-a4ca-e397199a8b78
-langcode: fr
-status: true
-dependencies: {  }
-id: global
-label: Global
-tags:
-  canonical_url: '[current-page:url]'
-  title: '[current-page:title] | [site:name]'

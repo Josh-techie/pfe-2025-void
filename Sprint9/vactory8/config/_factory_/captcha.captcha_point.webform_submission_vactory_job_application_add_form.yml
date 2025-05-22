@@ -1,9 +1,0 @@
-uuid: c5a8ffd9-d2a4-4275-9e91-9ab1bd38c3d8
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 6XMGqfqyPpv6Yu-qAcq8IdiCKGoBnA-N6JaOk_h-_fY
-formId: webform_submission_vactory_job_application_add_form
-captchaType: captcha/Math
-label: webform_submission_vactory_job_application_add_form

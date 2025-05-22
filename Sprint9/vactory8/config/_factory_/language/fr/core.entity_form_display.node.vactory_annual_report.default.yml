@@ -1,9 +1,0 @@
-third_party_settings:
-  field_group:
-    group_annual_report_layout:
-      label: Affichage
-content:
-  field_vactory_paragraphs:
-    settings:
-      title: Paragraphe
-      title_plural: Paragraphs

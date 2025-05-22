@@ -1,9 +1,0 @@
-uuid: e814f209-d0cf-4b63-84f3-582a464d46f3
-langcode: fr
-status: true
-dependencies: {  }
-id: '403'
-label: '403 access denied'
-tags:
-  canonical_url: '[site:url]'
-  shortlink: '[site:url]'
