@@ -14,16 +14,19 @@
   },
   "dependencies": {
     "next": "^15.1.2",
+    "next-drupal": "^2.0.0-beta.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next-drupal": "^2.0.0-beta.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
     "@tailwindcss/typography": "^0.5.12",
     "@types/node": "^20.12.7",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.19",
+    "babel-loader": "^10.0.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.0.4",
     "postcss": "^8.4.38",

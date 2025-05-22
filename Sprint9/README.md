@@ -11,7 +11,7 @@ This sprint is all about understanding how to use Drupal as a backend for a Next
 
 ## RESOURCES:
 
-`Coming Soon`
+- [The Next Drupal]()
 
 ---
 

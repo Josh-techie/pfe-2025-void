@@ -1,5 +1,0 @@
-name: 'custom_field'
-type: module
-description: 'This module we will create a custom field to add custom data to your entities and make it available to your decoupled frontend. Using the hook: hook_entity_base_field_info'
-package: Custom
-core_version_requirement: ^10 || ^11

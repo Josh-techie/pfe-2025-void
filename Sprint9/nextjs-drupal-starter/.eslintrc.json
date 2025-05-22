@@ -1,4 +1,6 @@
 {
-  "extends": "next/core-web-vitals",
-  "root": true
+  "extends": [
+    "next/babel",
+    "next/core-web-vitals"
+  ]
 }
