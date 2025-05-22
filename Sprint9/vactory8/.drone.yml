@@ -154,7 +154,7 @@ steps:
   #   depends_on:
   #     - publish
   #   settings:
-  #     webhook: https://hooks.slack.com/services/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
+  #     webhook: token_webhook
   #     channel: vactory3
   #     template: >
   #       {{#success build.status}} ✔ {{ else }} :x: {{/success}} {{ uppercasefirst build.status }}: Build Drupal #{{ build.number }} * (type: `{{ build.event }}`)
