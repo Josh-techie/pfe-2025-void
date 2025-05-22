@@ -10,8 +10,7 @@ $csv = [];
 $apcuAvailabe = function_exists('apcu_enabled') && apcu_enabled();
 $filename = './sites/default/files/redirections/urls.csv';
 $size = file_exists($filename) ? filesize($filename) : NULL;
-function csv_to_array($filename = '', $delimiter = ',')
-{
+function csv_to_array($filename = '', $delimiter = ',') {
   if (!file_exists($filename) || !is_readable($filename)) {
     return FALSE;
   }
@@ -24,7 +23,8 @@ function csv_to_array($filename = '', $delimiter = ',')
       if (!$header) {
         $header = $row;
         $isValid = count($row);
-      } else if (count($row) === $isValid) {
+      }
+      else if (count($row) === $isValid) {
         $data[] = array_combine($header, $row);
       }
     }
@@ -33,13 +33,12 @@ function csv_to_array($filename = '', $delimiter = ',')
   return $data;
 }
 /*
- * Returns an array that group each url with /fr
- */
+* Returns an array that group each url with /fr
+*/
 
-function group_by($key, $data)
-{
+function group_by($key, $data) {
   $return = [];
-  foreach ($data as $val) {
+  foreach($data as $val) {
     // Moves the internal pointer to the first element of the array.
     $from = reset($val);
     // Removes 'http://' or "https://' from the url.
@@ -88,7 +87,8 @@ if (isset($csv)) {
     $location = $row;
     $location = str_replace($domain, APP_PROD_HOST, $location);
     $location = empty($query) ? $location : $location . '?' . $query;
-  } else {
+  }
+  else {
     $param = explode('/', $current_url);
     $var = 0;
     for ($i = 1; $i < count($param); $i++) {

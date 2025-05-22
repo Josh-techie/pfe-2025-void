@@ -9,9 +9,8 @@
       "JSON:API, add 'f' to the reserved (official) query parameters. (for facets module)": "https://gist.githubusercontent.com/khalidbouhouch77/538bd6e180feb346cc3bdd076c4f8b54/raw/53d9ba90e2d906876dd587c3c07561f086f45680/include-f-reserved-param.patch",
       "Fix core file replace cloudinary error": "https://gist.githubusercontent.com/b-khouy/d796ede15da1e0b69fa22af52ad55b04/raw/7e40fda9ec5e037de722e767a2f59fa1d8cc9d60/fix-core-file-replace-cloudinary-error.patch",
       "Twig LoaderError after upgrading Twig to 2.15.3": "https://www.drupal.org/files/issues/2022-09-28/3312270-claro-menu-twig-fix.patch",
-      "JSONAPI include revisions" : "https://www.drupal.org/files/issues/2024-03-25/3088239-50.patch"
+      "Workflow-Permissions-Fix": "https://github.com/Josh-techie/pfe-2025-void/blob/main/Sprint9/Patches_Vactory/workflow-permissions-fix.patch"
     }
   },
-  "patches-ignore": {
-  }
+  "patches-ignore": {}
 }

@@ -4,14 +4,12 @@
   "type": "project",
   "license": "GPL-2.0-or-later",
   "require": {
-    "blackfire/php-sdk": "^2.5",
     "composer/installers": "^1.0.24",
-    "cweagans/composer-patches": "^1.7.3",
-    "drupal/core": "10.2.3",
+    "cweagans/composer-patches": "^1.7",
+    "drupal/core": "^10.2.3",
     "drupal/core-vendor-hardening": "^10.2.3",
-    "drupal/devel_entity_updates": "^4.1",
-    "drush/drush": "13",
-    "voidagency/vactory_starter_kit": "3.1.1"
+    "drush/drush": "~12",
+    "voidagency/vactory_starter_kit": "3.x-dev"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -68,7 +66,7 @@
       ]
     },
     "patches-file": "composer.patches.json",
-    "composer-exit-on-patch-failure": true
+    "composer-exit-on-patch-failure": false
   },
   "autoload": {
     "psr-4": {
@@ -82,6 +80,9 @@
   },
   "scripts": {
     "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
+    "post-autoload-dump": [
+      "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
+    ],
     "pre-install-cmd": [
       "VoidFactory\\composer\\ScriptHandler::checkComposerVersion"
     ],

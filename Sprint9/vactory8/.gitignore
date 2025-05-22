@@ -45,7 +45,6 @@ modules/contrib
 core
 themes/contrib
 profiles/contrib
-!profiles/contrib/vactory_starter_kit/config/install/user.role.webmaster.yml
 dev-tests
 sites/default/settings.local.php
 sites/default/settings.docker.env.php

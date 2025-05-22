@@ -297,7 +297,7 @@ $databases = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'blxKMtlLta-IjiebgmmWyGRCG4_Ktw9k4L74wGGSQbt2r3aBiRNuXK6FoZwW5Wgun_ETUSbeVg';
+$settings['hash_salt'] = 'ZCqtxaBZ0z7xD5vMkXWtpora2eAfcFYdj6kERhuCEa639R0eTZhnMQcPpjw7XSQd02a-TYJv2g';
 
 /**
  * Deployment identifier.
@@ -884,24 +884,6 @@ $settings['config_exclude_modules'] = [
 # $settings['entity_autocomplete_exact_matcher']['closer'] = '{';
 
 /**
- * Forcer l'utilisation de HTTPS pour les cookies (si tu es en HTTPS).
- */
-ini_set('session.cookie_secure', '1');
-
-/**
- * Définir SameSite sur 'Lax' (le plus compatible pour la plupart des cas).
- */
-ini_set('session.cookie_samesite', 'Lax');
-
-/**
- * Activer le cache des clés de l'API State.
- *
- * Drupal utilise l’API State pour stocker des informations volatiles (comme la dernière exécution de cron, le timestamp d’un index, etc.).
- * Par défaut, cela utilise la base de données sans cache. En activant $settings['state_cache'], ces valeurs sont mises en cache (souvent dans cache_default), ce qui améliore la performance.
- */
-$settings['state_cache'] = TRUE;
-
-/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
@@ -933,23 +915,13 @@ $config['image.settings']['allow_insecure_derivatives'] = FALSE;
  */
 #$settings['site_domain'] = 'www.example.com';
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
-
-if (file_exists($app_root . '/' . $site_path . '/settings.docker.php') && getenv('IS_DOCKER')) {
-  include $app_root . '/' . $site_path . '/settings.docker.php';
-}
-$databases['default']['default'] = array (
+$databases['default']['default'] = array(
   'database' => 'vactory_decoupled_db',
   'username' => 'root',
   'password' => '',
-  'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
   'driver' => 'mysql',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+  'prefix' => '',
+  'collation' => 'utf8mb4_general_ci',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_Ci69eWA6iRYvaxPDMaWfC62arOYGE_eIh9aZiAufYqUVjOjfcqga9LjWXfEsD2iXmSDc24f58g/sync';

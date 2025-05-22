@@ -28,13 +28,3 @@ README.txt
 capistrano
 capistrano-docker
 install_dev.sh
-libraries/**/test/
-libraries/**/tests/
-libraries/**/*.php
-libraries/**/*.md
-docs_factory
-.factory-release.txt
-update.php
-web.config
-sonar-project.properties
-example.gitignore

@@ -174,19 +174,18 @@ $config['system.performance']['minifyhtml']['minify_html'] = FALSE;
 $config['locale.settings']['translation']['path'] = 'sites/default/files/translations';
 
 /**
- * Redirect all site mails to array of mail addresses in local environment.
+ * Redirect all site mails to one mail address in local environment.
  *
  * In your settings.local.php file override $settings['vactory_mail_redirect'].
  *
  * By specifying the address to which all site mails should be delivered.
  *
  * Example:
- * $settings['vactory_mail_redirect'] = ['s.ghannouch@void.fr', 'toto@void.fr'];
- * $settings['vactory_mail_redirect'] = [ 'toto@void.fr']; // for one address
+ * $settings['vactory_mail_redirect'] = 'toto@void.fr';
  *
- * From now on, all site mails will be redirected to ['s.ghannouch@void.fr', 'toto@void.fr'] addresses.
+ * From now on, all site mails will be redirected to toto@void.fr address.
  */
-// $settings['vactory_mail_redirect'] = ['s.ghannouch@void.fr', 'toto@void.fr'];
+// $settings['vactory_mail_redirect'] = 'toto@void.fr';
 
 /**
  * Uncomment the following line to prevent user enumeration on the reset.
@@ -216,27 +215,3 @@ $config['locale.settings']['translation']['path'] = 'sites/default/files/transla
  */
 #$settings['site_domain'] = 'www.example.com';
 
-/**
- * Valeur	Comportement
- * Strict	Le cookie n'est jamais envoyé lors de requêtes intersites
- * Lax	Le cookie est envoyé pour les requêtes GET intersites (mais pas POST)
- * None	Le cookie est toujours envoyé — nécessite HTTPS
- */
-
-/**
- * Forcer l'utilisation de HTTPS pour les cookies (si tu es en HTTPS).
- */
-ini_set('session.cookie_secure', '1');
-
-/**
- * Définir SameSite sur 'Lax' (le plus compatible pour la plupart des cas).
- */
-ini_set('session.cookie_samesite', 'Lax');
-
-/**
- * Activer le cache des clés de l'API State.
- *
- * Drupal utilise l’API State pour stocker des informations volatiles (comme la dernière exécution de cron, le timestamp d’un index, etc.).
- * Par défaut, cela utilise la base de données sans cache. En activant $settings['state_cache'], ces valeurs sont mises en cache (souvent dans cache_default), ce qui améliore la performance.
- */
-$settings['state_cache'] = TRUE;

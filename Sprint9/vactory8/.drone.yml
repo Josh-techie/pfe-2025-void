@@ -7,13 +7,6 @@ type: docker
 #   - develop
 
 steps:
-  - name: code-analysis
-    image: kytay/sonar-node-plugin
-    settings:
-      sonar_host:
-        from_secret: sonar_host
-      sonar_token:
-        from_secret: sonar_token
   - name: build
     image: docker/compose:1.29.2
     volumes:
@@ -70,7 +63,7 @@ steps:
       SECRET_MAX_EXECUTION_TIME:
         from_secret: MAX_EXECUTION_TIME
     commands:
-      # - mkdir oauth-keys
+      - mkdir oauth-keys
       - echo "$SECRET_OAUTH_PRIVATE_KEY" > oauth-keys/private.key
       - echo "$SECRET_OAUTH_PUBLIC_KEY" > oauth-keys/public.key
       - echo "DOCKER_DB_NAME=$SECRET_DOCKER_DB_NAME" >> .env.prod
@@ -154,7 +147,7 @@ steps:
   #   depends_on:
   #     - publish
   #   settings:
-  #     webhook: token_webhook
+  #     webhook: https://hooks.slack.com/services/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
   #     channel: vactory3
   #     template: >
   #       {{#success build.status}} ✔ {{ else }} :x: {{/success}} {{ uppercasefirst build.status }}: Build Drupal #{{ build.number }} * (type: `{{ build.event }}`)

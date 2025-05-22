@@ -149,8 +149,6 @@ if (
     'password' => getenv('DOCKER_DB_PASSWORD'),
     'host'     => getenv('DOCKER_DB_HOST'),
     'port'     => getenv('DOCKER_DB_PORT'),
-    // Enable it if you want to use the isolation level.(env: READ COMMITTED or REPEATABLE READ)
-    // 'isolation_level' => getenv('DOCKER_DB_ISOLATION_LEVEL'),
   ];
 }
 
@@ -215,7 +213,7 @@ if (getenv('REVERSE_PROXY')) {
     | Request::HEADER_X_FORWARDED_PORT;
 
   if (getenv('REVERSE_PROXY_IP')) {
-     $settings['reverse_proxy_addresses'] = explode(',', getenv('REVERSE_PROXY_IP'));
+     $settings['reverse_proxy_addresses'] = array(getenv('REVERSE_PROXY_IP'));
   }
 }
 
@@ -234,32 +232,3 @@ $settings['NEXTJS_USER_PAGES_PATH_PREFIX'] = 'user'; // @todo: move to account o
 if (PHP_SAPI === 'cli') {
   ini_set('memory_limit', '2G');
 }
-
-/**
- * Trusted host configuration.
- *
- * Drupal core can use the Symfony trusted host mechanism to prevent HTTP Host
- * header spoofing.
- * This ensures that the trusted host patterns are set dynamically based on
- * the environment variables for enhanced security.
- */
-
-if ($base_domains = getenv('TRUSTED_HOST')) {
-  $domains = explode(',', $base_domains);
-  $settings['trusted_host_patterns'] = [];
-  foreach ($domains as $domain) {
-    $settings['trusted_host_patterns'][] = '^' . preg_quote(trim($domain)) . '$';
-  }
-}
-
-/**
- * A list of required env variables.
- */
-$settings['required_env_vars'] = [
-  'MEMCACHE_SERVER_ADDR',
-  'MEMCACHE_SERVER_PORT',
-  'REVERSE_PROXY',
-  'BASE_FRONTEND_URL',
-  'BASE_MEDIA_URL',
-  'FRONTEND_CACHE_KEY',
-];
