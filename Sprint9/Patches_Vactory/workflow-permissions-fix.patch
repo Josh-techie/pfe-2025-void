@@ -1,0 +1,12 @@
+diff --git a/Sprint9/vactory8/profiles/contrib/vactory_starter_kit/config/install/user.role.webmaster.yml b/Sprint9/vactory8/profiles/contrib/vactory_starter_kit/config/install/user.role.webmaster.yml
+index f859d5b7c..0b9504a71 100644
+--- a/Sprint9/vactory8/profiles/contrib/vactory_starter_kit/config/install/user.role.webmaster.yml
++++ b/Sprint9/vactory8/profiles/contrib/vactory_starter_kit/config/install/user.role.webmaster.yml
+@@ -4,6 +4,7 @@ dependencies:
+   config:
+     - filter.format.basic_html
+     - filter.format.full_html
++    - workflows.workflow.editorial
+ id: webmaster
+ label: Webmaster
+ weight: 5
