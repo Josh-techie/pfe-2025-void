@@ -1,0 +1,26 @@
+name: "Services Section"
+multiple: FALSE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Main Title"
+  description:
+    type: textarea
+    label: "Main Description"
+  service_cards:
+    type: group
+    label: "Service Cards"
+    multiple: TRUE
+    max_items: 4
+    fields:
+      icon:
+        type: image
+        label: "Service Icon"
+      card_title:
+        type: text
+        label: "Card Title"
+      card_link:
+        type: url_extended
+        label: "Card Link"

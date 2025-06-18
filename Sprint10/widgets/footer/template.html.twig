@@ -1,0 +1,39 @@
+<footer class="footer">
+  {# Social Media Links #}
+  {% if content.fields.cta_social %}
+    <a href="{{ content.fields.cta_social.url }}" class="social-link">
+      {% if content.fields.icon %}
+        <i class="{{ content.fields.icon }}"></i>
+      {% endif %}
+      {{ content.fields.cta_social.title }}
+    </a>
+  {% endif %}
+
+  {# Extra Fields #}
+  {% if content.extra_fields.enableThemeSwitcher %}
+    <div class="theme-switcher">
+      {# Add your theme switcher implementation here #}
+    </div>
+  {% endif %}
+
+  {% if content.extra_fields.use_menu %}
+    {# Render your menu using the menu ID #}
+    {{ drupal_menu(content.extra_fields.use_menu) }}
+  {% endif %}
+
+  {% if content.extra_fields.enableFooterBottom %}
+    <div class="footer-bottom">
+      {% if content.extra_fields.copyrights %}
+        <div class="copyrights">
+          {{ content.extra_fields.copyrights }}
+        </div>
+      {% endif %}
+
+      {% if content.extra_fields.signateur %}
+        <div class="signateur">
+          {{ content.extra_fields.signateur.value|raw }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</footer>

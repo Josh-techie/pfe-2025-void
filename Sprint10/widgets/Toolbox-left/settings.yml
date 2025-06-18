@@ -1,0 +1,24 @@
+name: "C50 - Toolbox contact / Sticky Mobile"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  cta:
+    type: url_extended
+    label: "toolbox link"
+  icon:
+    type: select
+    label: "icon"
+    options:
+      "#required": TRUE
+      "#options":
+        - "icon-facebook": "facebook icon"
+        - "icon-twitter": "twitter icon"
+        - "icon-youtube": "youtube icon"
+        - "icon-linkedin": "linkedin icon"
+  icon_name:
+    type: text
+    label: "icon class name if does not exist in the select"
+  mode:
+    type: checkbox
+    label: "sticky in mobile ?"

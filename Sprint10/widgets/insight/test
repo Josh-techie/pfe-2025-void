@@ -1,0 +1,1099 @@
+{
+    "jsonapi": {
+        "version": "1.0",
+        "meta": {
+            "links": {
+                "self": {
+                    "href": "http:\/\/jsonapi.org\/format\/1.0\/"
+                }
+            }
+        }
+    },
+    "data": [
+        {
+            "type": "node--insights",
+            "id": "b86a2159-d6f5-42dc-9211-4341fe684705",
+            "links": {
+                "self": {
+                    "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705?resourceVersion=id%3A17"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 12,
+                "drupal_internal__vid": 17,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-16T08:41:56+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "What BlockChain Means to your finances",
+                "created": "2025-06-16T08:38:37+00:00",
+                "changed": "2025-06-16T08:41:56+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": null,
+                "moderation_state": null,
+                "metatag": [
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "What BlockChain Means to your finances | Vactory"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better."
+                        }
+                    },
+                    {
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/What-BlockChain-Means-to-your-finances"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/en\/What-BlockChain-Means-to-your-finances"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "What BlockChain Means to your finances"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better."
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "path": {
+                    "alias": "\/What-BlockChain-Means-to-your-finances",
+                    "pid": 36,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "node_banner_title": null,
+                "node_banner_description": null,
+                "node_banner_showbreadcrumb": true,
+                "vcc_normalized": {
+                    "nodes": [],
+                    "more_link": "",
+                    "more_link_label": "",
+                    "display_mode": "",
+                    "limit": 0
+                },
+                "internal_user": {
+                    "revision_uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    },
+                    "uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    }
+                },
+                "internal_blocks": null,
+                "internal_metatag": [
+                    {
+                        "id": "title",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "What BlockChain Means to your finances | Vactory"
+                        }
+                    },
+                    {
+                        "id": "description",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better."
+                        }
+                    },
+                    {
+                        "id": "canonical_url",
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/What-BlockChain-Means-to-your-finances"
+                        }
+                    },
+                    {
+                        "id": "og_url",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "frontend_url\/en\/What-BlockChain-Means-to-your-finances"
+                        }
+                    },
+                    {
+                        "id": "og_title",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "What BlockChain Means to your finances"
+                        }
+                    },
+                    {
+                        "id": "og_description",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better."
+                        }
+                    },
+                    {
+                        "id": "og_image_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_secure_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "internal_comment": {
+                    "error": "Entity should have a field named comment"
+                },
+                "internal_breadcrumb": [
+                    {
+                        "url": "\/en",
+                        "text": "Home"
+                    },
+                    {
+                        "url": "\/en\/What-BlockChain-Means-to-your-finances",
+                        "text": "What BlockChain Means to your finances"
+                    }
+                ],
+                "internal_extra": {
+                    "translations": {
+                        "ar": "\/ar\/node\/12",
+                        "en": "\/en\/What-BlockChain-Means-to-your-finances",
+                        "fr": "\/fr\/node\/12"
+                    },
+                    "cache_exclude": false,
+                    "theme": "default"
+                },
+                "node_settings": null,
+                "cache_exclude": false,
+                "machine_name": null,
+                "field_live_mode": true,
+                "node_class": null,
+                "node_summary": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better.",
+                "node_body_class": null,
+                "legacy_id": null,
+                "content_translation_source": "und",
+                "content_translation_outdated": false,
+                "body": {
+                    "value": "\u003Cp\u003EBut how can we balance data and privacy? \u003Ca href=\u0022https:\/\/www.google.com\/\u0022 target=\u0022_blank\u0022 title=\u0022Legislation and regulation\u0022\u003ELegislation and regulation\u003C\/a\u003E of big data such as the European Union\u2019s General Data Protection Regulation (GDPR) and California\u2019s Consumer Privacy Act are partial measures at best. Regulators and pundits have focused so much on the demand side of the data equation \u2014 that is, on the use or sale of private citizens\u2019 data in corporate applications like Facebook, Google, and Uber without the individuals\u2019 awareness \u2014 that they\u2019ve failed to look at the supply side of data: where data originates, who creates it, who really owns it, and who gets to capture it in the first place.\u003C\/p\u003E\u003Cp\u003EThe answer is you do. All these data are a subset of your digital identity \u2014 the \u201cvirtual you,\u201d created by your data contrail across the Internet. That\u2019s how most corporations and institutions view you. As Carlos Moreira, CEO of WISeKey, said, \u201cThat identity is now yours, but the data that comes from its interaction in the world is owned by someone else.\u201d\u003C\/p\u003E",
+                    "format": "basic_html",
+                    "processed": "\u003Cp\u003EBut how can we balance data and privacy? \u003Ca href=\u0022https:\/\/www.google.com\/\u0022 target=\u0022_blank\u0022 title=\u0022Legislation and regulation\u0022\u003ELegislation and regulation\u003C\/a\u003E of big data such as the European Union\u2019s General Data Protection Regulation (GDPR) and California\u2019s Consumer Privacy Act are partial measures at best. Regulators and pundits have focused so much on the demand side of the data equation \u2014 that is, on the use or sale of private citizens\u2019 data in corporate applications like Facebook, Google, and Uber without the individuals\u2019 awareness \u2014 that they\u2019ve failed to look at the supply side of data: where data originates, who creates it, who really owns it, and who gets to capture it in the first place.\u003C\/p\u003E\u003Cp\u003EThe answer is you do. All these data are a subset of your digital identity \u2014 the \u201cvirtual you,\u201d created by your data contrail across the Internet. That\u2019s how most corporations and institutions view you. As Carlos Moreira, CEO of WISeKey, said, \u201cThat identity is now yours, but the data that comes from its interaction in the world is owned by someone else.\u201d\u003C\/p\u003E",
+                    "summary": ""
+                },
+                "field_contenu_lie": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "3a963361-9cc4-4d86-a8c7-fb486ab1d0da",
+                        "meta": {
+                            "drupal_internal__target_id": "insights"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/node_type?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/node_type?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/revision_uid?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/revision_uid?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/uid?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/uid?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "node_banner_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/node_banner_image?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/node_banner_image?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "node_banner_mobile_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/node_banner_mobile_image?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/node_banner_mobile_image?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "node_bg_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/node_bg_image?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/node_bg_image?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "field_field_insight_category": {
+                    "data": {
+                        "type": "taxonomy_term--news_category",
+                        "id": "e07013ad-2f9c-46ad-90d1-b463f0220444",
+                        "meta": {
+                            "drupal_internal__target_id": 4
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/field_field_insight_category?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/field_field_insight_category?resourceVersion=id%3A17"
+                        }
+                    }
+                },
+                "field_image_cover_news": {
+                    "data": {
+                        "type": "media--image",
+                        "id": "1c3cc1a8-fc52-4bfd-870d-38d03280127e",
+                        "meta": {
+                            "drupal_internal__target_id": 2
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/field_image_cover_news?resourceVersion=id%3A17"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/b86a2159-d6f5-42dc-9211-4341fe684705\/relationships\/field_image_cover_news?resourceVersion=id%3A17"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--insights",
+            "id": "711c6f54-a6e8-4a98-a997-91a17134124d",
+            "links": {
+                "self": {
+                    "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d?resourceVersion=id%3A19"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 13,
+                "drupal_internal__vid": 19,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-16T08:45:40+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP",
+                "created": "2025-06-16T08:45:05+00:00",
+                "changed": "2025-06-16T08:45:40+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": null,
+                "moderation_state": null,
+                "metatag": [
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP | Vactory"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "However, other data from Glassnode suggests that investor demand for BTC remains solid."
+                        }
+                    },
+                    {
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "However, other data from Glassnode suggests that investor demand for BTC remains solid."
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "path": {
+                    "alias": "\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP",
+                    "pid": 37,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "node_banner_title": null,
+                "node_banner_description": null,
+                "node_banner_showbreadcrumb": true,
+                "vcc_normalized": {
+                    "nodes": [],
+                    "more_link": "",
+                    "more_link_label": "",
+                    "display_mode": "",
+                    "limit": 0
+                },
+                "internal_user": {
+                    "revision_uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    },
+                    "uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    }
+                },
+                "internal_blocks": null,
+                "internal_metatag": [
+                    {
+                        "id": "title",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP | Vactory"
+                        }
+                    },
+                    {
+                        "id": "description",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "However, other data from Glassnode suggests that investor demand for BTC remains solid."
+                        }
+                    },
+                    {
+                        "id": "canonical_url",
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP"
+                        }
+                    },
+                    {
+                        "id": "og_url",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "frontend_url\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP"
+                        }
+                    },
+                    {
+                        "id": "og_title",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP"
+                        }
+                    },
+                    {
+                        "id": "og_description",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "However, other data from Glassnode suggests that investor demand for BTC remains solid."
+                        }
+                    },
+                    {
+                        "id": "og_image_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_secure_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "internal_comment": {
+                    "error": "Entity should have a field named comment"
+                },
+                "internal_breadcrumb": [
+                    {
+                        "url": "\/en",
+                        "text": "Home"
+                    },
+                    {
+                        "url": "\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP",
+                        "text": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP"
+                    }
+                ],
+                "internal_extra": {
+                    "translations": {
+                        "ar": "\/ar\/node\/13",
+                        "en": "\/en\/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP",
+                        "fr": "\/fr\/node\/13"
+                    },
+                    "cache_exclude": false,
+                    "theme": "default"
+                },
+                "node_settings": null,
+                "cache_exclude": false,
+                "machine_name": null,
+                "field_live_mode": true,
+                "node_class": null,
+                "node_summary": "However, other data from Glassnode suggests that investor demand for BTC remains solid.",
+                "node_body_class": null,
+                "legacy_id": null,
+                "content_translation_source": "und",
+                "content_translation_outdated": false,
+                "body": {
+                    "value": "\u003Ch4\u003EWhat to know:\u003C\/h4\u003E\u003Cul\u003E\u003Cli\u003EBitcoin remains stable around $105,000 despite geopolitical tensions, with institutional buying providing support amid market volatility.\u003C\/li\u003E\u003Cli\u003EGalaxy Research downplays the significance of the OP_Return debate, suggesting focus should shift to potential Bitcoin upgrades like CheckTemplateVerify.\u003C\/li\u003E\u003Cli\u003EBybit announces the launch of Byreal, a Solana-native decentralized exchange, aiming to combine centralized exchange liquidity with DeFi transparency.\u003C\/li\u003E\u003C\/ul\u003E\u003Ch2\u003E\u003Cstrong\u003EGood Morning, Asia. Here\u0027s what\u0027s making news in the markets:\u003C\/strong\u003E\u003C\/h2\u003E\u003Cp\u003E\u003Cem\u003EWelcome to Asia Morning Briefing, a daily summary of top stories during U.S. hours and an overview of market moves and analysis. For a detailed overview of U.S. markets, see \u003C\/em\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/daybook-us\u0022\u003E\u003Cem\u003E\u003Cu\u003ECoinDesk\u0027s Crypto Daybook Americas.\u003C\/u\u003E\u003C\/em\u003E\u003C\/a\u003E\u003C\/p\u003E\u003Cp\u003EAs Asia opens the trading week,\u003C\/p\u003E\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/price\/bitcoin\u0022\u003E\u003Cspan\u003E\u003Cu\u003EBTC$107,110.83\u003C\/u\u003E\u003C\/span\u003E\u003C\/a\u003E\u003C\/p\u003E\u003Cp\u003Eis changing hands at around $ 105,000, stuck in this range due to market uncertainty about whether the Israel-Iran conflict will escalate into a broader regional war, according to a recent note from trading firm QCP.\u003C\/p\u003E\u003Cp\u003EQCP wrote in a Friday note published on Telegram that risk reversals have \u0022flipped decisively,\u0022 with front-end BTC puts now commanding premiums of up to 5 volatility points over equivalent calls, a clear indicator of heightened investor anxiety and increased hedging against downside risks.\u003C\/p\u003E\u003Cp\u003EThe firm said that despite this defensive shift in positioning, BTC has demonstrated notable resilience. Even amid recent volatility, which saw over $1 billion in long positions liquidated across major crypto assets, on-chain data shows that institutional buying continues to provide meaningful support.\u003C\/p\u003E\u003Cp\u003EQCP emphasizes that markets remain \u0022stuck in a bind,\u0022 awaiting clarity on geopolitical outcomes, and warns that the digital asset complex will likely remain tightly linked to headline-driven sentiment shifts for the foreseeable future.\u003C\/p\u003E\u003Cp\u003EWith all that in mind, however, \u003Ca href=\u0022https:\/\/x.com\/glassnode\/status\/1933796558660624409\u0022 target=\u0022_blank\u0022\u003E\u003Cu\u003EGlassnode data provides some reassurance\u003C\/u\u003E\u003C\/a\u003E to investors concerned about longer-term directionality.\u003C\/p\u003E\u003Cp\u003EAlthough recent volatility underscores short-term anxiety, bitcoin\u2019s current cycle gain of 656%, while lower than previous bull markets, is notably impressive given its significantly larger market capitalization today.\u003C\/p\u003E\u003Cp\u003EPrevious cycles returned 1076% (2015\u20132018) and 1007% (2018\u20132022), suggesting investor demand is still pacing closely with BTC\u2019s maturation, even as near-term macro jitters dominate market sentiment.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\u003Ch2\u003E\u003Cbr\u003E\u003Cstrong\u003EGalaxy Research Says OP_Return Debate Wasn\u0027t That Important\u003C\/strong\u003E\u003C\/h2\u003E\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/tech\/2025\/06\/10\/bitcoin-core-30-to-increase-op_return-data-limit-after-developer-debate-concludes\u0022\u003E\u003Cu\u003EThe OP_Return debate\u003C\/u\u003E\u003C\/a\u003E was less important than what a \u0022loud but small group of critics\u0022 wanted everyone to think, Galaxy Research\u0027s Alex Thorn wrote in a recent note.\u003C\/p\u003E\u003Cp\u003EThorn described critics\u0027 reactions as \u0022wild accusations of the \u0027death of Bitcoin\u0027\u0022 and argued that such hyperbole was misplaced given historically low mempool congestion.\u003C\/p\u003E",
+                    "format": "basic_html",
+                    "processed": "\u003Ch4\u003EWhat to know:\u003C\/h4\u003E\u003Cul\u003E\u003Cli\u003EBitcoin remains stable around $105,000 despite geopolitical tensions, with institutional buying providing support amid market volatility.\u003C\/li\u003E\u003Cli\u003EGalaxy Research downplays the significance of the OP_Return debate, suggesting focus should shift to potential Bitcoin upgrades like CheckTemplateVerify.\u003C\/li\u003E\u003Cli\u003EBybit announces the launch of Byreal, a Solana-native decentralized exchange, aiming to combine centralized exchange liquidity with DeFi transparency.\u003C\/li\u003E\u003C\/ul\u003E\u003Ch2\u003E\u003Cstrong\u003EGood Morning, Asia. Here\u0027s what\u0027s making news in the markets:\u003C\/strong\u003E\u003C\/h2\u003E\u003Cp\u003E\u003Cem\u003EWelcome to Asia Morning Briefing, a daily summary of top stories during U.S. hours and an overview of market moves and analysis. For a detailed overview of U.S. markets, see \u003C\/em\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/daybook-us\u0022\u003E\u003Cem\u003E\u003Cu\u003ECoinDesk\u0027s Crypto Daybook Americas.\u003C\/u\u003E\u003C\/em\u003E\u003C\/a\u003E\u003C\/p\u003E\u003Cp\u003EAs Asia opens the trading week,\u003C\/p\u003E\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/price\/bitcoin\u0022\u003E\u003Cspan\u003E\u003Cu\u003EBTC$107,110.83\u003C\/u\u003E\u003C\/span\u003E\u003C\/a\u003E\u003C\/p\u003E\u003Cp\u003Eis changing hands at around $ 105,000, stuck in this range due to market uncertainty about whether the Israel-Iran conflict will escalate into a broader regional war, according to a recent note from trading firm QCP.\u003C\/p\u003E\u003Cp\u003EQCP wrote in a Friday note published on Telegram that risk reversals have \u0022flipped decisively,\u0022 with front-end BTC puts now commanding premiums of up to 5 volatility points over equivalent calls, a clear indicator of heightened investor anxiety and increased hedging against downside risks.\u003C\/p\u003E\u003Cp\u003EThe firm said that despite this defensive shift in positioning, BTC has demonstrated notable resilience. Even amid recent volatility, which saw over $1 billion in long positions liquidated across major crypto assets, on-chain data shows that institutional buying continues to provide meaningful support.\u003C\/p\u003E\u003Cp\u003EQCP emphasizes that markets remain \u0022stuck in a bind,\u0022 awaiting clarity on geopolitical outcomes, and warns that the digital asset complex will likely remain tightly linked to headline-driven sentiment shifts for the foreseeable future.\u003C\/p\u003E\u003Cp\u003EWith all that in mind, however, \u003Ca href=\u0022https:\/\/x.com\/glassnode\/status\/1933796558660624409\u0022 target=\u0022_blank\u0022\u003E\u003Cu\u003EGlassnode data provides some reassurance\u003C\/u\u003E\u003C\/a\u003E to investors concerned about longer-term directionality.\u003C\/p\u003E\u003Cp\u003EAlthough recent volatility underscores short-term anxiety, bitcoin\u2019s current cycle gain of 656%, while lower than previous bull markets, is notably impressive given its significantly larger market capitalization today.\u003C\/p\u003E\u003Cp\u003EPrevious cycles returned 1076% (2015\u20132018) and 1007% (2018\u20132022), suggesting investor demand is still pacing closely with BTC\u2019s maturation, even as near-term macro jitters dominate market sentiment.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\u003Ch2\u003E\u003Cbr\u003E\u003Cstrong\u003EGalaxy Research Says OP_Return Debate Wasn\u0027t That Important\u003C\/strong\u003E\u003C\/h2\u003E\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.coindesk.com\/tech\/2025\/06\/10\/bitcoin-core-30-to-increase-op_return-data-limit-after-developer-debate-concludes\u0022\u003E\u003Cu\u003EThe OP_Return debate\u003C\/u\u003E\u003C\/a\u003E was less important than what a \u0022loud but small group of critics\u0022 wanted everyone to think, Galaxy Research\u0027s Alex Thorn wrote in a recent note.\u003C\/p\u003E\u003Cp\u003EThorn described critics\u0027 reactions as \u0022wild accusations of the \u0027death of Bitcoin\u0027\u0022 and argued that such hyperbole was misplaced given historically low mempool congestion.\u003C\/p\u003E",
+                    "summary": ""
+                },
+                "field_contenu_lie": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "3a963361-9cc4-4d86-a8c7-fb486ab1d0da",
+                        "meta": {
+                            "drupal_internal__target_id": "insights"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/node_type?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/node_type?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/revision_uid?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/revision_uid?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/uid?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/uid?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "node_banner_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/node_banner_image?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/node_banner_image?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "node_banner_mobile_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/node_banner_mobile_image?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/node_banner_mobile_image?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "node_bg_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/node_bg_image?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/node_bg_image?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "field_field_insight_category": {
+                    "data": {
+                        "type": "taxonomy_term--news_category",
+                        "id": "af7b196f-3f76-44e7-8789-e664f19a6818",
+                        "meta": {
+                            "drupal_internal__target_id": 3
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/field_field_insight_category?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/field_field_insight_category?resourceVersion=id%3A19"
+                        }
+                    }
+                },
+                "field_image_cover_news": {
+                    "data": {
+                        "type": "media--image",
+                        "id": "ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d",
+                        "meta": {
+                            "drupal_internal__target_id": 3
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/field_image_cover_news?resourceVersion=id%3A19"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/711c6f54-a6e8-4a98-a997-91a17134124d\/relationships\/field_image_cover_news?resourceVersion=id%3A19"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "node--insights",
+            "id": "32f59108-f213-45c9-977e-3ef4b9b523ac",
+            "links": {
+                "self": {
+                    "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac?resourceVersion=id%3A21"
+                }
+            },
+            "attributes": {
+                "drupal_internal__nid": 14,
+                "drupal_internal__vid": 21,
+                "langcode": "en",
+                "revision_timestamp": "2025-06-16T11:00:11+00:00",
+                "revision_log": null,
+                "status": true,
+                "title": "5 Imperfect Fathers Who Shaped Future Presidents",
+                "created": "2025-06-16T08:52:56+00:00",
+                "changed": "2025-06-16T11:00:11+00:00",
+                "promote": false,
+                "sticky": false,
+                "default_langcode": true,
+                "revision_translation_affected": null,
+                "moderation_state": null,
+                "metatag": [
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "5 Imperfect Fathers Who Shaped Future Presidents | Vactory"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "They wouldn\u2019t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House."
+                        }
+                    },
+                    {
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/5-imperfect-fathers-who-shaped-future-presidents"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/en\/5-imperfect-fathers-who-shaped-future-presidents"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "5 Imperfect Fathers Who Shaped Future Presidents"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "They wouldn\u2019t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House."
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "http:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "path": {
+                    "alias": "\/5-imperfect-fathers-who-shaped-future-presidents",
+                    "pid": 38,
+                    "langcode": "en"
+                },
+                "publish_on": null,
+                "unpublish_on": null,
+                "node_banner_title": null,
+                "node_banner_description": null,
+                "node_banner_showbreadcrumb": true,
+                "vcc_normalized": {
+                    "nodes": [],
+                    "more_link": "",
+                    "more_link_label": "",
+                    "display_mode": "",
+                    "limit": 0
+                },
+                "internal_user": {
+                    "revision_uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    },
+                    "uid": {
+                        "id": "1",
+                        "name": "admin",
+                        "first_name": "",
+                        "last_name": "",
+                        "full_name": "admin",
+                        "picture": null
+                    }
+                },
+                "internal_blocks": null,
+                "internal_metatag": [
+                    {
+                        "id": "title",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "title",
+                            "content": "5 Imperfect Fathers Who Shaped Future Presidents | Vactory"
+                        }
+                    },
+                    {
+                        "id": "description",
+                        "tag": "meta",
+                        "attributes": {
+                            "name": "description",
+                            "content": "They wouldn\u2019t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House."
+                        }
+                    },
+                    {
+                        "id": "canonical_url",
+                        "tag": "link",
+                        "attributes": {
+                            "rel": "canonical",
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/5-imperfect-fathers-who-shaped-future-presidents"
+                        }
+                    },
+                    {
+                        "id": "og_url",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:url",
+                            "content": "frontend_url\/en\/5-imperfect-fathers-who-shaped-future-presidents"
+                        }
+                    },
+                    {
+                        "id": "og_title",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:title",
+                            "content": "5 Imperfect Fathers Who Shaped Future Presidents"
+                        }
+                    },
+                    {
+                        "id": "og_description",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:description",
+                            "content": "They wouldn\u2019t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House."
+                        }
+                    },
+                    {
+                        "id": "og_image_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    },
+                    {
+                        "id": "og_image_secure_url_0",
+                        "tag": "meta",
+                        "attributes": {
+                            "property": "og:image:secure_url",
+                            "content": "https:\/\/php.vactory8.orb.local\/themes\/vactory\/logo.png"
+                        }
+                    }
+                ],
+                "internal_comment": {
+                    "error": "Entity should have a field named comment"
+                },
+                "internal_breadcrumb": [
+                    {
+                        "url": "\/en",
+                        "text": "Home"
+                    },
+                    {
+                        "url": "\/en\/5-imperfect-fathers-who-shaped-future-presidents",
+                        "text": "5 Imperfect Fathers Who Shaped Future Presidents"
+                    }
+                ],
+                "internal_extra": {
+                    "translations": {
+                        "ar": "\/ar\/node\/14",
+                        "en": "\/en\/5-imperfect-fathers-who-shaped-future-presidents",
+                        "fr": "\/fr\/node\/14"
+                    },
+                    "cache_exclude": false,
+                    "theme": "default"
+                },
+                "node_settings": null,
+                "cache_exclude": false,
+                "machine_name": null,
+                "field_live_mode": true,
+                "node_class": null,
+                "node_summary": "They wouldn\u2019t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House.",
+                "node_body_class": null,
+                "legacy_id": null,
+                "content_translation_source": "und",
+                "content_translation_outdated": false,
+                "body": {
+                    "value": "\u003Cp\u003EFathers have profound influences on their children\u2019s values and ambitions, and in a few extraordinary cases in American history, they\u2019ve also pointed them on the path to the presidency.\u003C\/p\u003E\u003Cp\u003ENumerous presidential dads were themselves impressive figures. John Quincy Adams and George W. Bush followed their fathers\u2019 political footsteps to the White House, while Calvin Coolidge recited the presidential oath of office \u003Ca class=\u0022_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\u0022 href=\u0022https:\/\/www.history.com\/this-day-in-history\/august-3\/calvin-coolidge-takes-oath-of-office-after-hardings-death\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003Eadministered by his dad\u003C\/a\u003E.\u003C\/p\u003E\u003Cp\u003ENot all presidential fathers, though, forged close bonds with their children. Barack Obama and his dad had only fleeting encounters. George Washington lost his father at an early age, and Bill Clinton, Andrew Jackson and Rutherford B. Hayes never met their dads, who died before their births.\u003C\/p\u003E\u003Cp\u003EEven absentee fathers, however, left their imprints. From strict disciplinarians to nurturing mentors, the following fathers helped their sons ascend to the highest political office in the land.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\u003Cp\u003E\u003Cspan\u003E1.\u003C\/span\u003E\u003C\/p\u003E\u003Ch2\u003EBenjamin Pierce\u003C\/h2\u003E\u003Cp\u003EOften ranked among the least-accomplished presidents, \u003Ca class=\u0022_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\u0022 href=\u0022https:\/\/www.history.com\/articles\/franklin-pierce\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003EFranklin Pierce\u003C\/a\u003E boasted one of the most accomplished of presidential fathers, one who helped birth the country his son would one day lead.\u003C\/p\u003E\u003Cp\u003EWhen news of the battles at Lexington and Concord reached his Massachusetts farm, Benjamin Pierce abandoned his plow, grabbed a gun and joined patriot troops \u003Ca class=\u0022_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\u0022 href=\u0022https:\/\/www.history.com\/articles\/siege-of-boston\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003Elaying siege to Boston\u003C\/a\u003E. He wouldn\u2019t return home for more than seven years. General Pierce fought at Bunker Hill and Saratoga, endured Valley Forge\u2019s harsh winter and guarded George Washington.\u003C\/p\u003E\u003Cp\u003EThe Revolutionary War hero may never have envisioned his son becoming president like Washington, but Benjamin had high expectations for young Franklin. After moving to New Hampshire, Benjamin served as a state legislator and two-term governor. During Benajmin\u2019s final term as the state\u2019s chief executive, his Democratic Party political network aided Franklin\u2019s election to the state legislature, a stepping stone to an eventual seat in the U.S. Congress. When the Mexican-American War erupted, Franklin emulated his father and abandoned his thriving law practice to volunteer for the army, despite his lack of military experience.\u003C\/p\u003E\u003Cp\u003EBenjamin died in 1839, more than a decade before his son won the White House. Franklin\u2019s lifelong friend Nathaniel Hawthorne credited Benajmin with infusing his son with a patriotic and military spirit. \u201cFrom infancy upward, the boy had before his eyes, as the model on which he might instinctively form himself, one of the best specimens of sterling New England character, developed in a life of simple habits, yet of elevated action,\u201d \u003Ca class=\u0022_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\u0022 href=\u0022https:\/\/www.ibiblio.org\/eldritch\/nh\/fp01.html\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003EHawthorne wrote\u003C\/a\u003E.\u003C\/p\u003E",
+                    "format": "basic_html",
+                    "processed": "\u003Cp\u003EFathers have profound influences on their children\u2019s values and ambitions, and in a few extraordinary cases in American history, they\u2019ve also pointed them on the path to the presidency.\u003C\/p\u003E\u003Cp\u003ENumerous presidential dads were themselves impressive figures. John Quincy Adams and George W. Bush followed their fathers\u2019 political footsteps to the White House, while Calvin Coolidge recited the presidential oath of office \u003Ca href=\u0022https:\/\/www.history.com\/this-day-in-history\/august-3\/calvin-coolidge-takes-oath-of-office-after-hardings-death\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003Eadministered by his dad\u003C\/a\u003E.\u003C\/p\u003E\u003Cp\u003ENot all presidential fathers, though, forged close bonds with their children. Barack Obama and his dad had only fleeting encounters. George Washington lost his father at an early age, and Bill Clinton, Andrew Jackson and Rutherford B. Hayes never met their dads, who died before their births.\u003C\/p\u003E\u003Cp\u003EEven absentee fathers, however, left their imprints. From strict disciplinarians to nurturing mentors, the following fathers helped their sons ascend to the highest political office in the land.\u003C\/p\u003E\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\u003Cp\u003E\u003Cspan\u003E1.\u003C\/span\u003E\u003C\/p\u003E\u003Ch2\u003EBenjamin Pierce\u003C\/h2\u003E\u003Cp\u003EOften ranked among the least-accomplished presidents, \u003Ca href=\u0022https:\/\/www.history.com\/articles\/franklin-pierce\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003EFranklin Pierce\u003C\/a\u003E boasted one of the most accomplished of presidential fathers, one who helped birth the country his son would one day lead.\u003C\/p\u003E\u003Cp\u003EWhen news of the battles at Lexington and Concord reached his Massachusetts farm, Benjamin Pierce abandoned his plow, grabbed a gun and joined patriot troops \u003Ca href=\u0022https:\/\/www.history.com\/articles\/siege-of-boston\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003Elaying siege to Boston\u003C\/a\u003E. He wouldn\u2019t return home for more than seven years. General Pierce fought at Bunker Hill and Saratoga, endured Valley Forge\u2019s harsh winter and guarded George Washington.\u003C\/p\u003E\u003Cp\u003EThe Revolutionary War hero may never have envisioned his son becoming president like Washington, but Benjamin had high expectations for young Franklin. After moving to New Hampshire, Benjamin served as a state legislator and two-term governor. During Benajmin\u2019s final term as the state\u2019s chief executive, his Democratic Party political network aided Franklin\u2019s election to the state legislature, a stepping stone to an eventual seat in the U.S. Congress. When the Mexican-American War erupted, Franklin emulated his father and abandoned his thriving law practice to volunteer for the army, despite his lack of military experience.\u003C\/p\u003E\u003Cp\u003EBenjamin died in 1839, more than a decade before his son won the White House. Franklin\u2019s lifelong friend Nathaniel Hawthorne credited Benajmin with infusing his son with a patriotic and military spirit. \u201cFrom infancy upward, the boy had before his eyes, as the model on which he might instinctively form himself, one of the best specimens of sterling New England character, developed in a life of simple habits, yet of elevated action,\u201d \u003Ca href=\u0022https:\/\/www.ibiblio.org\/eldritch\/nh\/fp01.html\u0022 target=\u0022_blank\u0022 rel=\u0022noopener noreferrer\u0022\u003EHawthorne wrote\u003C\/a\u003E.\u003C\/p\u003E",
+                    "summary": ""
+                },
+                "field_contenu_lie": null
+            },
+            "relationships": {
+                "node_type": {
+                    "data": {
+                        "type": "node_type--node_type",
+                        "id": "3a963361-9cc4-4d86-a8c7-fb486ab1d0da",
+                        "meta": {
+                            "drupal_internal__target_id": "insights"
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/node_type?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/node_type?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "revision_uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/revision_uid?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/revision_uid?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "uid": {
+                    "data": {
+                        "type": "user--user",
+                        "id": "cbe71e5c-217b-4448-aecc-00df47f1e661",
+                        "meta": {
+                            "drupal_internal__target_id": 1
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/uid?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/uid?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "node_banner_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/node_banner_image?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/node_banner_image?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "node_banner_mobile_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/node_banner_mobile_image?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/node_banner_mobile_image?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "node_bg_image": {
+                    "data": null,
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/node_bg_image?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/node_bg_image?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "field_field_insight_category": {
+                    "data": {
+                        "type": "taxonomy_term--news_category",
+                        "id": "b25cdff7-c95b-4d5a-a424-52efe87c4fe0",
+                        "meta": {
+                            "drupal_internal__target_id": 5
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/field_field_insight_category?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/field_field_insight_category?resourceVersion=id%3A21"
+                        }
+                    }
+                },
+                "field_image_cover_news": {
+                    "data": {
+                        "type": "media--image",
+                        "id": "d6b93efd-6141-4c31-9b1e-a25133dbd9cc",
+                        "meta": {
+                            "drupal_internal__target_id": 4
+                        }
+                    },
+                    "links": {
+                        "related": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/field_image_cover_news?resourceVersion=id%3A21"
+                        },
+                        "self": {
+                            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights\/32f59108-f213-45c9-977e-3ef4b9b523ac\/relationships\/field_image_cover_news?resourceVersion=id%3A21"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "meta": {
+        "count": 3
+    },
+    "links": {
+        "self": {
+            "href": "http:\/\/php.vactory8.orb.local\/en\/api\/node\/insights"
+        }
+    }
+}

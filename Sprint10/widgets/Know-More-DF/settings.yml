@@ -1,0 +1,17 @@
+name: "Content Card Component"
+multiple: FALSE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Title"
+  description:
+    type: textarea
+    label: "Description"
+  link:
+    type: url_extended
+    label: "Know More Link"
+  image:
+    type: image
+    label: "Event Image"

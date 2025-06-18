@@ -1,0 +1,17 @@
+name: "Service DF"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Title Service Section"
+  description:
+    type: text
+    label: "Description Service Section"
+  image:
+    type: image
+    label: "Service Image"
+  subtitle:
+    type: text
+    label: "Service Subtitle"

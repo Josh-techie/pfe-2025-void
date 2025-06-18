@@ -1,0 +1,84 @@
+name: "DF: Events Worldwide"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Main Title"
+  image:
+    type: image
+    label: "Event Image"
+  event_title:
+    type: text
+    label: "Event Title"
+  event_link:
+    type: url_extended
+    label: "Event Title Link"
+  date:
+    type: group
+    label: "Event Date"
+    fields:
+      start_date:
+        type: datetime
+        label: "Start Date"
+        settings:
+          datetime_type: date
+        options:
+          "#date_time_format": "d-m-Y"
+          "#required": true
+      end_date:
+        type: datetime
+        label: "End Date"
+        settings:
+          datetime_type: date
+        options:
+          "#date_time_format": "d-m-Y"
+          "#required": true
+  event_location:
+    type: entity_reference
+    label: "Event Location"
+    options:
+      "#target_type": "taxonomy_term"
+      "#target_bundle": "event_location"
+      "#multiple": false
+      "#required": true
+  event_type:
+    type: entity_reference
+    label: "Event Type"
+    options:
+      "#target_type": "taxonomy_term"
+      "#target_bundle": "event_type"
+      "#multiple": false
+      "#required": true
+  tag_style:
+    type: select
+    label: "Tag Display Style"
+    options:
+      "#options":
+        primary: "Primary Style (Red)"
+        secondary: "Secondary Style (Dark Blue)"
+  description:
+    type: textarea
+    label: "Event Description"
+    options:
+      "#format": full_html
+  cta_primary:
+    type: url_extended
+    label: "Read More Button"
+    options:
+      "#title": "LIRE PLUS"
+extra_fields:
+  slider:
+    type: checkbox
+    label: "Activate Slider Mode"
+  intro:
+    type: text_format
+    label: "Section Introduction"
+    options:
+      "#format": full_html
+  view_all_events:
+    type: url_extended
+    label: "View All Events Button"
+    options:
+      "#title": "VOIR PLUS D'ÉVÉNEMENTS"

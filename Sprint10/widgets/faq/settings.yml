@@ -1,0 +1,25 @@
+name: "Bootstrap - Accordion"
+multiple: TRUE
+category: "Grouping"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Title"
+    options:
+      "#required": TRUE
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      "#format": "full_html"
+      "#required": TRUE
+extra_fields:
+  intro:
+    type: text_format
+    label: "Introduction"
+    options:
+      "#format": full_html
+  bigtitle:
+    type: text
+    label: "Titre d'accordion"

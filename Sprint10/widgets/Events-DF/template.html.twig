@@ -1,0 +1,77 @@
+<section class="events-worldwide">
+  {% if content.fields.title %}
+    <h2 class="section-title">{{ content.fields.title }}</h2>
+  {% endif %}
+
+  <div class="events-slider {% if content.extra_fields.slider %}slider-enabled{% endif %}">
+    {% for item in content.fields %}
+      <div class="event-card">
+        {# Image #}
+        {% if item.image %}
+          <img src="{{ item.image }}" alt="{{ item.event_title }}" class="event-image">
+        {% endif %}
+
+        {# Event Date #}
+        {% if item.date %}
+          <div class="event-date">
+            {{ item.date.start_date|date("d") }}
+            <span class="month">{{ item.date.start_date|date("M")|lower }}</span>
+            {% if item.date.end_date %}
+              - 
+              {{ item.date.end_date|date("d") }}
+              <span class="month">{{ item.date.end_date|date("M")|lower }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {# Event Title with Link #}
+        {% if item.event_title %}
+          <h3 class="event-title">
+            {% if item.event_link %}
+              <a href="{{ item.event_link.url }}">{{ item.event_title }}</a>
+            {% else %}
+              {{ item.event_title }}
+            {% endif %}
+          </h3>
+        {% endif %}
+
+        {# Taxonomies - Location and Type #}
+        <div class="event-tags">
+          {% if item.event_location %}
+            <span class="tag {{ item.tag_style == 'primary' ? 'tag-primary' : 'tag-secondary' }}">
+              {{ item.event_location }}
+            </span>
+          {% endif %}
+          {% if item.event_type %}
+            <span class="tag {{ item.tag_style == 'primary' ? 'tag-primary' : 'tag-secondary' }}">
+              {{ item.event_type }}
+            </span>
+          {% endif %}
+        </div>
+
+        {# Description #}
+        {% if item.description %}
+          <div class="event-description">
+            {{ item.description }}
+          </div>
+        {% endif %}
+
+        {# CTA Button #}
+        {% if item.cta_primary %}
+          <a href="{{ item.cta_primary.url }}" class="cta-button">
+            {{ item.cta_primary.title }}
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {# View All Events Button #}
+  {% if content.extra_fields.view_all_events %}
+    <div class="view-all">
+      <a href="{{ content.extra_fields.view_all_events.url }}" class="view-all-button">
+        {{ content.extra_fields.view_all_events.title }}
+      </a>
+    </div>
+  {% endif %}
+</section>

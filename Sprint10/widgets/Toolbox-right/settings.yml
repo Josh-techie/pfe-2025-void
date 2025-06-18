@@ -1,0 +1,8 @@
+name: "DF: Toolbox contact"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  link:
+    type: url_extended
+    label: "Url of the link"

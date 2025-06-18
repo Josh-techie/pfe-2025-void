@@ -1,0 +1,28 @@
+name: "Card Slider"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Title"
+    placeholder_value: "Title of the card"
+    options:
+      "#required": TRUE
+  image:
+    type: image
+    label: "Image"
+    placeholder_value: "test-image.jpg"
+    options:
+      "#required": TRUE
+      "#description": "Image size largeur: 768px hauteur 480px"
+  description:
+    type: text
+    label: "Description"
+    placeholder_value: "Description of the card"
+    options:
+      "#required": TRUE
+  link:
+    type: url_extended
+    label: "Read More Link"
+    placeholder_value: "https://www.google.com"

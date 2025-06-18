@@ -1,0 +1,38 @@
+name: "Header Capital Azure"
+multiple: FALSE
+category: "Layout"
+enabled: TRUE
+fields:
+  logo:
+    type: image
+    label: "Header Logo"
+  logo_link:
+    type: url_extended
+    label: "Logo Link"
+extra_fields:
+  use_main_menu:
+    type: text
+    label: "Main Menu ID"
+    options:
+      "#description": "Main Navigation Menu Machine Name. Default to Main"
+  banque_digitale_text:
+    type: text
+    label: "Main Button Text"
+  banque_digitale_link:
+    type: url_extended
+    label: "Banque Digitale Link"
+  language_switcher:
+    type: checkbox
+    label: "Enable Language Switcher"
+  default_language:
+    type: select
+    label: "Default Language"
+    options:
+      fr: "French"
+      en: "English"
+  language_toggle_style:
+    type: select
+    label: "Toggle Style"
+    options:
+      button: "Button Style"
+      dropdown: "Dropdown Style"

@@ -1,0 +1,34 @@
+name: "Footer variant 3"
+multiple: TRUE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  cta_social:
+    type: url_extended
+    label: "Social media links"
+  icon:
+    type: vactory_icon_picker
+    label: "Icon"
+extra_fields:
+  enableThemeSwitcher:
+    type: checkbox
+    label: "Activer Dark Mode"
+  icon:
+    type: vactory_icon_picker
+    label: "Footer's icon"
+  use_menu:
+    type: text
+    label: "Menu Main ID"
+    options:
+      "#description": "Menu machine name. Default to main"
+  enableFooterBottom:
+    type: checkbox
+    label: "Afficher Footer Bottom"
+  copyrights:
+    type: text
+    label: "copyrights text"
+  signateur:
+    type: text_format
+    label: 'Page signateur, ex: "Agence digitale VOID"'
+    options:
+      "#format": full_html

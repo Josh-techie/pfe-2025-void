@@ -1,0 +1,17 @@
+name: "Presence DF Widgets"
+multiple: FALSE
+category: "Capital Azure Widgets"
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Title Presence Section"
+  description:
+    type: text
+    label: "Description Presence Section"
+  link:
+    type: url_extended
+    label: "Link to Our Presense Page"
+  image:
+    type: image
+    label: "Presence Image"
