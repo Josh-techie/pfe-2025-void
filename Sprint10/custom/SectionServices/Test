@@ -1,0 +1,88 @@
+{
+    "auto_populate": false,
+    "pending_content": [],
+    "components": [
+        {
+            "title": "DES SERVICES INNOVANTS POUR UN QUOTIDIEN SIMPLIFIÉ",
+            "description": "Capital Azur accompagne l’ensemble de sa clientèle dans leurs projets à toutes les étapes de leurs vie.",
+            "image": [
+                {
+                    "_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Comptes-Cartes.png",
+                    "file_name": "Comptes-Cartes.png",
+                    "meta": {
+                        "target_id": "8",
+                        "alt": "Comptes-Cartes",
+                        "title": "",
+                        "width": "228",
+                        "height": "138"
+                    }
+                }
+            ],
+            "subtitle": "Comptes & Cartes",
+            "_weight": "1",
+            "remove": "Remove"
+        },
+        {
+            "title": "",
+            "description": "",
+            "image": [
+                {
+                    "_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Epargne.png",
+                    "file_name": "Epargne.png",
+                    "meta": {
+                        "target_id": "9",
+                        "alt": "Epargne",
+                        "title": "",
+                        "width": "176",
+                        "height": "126"
+                    }
+                }
+            ],
+            "subtitle": "Epargne",
+            "_weight": "2",
+            "remove": "Remove"
+        },
+        {
+            "title": "",
+            "description": "",
+            "image": [
+                {
+                    "_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Credit.png",
+                    "file_name": "Credit.png",
+                    "meta": {
+                        "target_id": "10",
+                        "alt": "Credit",
+                        "title": "",
+                        "width": "232",
+                        "height": "136"
+                    }
+                }
+            ],
+            "subtitle": "Credit",
+            "_weight": "3",
+            "remove": "Remove"
+        },
+        {
+            "title": "",
+            "description": "",
+            "image": [
+                {
+                    "_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Insurance.png",
+                    "file_name": "Insurance.png",
+                    "meta": {
+                        "target_id": "11",
+                        "alt": "Insurance",
+                        "title": "",
+                        "width": "228",
+                        "height": "138"
+                    }
+                }
+            ],
+            "subtitle": "Insurance",
+            "_weight": "4",
+            "remove": "Remove"
+        }
+    ],
+    "template": "custom_dynamic_fields:Service-DF",
+    "uniqueId": "custom_dynamic_fields_Service-DF_20"
+}

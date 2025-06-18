@@ -1,0 +1,56 @@
+{
+	"auto_populate": false,
+	"pending_content": [],
+	"components": [
+		{
+			"link": {
+				"title": "OUVRIR UN COMPTE",
+				"url": "/en",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mde3ndk1nze0nzk",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "1",
+			"remove": "Remove"
+		},
+		{
+			"link": {
+				"title": "RECLAMATION",
+				"url": "/contact-us",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mte3ndk1nze0otk",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "2",
+			"remove": "Remove"
+		},
+		{
+			"link": {
+				"title": "FAQ",
+				"url": "/faq",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mje3ndk1nze1mte",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "3",
+			"remove": "Remove"
+		}
+	],
+	"template": "custom_dynamic_fields:Toolbox-right",
+	"uniqueId": "custom_dynamic_fields_Toolbox-right_18"
+}

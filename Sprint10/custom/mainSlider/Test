@@ -1,0 +1,101 @@
+{
+	"auto_populate": false,
+	"pending_content": [],
+	"components": [
+		{
+			"title": "Gérer votre épargne en toute simplicité",
+			"image": [
+				{
+					"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/gerer-mon-epargne.jpg",
+					"file_name": "gerer-mon-epargne.jpg",
+					"meta": {
+						"target_id": "13",
+						"alt": "gerer mon epargne",
+						"title": "",
+						"width": "2514",
+						"height": "986"
+					}
+				}
+			],
+			"description": "Profitez de tous les outils pour mieux gérer votre épargne",
+			"link": {
+				"title": "En savoir Plus",
+				"url": "/gerer-mon-epargne",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mde3ndk2nda3mtg",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "1",
+			"remove": "Remove"
+		},
+		{
+			"title": "COVID-19 : Capital Azur accompagne ses clients Particuliers",
+			"image": [
+				{
+					"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/3.jpg",
+					"file_name": "3.jpg",
+					"meta": {
+						"target_id": "14",
+						"alt": "slider-image2",
+						"title": "",
+						"width": "2514",
+						"height": "986"
+					}
+				}
+			],
+			"description": "Report d'échéances, financements... nous vous proposons les solutions les plus adaptées à votre situation",
+			"link": {
+				"title": "En savoir plus",
+				"url": "/crise-coronavirus",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mte3ndk2nda5otm",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "2",
+			"remove": "Remove"
+		},
+		{
+			"title": "Capital Azur, votre banque en ligne",
+			"image": [
+				{
+					"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/slider-pro.jpg",
+					"file_name": "slider-pro.jpg",
+					"meta": {
+						"target_id": "15",
+						"alt": "Corona-Slider-main-1",
+						"title": "",
+						"width": "2514",
+						"height": "986"
+					}
+				}
+			],
+			"description": "5 mesures pour accompagner nos clients Professionnels et Entreprises en Afrique",
+			"link": {
+				"title": "En savoir plus",
+				"url": "/crise-coronavirus",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mje3ndk2ndexmdy",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": "3",
+			"remove": "Remove"
+		}
+	],
+	"template": "custom_dynamic_fields:Slider-Main",
+	"uniqueId": "custom_dynamic_fields_Slider-Main_22"
+}

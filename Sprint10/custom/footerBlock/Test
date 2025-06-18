@@ -1,0 +1,12 @@
+{
+	"enableThemeSwitcher": 0,
+	"use_menu": "footer-capital-azure",
+	"enableFooterBottom": 0,
+	"copyrights": "Capital Azur 2020 © All rights reserved",
+	"signateur": {
+		"value": {
+			"#text": "<p>Conception et développement&nbsp;</p>\n",
+			"#format": "full_html"
+		}
+	}
+}

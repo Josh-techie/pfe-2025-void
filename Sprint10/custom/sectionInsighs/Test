@@ -1,0 +1,415 @@
+{
+	"auto_populate": false,
+	"pending_content": [],
+	"components": [
+		{
+			"collection": {
+				"data": {
+					"jsonapi": {
+						"version": "1.0",
+						"meta": {
+							"links": {
+								"self": {
+									"href": "http://jsonapi.org/format/1.0/"
+								}
+							}
+						}
+					},
+					"data": [
+						{
+							"type": "node--insights",
+							"id": "32f59108-f213-45c9-977e-3ef4b9b523ac",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/node/insights/32f59108-f213-45c9-977e-3ef4b9b523ac?resourceVersion=id%3A21"
+								}
+							},
+							"attributes": {
+								"drupal_internal__nid": 14,
+								"title": "5 Imperfect Fathers Who Shaped Future Presidents",
+								"created": "2025-06-16T08:52:56+00:00",
+								"path": {
+									"alias": "/5-imperfect-fathers-who-shaped-future-presidents",
+									"pid": 38,
+									"langcode": "en"
+								},
+								"node_summary": "They wouldn’t all earn spots on the Mount Rushmore of dads, but these fathers reared sons who won the White House.",
+								"body": {
+									"value": "<p>Fathers have profound influences on their children’s values and ambitions, and in a few extraordinary cases in American history, they’ve also pointed them on the path to the presidency.</p><p>Numerous presidential dads were themselves impressive figures. John Quincy Adams and George W. Bush followed their fathers’ political footsteps to the White House, while Calvin Coolidge recited the presidential oath of office <a class=\"_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\" href=\"https://www.history.com/this-day-in-history/august-3/calvin-coolidge-takes-oath-of-office-after-hardings-death\" target=\"_blank\" rel=\"noopener noreferrer\">administered by his dad</a>.</p><p>Not all presidential fathers, though, forged close bonds with their children. Barack Obama and his dad had only fleeting encounters. George Washington lost his father at an early age, and Bill Clinton, Andrew Jackson and Rutherford B. Hayes never met their dads, who died before their births.</p><p>Even absentee fathers, however, left their imprints. From strict disciplinarians to nurturing mentors, the following fathers helped their sons ascend to the highest political office in the land.</p><p>&nbsp;</p><p><span>1.</span></p><h2>Benjamin Pierce</h2><p>Often ranked among the least-accomplished presidents, <a class=\"_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\" href=\"https://www.history.com/articles/franklin-pierce\" target=\"_blank\" rel=\"noopener noreferrer\">Franklin Pierce</a> boasted one of the most accomplished of presidential fathers, one who helped birth the country his son would one day lead.</p><p>When news of the battles at Lexington and Concord reached his Massachusetts farm, Benjamin Pierce abandoned his plow, grabbed a gun and joined patriot troops <a class=\"_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\" href=\"https://www.history.com/articles/siege-of-boston\" target=\"_blank\" rel=\"noopener noreferrer\">laying siege to Boston</a>. He wouldn’t return home for more than seven years. General Pierce fought at Bunker Hill and Saratoga, endured Valley Forge’s harsh winter and guarded George Washington.</p><p>The Revolutionary War hero may never have envisioned his son becoming president like Washington, but Benjamin had high expectations for young Franklin. After moving to New Hampshire, Benjamin served as a state legislator and two-term governor. During Benajmin’s final term as the state’s chief executive, his Democratic Party political network aided Franklin’s election to the state legislature, a stepping stone to an eventual seat in the U.S. Congress. When the Mexican-American War erupted, Franklin emulated his father and abandoned his thriving law practice to volunteer for the army, despite his lack of military experience.</p><p>Benjamin died in 1839, more than a decade before his son won the White House. Franklin’s lifelong friend Nathaniel Hawthorne credited Benajmin with infusing his son with a patriotic and military spirit. “From infancy upward, the boy had before his eyes, as the model on which he might instinctively form himself, one of the best specimens of sterling New England character, developed in a life of simple habits, yet of elevated action,” <a class=\"_1l8442v0 _1jnz0ocj g1fwxfi6 _1l8442v1 g1fwxfhu\" href=\"https://www.ibiblio.org/eldritch/nh/fp01.html\" target=\"_blank\" rel=\"noopener noreferrer\">Hawthorne wrote</a>.</p>",
+									"format": "basic_html",
+									"processed": "<p>Fathers have profound influences on their children’s values and ambitions, and in a few extraordinary cases in American history, they’ve also pointed them on the path to the presidency.</p><p>Numerous presidential dads were themselves impressive figures. John Quincy Adams and George W. Bush followed their fathers’ political footsteps to the White House, while Calvin Coolidge recited the presidential oath of office <a href=\"https://www.history.com/this-day-in-history/august-3/calvin-coolidge-takes-oath-of-office-after-hardings-death\" target=\"_blank\" rel=\"noopener noreferrer\">administered by his dad</a>.</p><p>Not all presidential fathers, though, forged close bonds with their children. Barack Obama and his dad had only fleeting encounters. George Washington lost his father at an early age, and Bill Clinton, Andrew Jackson and Rutherford B. Hayes never met their dads, who died before their births.</p><p>Even absentee fathers, however, left their imprints. From strict disciplinarians to nurturing mentors, the following fathers helped their sons ascend to the highest political office in the land.</p><p>&nbsp;</p><p><span>1.</span></p><h2>Benjamin Pierce</h2><p>Often ranked among the least-accomplished presidents, <a href=\"https://www.history.com/articles/franklin-pierce\" target=\"_blank\" rel=\"noopener noreferrer\">Franklin Pierce</a> boasted one of the most accomplished of presidential fathers, one who helped birth the country his son would one day lead.</p><p>When news of the battles at Lexington and Concord reached his Massachusetts farm, Benjamin Pierce abandoned his plow, grabbed a gun and joined patriot troops <a href=\"https://www.history.com/articles/siege-of-boston\" target=\"_blank\" rel=\"noopener noreferrer\">laying siege to Boston</a>. He wouldn’t return home for more than seven years. General Pierce fought at Bunker Hill and Saratoga, endured Valley Forge’s harsh winter and guarded George Washington.</p><p>The Revolutionary War hero may never have envisioned his son becoming president like Washington, but Benjamin had high expectations for young Franklin. After moving to New Hampshire, Benjamin served as a state legislator and two-term governor. During Benajmin’s final term as the state’s chief executive, his Democratic Party political network aided Franklin’s election to the state legislature, a stepping stone to an eventual seat in the U.S. Congress. When the Mexican-American War erupted, Franklin emulated his father and abandoned his thriving law practice to volunteer for the army, despite his lack of military experience.</p><p>Benjamin died in 1839, more than a decade before his son won the White House. Franklin’s lifelong friend Nathaniel Hawthorne credited Benajmin with infusing his son with a patriotic and military spirit. “From infancy upward, the boy had before his eyes, as the model on which he might instinctively form himself, one of the best specimens of sterling New England character, developed in a life of simple habits, yet of elevated action,” <a href=\"https://www.ibiblio.org/eldritch/nh/fp01.html\" target=\"_blank\" rel=\"noopener noreferrer\">Hawthorne wrote</a>.</p>",
+									"summary": ""
+								}
+							},
+							"relationships": {
+								"field_image_cover_news": {
+									"data": {
+										"type": "media--image",
+										"id": "d6b93efd-6141-4c31-9b1e-a25133dbd9cc",
+										"meta": {
+											"drupal_internal__target_id": 4
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/32f59108-f213-45c9-977e-3ef4b9b523ac/field_image_cover_news?resourceVersion=id%3A21"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/32f59108-f213-45c9-977e-3ef4b9b523ac/relationships/field_image_cover_news?resourceVersion=id%3A21"
+										}
+									}
+								}
+							}
+						},
+						{
+							"type": "node--insights",
+							"id": "711c6f54-a6e8-4a98-a997-91a17134124d",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/node/insights/711c6f54-a6e8-4a98-a997-91a17134124d?resourceVersion=id%3A19"
+								}
+							},
+							"attributes": {
+								"drupal_internal__nid": 13,
+								"title": "Israel-Iran Conflict Keeps BTC Around 105K Says QCP",
+								"created": "2025-06-16T08:45:05+00:00",
+								"path": {
+									"alias": "/Israel-Iran-Conflict-Keeps-BTC-Around-105K-Says-QCP",
+									"pid": 37,
+									"langcode": "en"
+								},
+								"node_summary": "However, other data from Glassnode suggests that investor demand for BTC remains solid.",
+								"body": {
+									"value": "<h4>What to know:</h4><ul><li>Bitcoin remains stable around $105,000 despite geopolitical tensions, with institutional buying providing support amid market volatility.</li><li>Galaxy Research downplays the significance of the OP_Return debate, suggesting focus should shift to potential Bitcoin upgrades like CheckTemplateVerify.</li><li>Bybit announces the launch of Byreal, a Solana-native decentralized exchange, aiming to combine centralized exchange liquidity with DeFi transparency.</li></ul><h2><strong>Good Morning, Asia. Here's what's making news in the markets:</strong></h2><p><em>Welcome to Asia Morning Briefing, a daily summary of top stories during U.S. hours and an overview of market moves and analysis. For a detailed overview of U.S. markets, see </em><a href=\"https://www.coindesk.com/daybook-us\"><em><u>CoinDesk's Crypto Daybook Americas.</u></em></a></p><p>As Asia opens the trading week,</p><p><a href=\"https://www.coindesk.com/price/bitcoin\"><span><u>BTC$107,110.83</u></span></a></p><p>is changing hands at around $ 105,000, stuck in this range due to market uncertainty about whether the Israel-Iran conflict will escalate into a broader regional war, according to a recent note from trading firm QCP.</p><p>QCP wrote in a Friday note published on Telegram that risk reversals have \"flipped decisively,\" with front-end BTC puts now commanding premiums of up to 5 volatility points over equivalent calls, a clear indicator of heightened investor anxiety and increased hedging against downside risks.</p><p>The firm said that despite this defensive shift in positioning, BTC has demonstrated notable resilience. Even amid recent volatility, which saw over $1 billion in long positions liquidated across major crypto assets, on-chain data shows that institutional buying continues to provide meaningful support.</p><p>QCP emphasizes that markets remain \"stuck in a bind,\" awaiting clarity on geopolitical outcomes, and warns that the digital asset complex will likely remain tightly linked to headline-driven sentiment shifts for the foreseeable future.</p><p>With all that in mind, however, <a href=\"https://x.com/glassnode/status/1933796558660624409\" target=\"_blank\"><u>Glassnode data provides some reassurance</u></a> to investors concerned about longer-term directionality.</p><p>Although recent volatility underscores short-term anxiety, bitcoin’s current cycle gain of 656%, while lower than previous bull markets, is notably impressive given its significantly larger market capitalization today.</p><p>Previous cycles returned 1076% (2015–2018) and 1007% (2018–2022), suggesting investor demand is still pacing closely with BTC’s maturation, even as near-term macro jitters dominate market sentiment.</p><p>&nbsp;</p><h2><br><strong>Galaxy Research Says OP_Return Debate Wasn't That Important</strong></h2><p><a href=\"https://www.coindesk.com/tech/2025/06/10/bitcoin-core-30-to-increase-op_return-data-limit-after-developer-debate-concludes\"><u>The OP_Return debate</u></a> was less important than what a \"loud but small group of critics\" wanted everyone to think, Galaxy Research's Alex Thorn wrote in a recent note.</p><p>Thorn described critics' reactions as \"wild accusations of the 'death of Bitcoin'\" and argued that such hyperbole was misplaced given historically low mempool congestion.</p>",
+									"format": "basic_html",
+									"processed": "<h4>What to know:</h4><ul><li>Bitcoin remains stable around $105,000 despite geopolitical tensions, with institutional buying providing support amid market volatility.</li><li>Galaxy Research downplays the significance of the OP_Return debate, suggesting focus should shift to potential Bitcoin upgrades like CheckTemplateVerify.</li><li>Bybit announces the launch of Byreal, a Solana-native decentralized exchange, aiming to combine centralized exchange liquidity with DeFi transparency.</li></ul><h2><strong>Good Morning, Asia. Here's what's making news in the markets:</strong></h2><p><em>Welcome to Asia Morning Briefing, a daily summary of top stories during U.S. hours and an overview of market moves and analysis. For a detailed overview of U.S. markets, see </em><a href=\"https://www.coindesk.com/daybook-us\"><em><u>CoinDesk's Crypto Daybook Americas.</u></em></a></p><p>As Asia opens the trading week,</p><p><a href=\"https://www.coindesk.com/price/bitcoin\"><span><u>BTC$107,110.83</u></span></a></p><p>is changing hands at around $ 105,000, stuck in this range due to market uncertainty about whether the Israel-Iran conflict will escalate into a broader regional war, according to a recent note from trading firm QCP.</p><p>QCP wrote in a Friday note published on Telegram that risk reversals have \"flipped decisively,\" with front-end BTC puts now commanding premiums of up to 5 volatility points over equivalent calls, a clear indicator of heightened investor anxiety and increased hedging against downside risks.</p><p>The firm said that despite this defensive shift in positioning, BTC has demonstrated notable resilience. Even amid recent volatility, which saw over $1 billion in long positions liquidated across major crypto assets, on-chain data shows that institutional buying continues to provide meaningful support.</p><p>QCP emphasizes that markets remain \"stuck in a bind,\" awaiting clarity on geopolitical outcomes, and warns that the digital asset complex will likely remain tightly linked to headline-driven sentiment shifts for the foreseeable future.</p><p>With all that in mind, however, <a href=\"https://x.com/glassnode/status/1933796558660624409\" target=\"_blank\"><u>Glassnode data provides some reassurance</u></a> to investors concerned about longer-term directionality.</p><p>Although recent volatility underscores short-term anxiety, bitcoin’s current cycle gain of 656%, while lower than previous bull markets, is notably impressive given its significantly larger market capitalization today.</p><p>Previous cycles returned 1076% (2015–2018) and 1007% (2018–2022), suggesting investor demand is still pacing closely with BTC’s maturation, even as near-term macro jitters dominate market sentiment.</p><p>&nbsp;</p><h2><br><strong>Galaxy Research Says OP_Return Debate Wasn't That Important</strong></h2><p><a href=\"https://www.coindesk.com/tech/2025/06/10/bitcoin-core-30-to-increase-op_return-data-limit-after-developer-debate-concludes\"><u>The OP_Return debate</u></a> was less important than what a \"loud but small group of critics\" wanted everyone to think, Galaxy Research's Alex Thorn wrote in a recent note.</p><p>Thorn described critics' reactions as \"wild accusations of the 'death of Bitcoin'\" and argued that such hyperbole was misplaced given historically low mempool congestion.</p>",
+									"summary": ""
+								}
+							},
+							"relationships": {
+								"field_image_cover_news": {
+									"data": {
+										"type": "media--image",
+										"id": "ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d",
+										"meta": {
+											"drupal_internal__target_id": 3
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/711c6f54-a6e8-4a98-a997-91a17134124d/field_image_cover_news?resourceVersion=id%3A19"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/711c6f54-a6e8-4a98-a997-91a17134124d/relationships/field_image_cover_news?resourceVersion=id%3A19"
+										}
+									}
+								}
+							}
+						},
+						{
+							"type": "node--insights",
+							"id": "b86a2159-d6f5-42dc-9211-4341fe684705",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/node/insights/b86a2159-d6f5-42dc-9211-4341fe684705?resourceVersion=id%3A17"
+								}
+							},
+							"attributes": {
+								"drupal_internal__nid": 12,
+								"title": "What BlockChain Means to your finances",
+								"created": "2025-06-16T08:38:37+00:00",
+								"path": {
+									"alias": "/What-BlockChain-Means-to-your-finances",
+									"pid": 36,
+									"langcode": "en"
+								},
+								"node_summary": "Describe the relationship between you finance health and how blockchain can improve it and help you be financially better.",
+								"body": {
+									"value": "<p>But how can we balance data and privacy? <a href=\"https://www.google.com/\" target=\"_blank\" title=\"Legislation and regulation\">Legislation and regulation</a> of big data such as the European Union’s General Data Protection Regulation (GDPR) and California’s Consumer Privacy Act are partial measures at best. Regulators and pundits have focused so much on the demand side of the data equation — that is, on the use or sale of private citizens’ data in corporate applications like Facebook, Google, and Uber without the individuals’ awareness — that they’ve failed to look at the supply side of data: where data originates, who creates it, who really owns it, and who gets to capture it in the first place.</p><p>The answer is you do. All these data are a subset of your digital identity — the “virtual you,” created by your data contrail across the Internet. That’s how most corporations and institutions view you. As Carlos Moreira, CEO of WISeKey, said, “That identity is now yours, but the data that comes from its interaction in the world is owned by someone else.”</p>",
+									"format": "basic_html",
+									"processed": "<p>But how can we balance data and privacy? <a href=\"https://www.google.com/\" target=\"_blank\" title=\"Legislation and regulation\">Legislation and regulation</a> of big data such as the European Union’s General Data Protection Regulation (GDPR) and California’s Consumer Privacy Act are partial measures at best. Regulators and pundits have focused so much on the demand side of the data equation — that is, on the use or sale of private citizens’ data in corporate applications like Facebook, Google, and Uber without the individuals’ awareness — that they’ve failed to look at the supply side of data: where data originates, who creates it, who really owns it, and who gets to capture it in the first place.</p><p>The answer is you do. All these data are a subset of your digital identity — the “virtual you,” created by your data contrail across the Internet. That’s how most corporations and institutions view you. As Carlos Moreira, CEO of WISeKey, said, “That identity is now yours, but the data that comes from its interaction in the world is owned by someone else.”</p>",
+									"summary": ""
+								}
+							},
+							"relationships": {
+								"field_image_cover_news": {
+									"data": {
+										"type": "media--image",
+										"id": "1c3cc1a8-fc52-4bfd-870d-38d03280127e",
+										"meta": {
+											"drupal_internal__target_id": 2
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/b86a2159-d6f5-42dc-9211-4341fe684705/field_image_cover_news?resourceVersion=id%3A17"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/node/insights/b86a2159-d6f5-42dc-9211-4341fe684705/relationships/field_image_cover_news?resourceVersion=id%3A17"
+										}
+									}
+								}
+							}
+						}
+					],
+					"included": [
+						{
+							"type": "media--image",
+							"id": "d6b93efd-6141-4c31-9b1e-a25133dbd9cc",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/media/image/d6b93efd-6141-4c31-9b1e-a25133dbd9cc?resourceVersion=id%3A4"
+								}
+							},
+							"attributes": {
+								"name": "Presidents-News.png"
+							},
+							"relationships": {
+								"thumbnail": {
+									"data": {
+										"type": "file--image",
+										"id": "f71a8def-1dd8-4a39-b578-a2e2018b330f",
+										"meta": {
+											"alt": "History-News",
+											"title": null,
+											"width": null,
+											"height": null,
+											"drupal_internal__target_id": 4
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/d6b93efd-6141-4c31-9b1e-a25133dbd9cc/thumbnail?resourceVersion=id%3A4"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/d6b93efd-6141-4c31-9b1e-a25133dbd9cc/relationships/thumbnail?resourceVersion=id%3A4"
+										}
+									}
+								}
+							}
+						},
+						{
+							"type": "media--image",
+							"id": "ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/media/image/ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d?resourceVersion=id%3A3"
+								}
+							},
+							"attributes": {
+								"name": "Politics.png"
+							},
+							"relationships": {
+								"thumbnail": {
+									"data": {
+										"type": "file--image",
+										"id": "1903d15d-f5a5-4a26-bf9c-31c0f4ce4c61",
+										"meta": {
+											"alt": "News-Politics",
+											"title": null,
+											"width": null,
+											"height": null,
+											"drupal_internal__target_id": 3
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d/thumbnail?resourceVersion=id%3A3"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/ba3d2f0b-2e9b-4b51-b29c-758fc695eb8d/relationships/thumbnail?resourceVersion=id%3A3"
+										}
+									}
+								}
+							}
+						},
+						{
+							"type": "media--image",
+							"id": "1c3cc1a8-fc52-4bfd-870d-38d03280127e",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/media/image/1c3cc1a8-fc52-4bfd-870d-38d03280127e?resourceVersion=id%3A2"
+								}
+							},
+							"attributes": {
+								"name": "News-BlockChain.jpg"
+							},
+							"relationships": {
+								"thumbnail": {
+									"data": {
+										"type": "file--image",
+										"id": "1f5eafd7-5b38-498f-9815-b0250d017bb0",
+										"meta": {
+											"alt": "News-Blockchain",
+											"title": null,
+											"width": 1200,
+											"height": 848,
+											"drupal_internal__target_id": 2
+										}
+									},
+									"links": {
+										"related": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/1c3cc1a8-fc52-4bfd-870d-38d03280127e/thumbnail?resourceVersion=id%3A2"
+										},
+										"self": {
+											"href": "http://php.vactory8.orb.local/en/api/media/image/1c3cc1a8-fc52-4bfd-870d-38d03280127e/relationships/thumbnail?resourceVersion=id%3A2"
+										}
+									}
+								}
+							}
+						},
+						{
+							"type": "file--image",
+							"id": "f71a8def-1dd8-4a39-b578-a2e2018b330f",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/file/image/f71a8def-1dd8-4a39-b578-a2e2018b330f"
+								}
+							},
+							"attributes": {
+								"filename": "Presidents-News.png",
+								"uri": {
+									"value": {
+										"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Presidents-News.png",
+										"file_name": "Presidents-News.png",
+										"meta": {
+											"height": null,
+											"width": null
+										}
+									},
+									"url": "/sites/default/files/2025-06/Presidents-News.png"
+								}
+							}
+						},
+						{
+							"type": "file--image",
+							"id": "1903d15d-f5a5-4a26-bf9c-31c0f4ce4c61",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/file/image/1903d15d-f5a5-4a26-bf9c-31c0f4ce4c61"
+								}
+							},
+							"attributes": {
+								"filename": "Politics.png",
+								"uri": {
+									"value": {
+										"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/Politics.png",
+										"file_name": "Politics.png",
+										"meta": {
+											"height": null,
+											"width": null
+										}
+									},
+									"url": "/sites/default/files/2025-06/Politics.png"
+								}
+							}
+						},
+						{
+							"type": "file--image",
+							"id": "1f5eafd7-5b38-498f-9815-b0250d017bb0",
+							"links": {
+								"self": {
+									"href": "http://php.vactory8.orb.local/en/api/file/image/1f5eafd7-5b38-498f-9815-b0250d017bb0"
+								}
+							},
+							"attributes": {
+								"filename": "News-BlockChain.jpg",
+								"uri": {
+									"value": {
+										"_default": "https://php.vactory8.orb.local/sites/default/files/2025-06/News-BlockChain.jpg",
+										"file_name": "News-BlockChain.jpg",
+										"meta": {
+											"height": 848,
+											"width": 1200
+										}
+									},
+									"url": "/sites/default/files/2025-06/News-BlockChain.jpg"
+								}
+							}
+						}
+					],
+					"meta": {
+						"count": 3
+					},
+					"links": {
+						"self": {
+							"href": "http://php.vactory8.orb.local/en/api/node/insights?fields%5Bnode--insights%5D=drupal_internal__nid%2Cpath%2Ctitle%2Cbody%2Cnode_summary%2Cfield_image_cover_news%2Ccreated&fields%5Bmedia--image%5D=name%2Cthumbnail&fields%5Bfile--image%5D=filename%2Curi&filter%5Bstatus%5D%5Bvalue%5D=1&include=field_image_cover_news%2Cfield_image_cover_news.thumbnail&page%5Boffset%5D=0&page%5Blimit%5D=3&q%5Bentity_bundle%5D=vactory_page&q%5Bentity_id%5D=11&sort=-created"
+						}
+					}
+				},
+				"filters": {
+					"fields": {
+						"node--insights": "drupal_internal__nid,path,title,body,node_summary,field_image_cover_news,created",
+						"media--image": "name,thumbnail",
+						"file--image": "filename,uri"
+					},
+					"include": "field_image_cover_news,field_image_cover_news.thumbnail",
+					"page": {
+						"offset": "0",
+						"limit": "3"
+					},
+					"sort": "-created",
+					"filter": {
+						"status": {
+							"value": "1"
+						}
+					}
+				},
+				"original_filters": {
+					"fields": {
+						"node--insights": "drupal_internal__nid,path,title,body,node_summary,field_image_cover_news,created",
+						"media--image": "name,thumbnail",
+						"file--image": "filename,uri"
+					},
+					"include": "field_image_cover_news,field_image_cover_news.thumbnail",
+					"page": {
+						"offset": "0",
+						"limit": "3"
+					},
+					"sort": "-created",
+					"filter": {
+						"status": {
+							"value": "1"
+						}
+					}
+				},
+				"taxonomies": {
+					"news_category": [
+						{
+							"id": "4",
+							"uuid": "e07013ad-2f9c-46ad-90d1-b463f0220444",
+							"slug": "finance",
+							"label": "Finance",
+							"results": []
+						},
+						{
+							"id": "5",
+							"uuid": "b25cdff7-c95b-4d5a-a424-52efe87c4fe0",
+							"slug": "history",
+							"label": "History",
+							"results": []
+						},
+						{
+							"id": "3",
+							"uuid": "af7b196f-3f76-44e7-8789-e664f19a6818",
+							"slug": "politics",
+							"label": "Politics",
+							"results": []
+						},
+						{
+							"id": "2",
+							"uuid": "a7712c74-d0cd-4da3-af82-12781658a7ea",
+							"slug": "sports",
+							"label": "Sports",
+							"results": []
+						}
+					]
+				},
+				"optional_data": []
+			},
+			"_weight": 1
+		}
+	],
+	"template": "custom_dynamic_fields:insight",
+	"uniqueId": "custom_dynamic_fields_insight_8"
+}

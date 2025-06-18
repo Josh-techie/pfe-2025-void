@@ -1,0 +1,26 @@
+{
+	"auto_populate": false,
+	"pending_content": [],
+	"components": [
+		{
+			"title": "VOTRE SATISFACTION, NOTRE PASSION",
+			"description": "Découvrez Capital Azur, la première banque 100% Digitale en Afrique et oubliez la paperasse et les frais cachés. Avec tous nos outils dédiés aux besoins de tous nos clients (Particuliers, Entreprises, Corporate), Nous vous accompagnons chaque jour pour réaliser vos projets de vie.",
+			"lead": "",
+			"link": {
+				"title": "A PROPOS DE NOUS",
+				"url": "/nous-connaitre",
+				"attributes": {
+					"label": "",
+					"class": "",
+					"id": "link-mde3ndkwmjcwnju",
+					"target": "_self",
+					"rel": ""
+				},
+				"is_external": false
+			},
+			"_weight": 1
+		}
+	],
+	"template": "custom_dynamic_fields:votre-satisfaction",
+	"uniqueId": "custom_dynamic_fields_votre-satisfaction_12"
+}
