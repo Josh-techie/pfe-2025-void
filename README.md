@@ -26,6 +26,8 @@ A chronological order of the different sprints and what they cover in order to b
 - [Sprint 7](./Sprint7/) : We create a function full fledged module that does some complex stuff:Appointment Booking System it helps book appointements, check the availability, sending emails, confirmations...
 - [Sprint 8](./Sprint8/) : We will try to use Factory and fix the issues we might encounter installing the profil factory 9 in a monolith repo (You might not have access to all the version as this is proprietry code)
 - [Sprint 9](./Sprint9/) : In this sprint we setup drupal with vactory8 profil as backend with nextjs as frontend in a containerized environment.
+- [Sprint 10](./Sprint10/) : In this sprint we will work on creating an example of real world full fledged website enttled: `Capital Azure` using vactory8 with nextjs in a decoupled architecture.
+- [Sprint 11]() : We will get acquainted with docker technology and host our version of capital azure using the knowledge we gained in this sprrint so far.
 
 ---
 
