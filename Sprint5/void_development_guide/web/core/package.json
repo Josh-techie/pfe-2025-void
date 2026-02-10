@@ -102,7 +102,7 @@
     "transliteration": "^2.3.5",
     "tua-body-scroll-lock": "^1.5.3",
     "underscore": "~1.13.7",
-    "webpack": "^5.97.1",
+    "webpack": "^5.104.1",
     "webpack-cli": "^5.1.4"
   },
   "browserslist": [
